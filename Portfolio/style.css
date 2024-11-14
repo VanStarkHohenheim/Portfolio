@@ -1,0 +1,158 @@
+:root {
+    --primary-color: #4f46e5;
+    --secondary-color: #2a2a2e;
+    --dark-bg: #1a1a1a;
+    --light-text: #f1f1f1;
+    --light-bg: #333;
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: var(--light-text);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+}
+
+/* Navbar Styling */
+.navbar {
+    background: var(--dark-bg);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav-link {
+    color: var(--light-text);
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://source.unsplash.com/1600x900/?technology') no-repeat center center/cover;
+    color: var(--light-text);
+}
+
+.hero-title {
+    color: var(--primary-color);
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+.hero-subtitle {
+    color: #c2c2c2;
+}
+
+/* Button */
+.btn-primary {
+    background: var(--primary-color);
+    color: var(--light-text);
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #3730a3;
+    transform: translateY(-3px);
+}
+
+/* Section Titles */
+.section-title {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.section-description {
+    color: #bbb;
+    max-width: 700px;
+}
+
+/* Cards Styling */
+.skill-card,
+.project-card {
+    background: var(--light-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-card:hover,
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.project-card .background-image {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Contact Form */
+.contact-form .input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    background: var(--light-bg);
+    border: none;
+    color: var(--light-text);
+    border-radius: 5px;
+}
+
+.contact-form .input:focus {
+    outline: 2px solid var(--primary-color);
+}
+
+.footer {
+    background: var(--dark-bg);
+    color: var(--light-text);
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+#hero {
+    position: relative;
+    background-image: url('photo/kill_4.gif'); /* Utilisez le chemin de votre GIF */
+    background-size: cover; /* Assure que le GIF couvre toute la section */
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #f1f1f1;
+    padding: 4rem 0;
+    overflow: hidden;
+}
+
+/* Couche sombre pour améliorer la lisibilité du texte */
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Couleur sombre avec opacité */
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    z-index: 2; /* Place le contenu au-dessus de la couche sombre */
+}
+
+.hero-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.hero-subtitle {
+    color: #c2c2c2;
+}
