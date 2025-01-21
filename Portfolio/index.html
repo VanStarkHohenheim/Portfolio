@@ -5,108 +5,180 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mohamed Belmokhtar - Portfolio</title>
-    <!-- Tailwind CSS pour la structure de base -->
+
+    <!-- Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <!-- Fichier CSS personnalisé -->
+
+    <!-- Locomotive Scroll CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/locomotive-scroll/4.1.4/locomotive-scroll.min.css" integrity="sha512-D8OJ3q93E9rrNsKNYZWCH2PH+fcb4BsyLQdI9QlLjEtVqRhT88T0PTPPlGGKnBb8rdF6N44RGfLtJDOgFuvh5A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Fichier CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="bg-dark text-light font-sans leading-relaxed">
-<!-- Barre de navigation -->
-<header class="navbar">
-    <nav class="container flex justify-center items-center py-4">
-        <ul class="flex space-x-8">
-            <li><a href="#about" class="nav-link">À propos</a></li>
-            <li><a href="#skills" class="nav-link">Compétences</a></li>
-            <li><a href="#projects" class="nav-link">Projets</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+<body class="bg-dark text-light font-sans leading-relaxed overflow-x-hidden">
 
+    <!-- Navbar -->
+    <header class="fixed top-0 left-0 w-full bg-dark z-50 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <h1 class="text-primary text-2xl font-bold">MB.</h1>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#hero" class="nav-link">Accueil</a>
+                <a href="#about" class="nav-link">À propos</a>
+                <a href="#skills" class="nav-link">Compétences</a>
+                <a href="#projects" class="nav-link">Projets</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <button id="menu-toggle" class="block text-light md:hidden focus:outline-none">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+    </header>
 
-    <!-- Section d'introduction -->
-    <section id="hero" class="hero text-center relative overflow-hidden">
-        <div class="container relative z-10 mx-auto py-20">
-            <h2 class="hero-title"><span>Mohamed Belmokhtar</span></h2>
-            <p class="hero-subtitle mt-4">Cybersecurity & Linux enthusiastist</p>
-            <a href="#projects" class="btn-primary mt-8 inline-block">Découvrez mes projets</a>
+    <!-- Hero Section -->
+    <section id="hero" class="h-screen flex items-center justify-center bg-dark relative">
+        <div class="container text-center" data-scroll>
+            <h1 class="text-5xl font-bold text-primary mb-4">Mohamed Belmokhtar</h1>
+            <p class="text-xl text-gray-300 mb-8">Cybersecurity & Linux Enthusiast</p>
+            <a href="#projects" class="btn-primary">Voir mes projets</a>
         </div>
     </section>
 
-    <!-- Section À propos -->
-    <section id="about" class="section bg-secondary py-20">
+    <!-- About Section -->
+    <section id="about" class="min-h-screen bg-secondary py-20">
         <div class="container mx-auto text-center">
-            <h2 class="section-title">À propos de moi</h2>
-            <p class="section-description max-w-3xl mx-auto">Je suis étudiant en BTS SIO, option Solutions d’Infrastructure, Systèmes et Réseaux, passionné par la cybersécurité, l’administration des systèmes Linux et les infrastructures réseau.
-
-Je suis actuellement à la recherche d’un stage du 19 mai au 20 juin 2025 pour mettre en pratique mes compétences et contribuer activement à des projets concrets. Rigoureux et motivé, je suis prêt à relever les défis et à apporter une réelle valeur ajoutée.</p>
+            <h2 class="text-4xl font-bold text-primary mb-6" data-scroll>À propos de moi</h2>
+            <p class="text-lg max-w-3xl mx-auto" data-scroll>
+                Je suis étudiant en BTS SIO, option Solutions d’Infrastructure, Systèmes et Réseaux, passionné par la cybersécurité et les systèmes Linux. Actuellement à la recherche d’un stage, je souhaite mettre en pratique mes compétences dans des projets concrets.
+            </p>
         </div>
     </section>
 
-    <!-- Section Compétences -->
-    <section id="skills" class="section py-20">
+    <!-- Skills Section -->
+    <section id="skills" class="bg-dark py-20">
         <div class="container mx-auto text-center">
-            <h2 class="section-title">Compétences</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-10">
-                <div class="skill-card">HTML/CSS</div>
-                <div class="skill-card">Java</div>
-                <div class="skill-card">SQL</div>
-                <div class="skill-card">Python</div>
-                <div class="skill-card">Cybersécurité</div>
-                <div class="skill-card">Bases du Bash Scripting / Powershell</div>
-                <div class="skill-card">Administration Cisco</div>
+            <h2 class="text-4xl font-bold text-primary mb-10">Compétences et Certifications</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <!-- Skill 1 -->
+                <div class="skill-card group cursor-pointer" data-skill="html">
+                    <div class="icon-container">
+                        <i class="fab fa-html5 text-6xl text-primary"></i>
+                    </div>
+                    <p class="mt-4 font-semibold text-gray-300 group-hover:text-light">
+                        ANSSI <br>
+                        <span class="text-sm text-gray-400 group-hover:text-light">(SecNumacadémie)</span>
+                    </p>
+                </div>
+    
+                <!-- Skill 2 -->
+                <div class="skill-card group cursor-pointer" data-skill="css">
+                    <div class="icon-container">
+                        <i class="fab fa-css3-alt text-6xl text-primary"></i>
+                    </div>
+                    <p class="mt-4 font-semibold text-gray-300 group-hover:text-light">
+                        Try Hack Me <br>
+                        <span class="text-sm text-gray-400 group-hover:text-light">(Pre Security Certificate)</span>
+                    </p>
+                </div>
+    
+                <!-- Skill 3 -->
+                <div class="skill-card group cursor-pointer" data-skill="python">
+                    <div class="icon-container">
+                        <i class="fab fa-python text-6xl text-primary"></i>
+                    </div>
+                    <p class="mt-4 font-semibold text-gray-300 group-hover:text-light">
+                        Cisco <br>
+                        <span class="text-sm text-gray-400 group-hover:text-light">(Python Essentials 1)</span>
+                    </p>
+                </div>
+    
+                <!-- Skill 4 -->
+                <div class="skill-card group cursor-pointer" data-skill="cybersecurity">
+                    <div class="icon-container">
+                        <i class="fas fa-lock text-6xl text-primary"></i>
+                    </div>
+                    <p class="mt-4 font-semibold text-gray-300 group-hover:text-light">
+                        Cisco <br>
+                        <span class="text-sm text-gray-400 group-hover:text-light">(Introduction to Cybersecurity)</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Modale pour afficher la certification -->
+    <div id="cert-modal" class="hidden fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
+        <div class="bg-dark p-8 rounded-lg relative max-w-3xl w-full">
+            <!-- Bouton de fermeture -->
+            <button id="close-modal" class="absolute top-4 right-4 text-gray-300 hover:text-white">
+                <i class="fas fa-times text-2xl"></i>
+            </button>
+    
+            <!-- Contenu de la modale -->
+            <h3 id="modal-title" class="text-2xl font-bold text-primary mb-4">Titre de la compétence</h3>
+            <iframe id="modal-pdf" src="" class="w-full h-80 rounded-lg border border-gray-700"></iframe>
+            <a id="modal-link" href="#" target="_blank" class="btn-primary mt-6 inline-block">Voir la certification complète</a>
+        </div>
+    </div>
+    
+
+    <!-- Modale pour afficher la certification -->
+<div id="cert-modal" class="hidden fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
+    <div class="bg-dark p-8 rounded-lg relative max-w-3xl w-full">
+        <!-- Bouton de fermeture -->
+        <button id="close-modal" class="absolute top-4 right-4 text-gray-300 hover:text-white">
+            <i class="fas fa-times text-2xl"></i>
+        </button>
+
+        <!-- Boutons pour naviguer -->
+        <button id="prev-skill" class="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-300 hover:text-white">
+            <i class="fas fa-chevron-left text-3xl"></i>
+        </button>
+        <button id="next-skill" class="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-300 hover:text-white">
+            <i class="fas fa-chevron-right text-3xl"></i>
+        </button>
+
+        <!-- Contenu de la modale -->
+        <h3 id="modal-title" class="text-2xl font-bold text-primary mb-4">Titre de la compétence</h3>
+        <iframe id="modal-pdf" src="" class="w-full h-80 rounded-lg border border-gray-700"></iframe>
+        <a id="modal-link" href="#" target="_blank" class="btn-primary mt-6 inline-block">Voir la certification complète</a>
+    </div>
+</div>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-secondary py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-primary mb-10" data-scroll>Projets</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Projet 1 -->
+                <a href="https://github.com/VanStarkHohenheim/NotiLog" target="_blank" class="project-card bg-dark p-6 rounded-lg shadow-lg transition duration-300 transform hover:scale-105" data-scroll>
+                    <h3 class="text-2xl font-bold text-light mb-4">NotiLog</h3>
+                    <p class="text-gray-400">Un script simple pour afficher au démarrage les connexions (SSH) sur une machine Linux Debian.</p>
+                </a>
             </div>
         </div>
     </section>
 
-<!-- Section Projets -->
-<section id="projects" class="section bg-secondary py-20">
-    <div class="container mx-auto text-center">
-        <h2 class="section-title">Projets</h2>
-        <div class="flex justify-center items-center mt-10">
-            <!-- Projet 1 -->
-            <div class="project-card relative bg-dark text-light p-6 rounded-lg shadow-lg overflow-hidden max-w-lg">
-                <div class="background-image" style="background-image: url('photo/debian-red.jpg'); opacity: 0.3;"></div>
-                <h3 class="project-title text-xl font-bold mb-2">Administration de systèmes informatiques communicants complexes</h3>
-                <p class="project-description text-sm">
-                    Installation d’un poste de travail et des outils de développement en vue de coder en C# (avec la librairie Monogame) et PHP7 sous Linux (distribution Debian).
-                </p>
-            </div>
+    <!-- Contact Section -->
+    <section id="contact" class="bg-dark py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-primary mb-10" data-scroll>Contactez-moi</h2>
+            <form class="max-w-lg mx-auto" data-scroll>
+                <input type="text" placeholder="Votre nom" class="w-full bg-gray-800 p-4 rounded-lg mb-4">
+                <input type="email" placeholder="Votre email" class="w-full bg-gray-800 p-4 rounded-lg mb-4">
+                <textarea placeholder="Votre message" class="w-full bg-gray-800 p-4 rounded-lg mb-4"></textarea>
+                <button class="btn-primary w-full">Envoyer</button>
+            </form>
         </div>
-    </div>
-</section>
+    </section>
 
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/locomotive-scroll/4.1.4/locomotive-scroll.min.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
 
-
-<!-- Section Contact -->
-<section id="contact" class="section py-20">
-    <div class="container mx-auto text-center">
-        <h2 class="section-title">Contactez-moi</h2>
-        <!-- Icônes de contact -->
-        <div class="contact-info mt-8 mx-auto flex justify-center space-x-6">
-            <!-- Email -->
-            <a href="mailto:monadresse@mail.com" target="_blank" class="text-primary">
-                <img src="https://img.icons8.com/ios-filled/50/000000/new-post.png" alt="Email" title="Email">
-            </a>
-            <!-- GitHub -->
-            <a href="https://github.com/VanStarkHohenheim/VanStarkHohenheim/blob/main/README.md" target="_blank" class="text-primary">
-                <img src="https://img.icons8.com/ios-filled/50/000000/github.png" alt="GitHub" title="GitHub">
-            </a>
-            <!-- ID de session -->
-            <a href="#" class="text-primary" onclick="navigator.clipboard.writeText('0504bcb8692bec026448e1d27fae30f6a381a0fd8666e63c8623ec878119cec36e'); alert('ID de session copié!');">
-                <img src="https://getsession.org/_next/image?url=%2Fassets%2Fimages%2Flogo.png&w=256&q=75" alt="ID de Session" title="Copier l'ID de Session">
-            </a>
-        </div>
-    </div>
-</section>
-
-        <!-- Formulaire de contact 
-        <form class="contact-form mt-8 max-w-lg mx-auto">
-            <input type="text" placeholder="Votre nom" class="input">
-            <input type="email" placeholder="Votre email" class="input mt-4">
-            <textarea placeholder="Votre message" class="input mt-4"></textarea>
-            <button type="submit" class="btn-primary mt-6">Envoyer le message</button>
-        </form>
-    </div>
-</section> -->
+</html>

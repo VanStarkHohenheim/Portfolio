@@ -3,27 +3,27 @@
     --secondary-color: #2a2a2e;
     --dark-bg: #1a1a1a;
     --light-text: #f1f1f1;
-    --light-bg: #333;
+    --gray-text: #9ca3af;
 }
 
 body {
     background-color: var(--dark-bg);
     color: var(--light-text);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.7;
+    scroll-behavior: smooth;
 }
 
-/* Navbar Styling */
-.navbar {
-    background: var(--dark-bg);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+/* Navbar */
+header {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .nav-link {
     color: var(--light-text);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 500;
     transition: color 0.3s ease;
 }
 
@@ -32,127 +32,313 @@ body {
 }
 
 /* Hero Section */
-.hero {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://source.unsplash.com/1600x900/?technology') no-repeat center center/cover;
-    color: var(--light-text);
+#hero {
+    background-image: url('photo/kill_4.gif'); /* Remplacez par le chemin de votre GIF */
+    background-size: cover; /* Assure que le GIF couvre toute la section */
+    background-position: center; /* Centre le GIF */
+    background-repeat: no-repeat; /* Évite les répétitions du GIF */
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .hero-title {
-    color: var(--primary-color);
-    font-size: 2.8rem;
+    font-size: 3.5rem;
     font-weight: bold;
+    color: var(--primary-color);
 }
 
 .hero-subtitle {
-    color: #c2c2c2;
+    color: var(--gray-text);
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
 }
 
-/* Button */
 .btn-primary {
     background: var(--primary-color);
     color: var(--light-text);
-    padding: 0.75rem 1.5rem;
-    border-radius: 5px;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    text-transform: uppercase;
     transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .btn-primary:hover {
     background: #3730a3;
     transform: translateY(-3px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
 }
 
-/* Section Titles */
-.section-title {
-    color: var(--primary-color);
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-.section-description {
-    color: #bbb;
-    max-width: 700px;
-}
-
-/* Cards Styling */
-.skill-card,
-.project-card {
-    background: var(--light-bg);
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.skill-card:hover,
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
-}
-
-.project-card .background-image {
-    position: absolute;
-    inset: 0;
-    background-size: cover;
-    background-position: center;
-}
-
-
-/* Contact Form */
-.contact-form .input {
-    width: 100%;
-    padding: 0.8rem;
-    margin-bottom: 1rem;
-    background: var(--light-bg);
-    border: none;
-    color: var(--light-text);
-    border-radius: 5px;
-}
-
-.contact-form .input:focus {
-    outline: 2px solid var(--primary-color);
-}
-
-.footer {
-    background: var(--dark-bg);
-    color: var(--light-text);
-    font-size: 0.9rem;
-    text-align: center;
-}
-
-#hero {
-    position: relative;
-    background-image: url('photo/kill_4.gif'); /* Utilisez le chemin de votre GIF */
-    background-size: cover; /* Assure que le GIF couvre toute la section */
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #f1f1f1;
-    padding: 4rem 0;
-    overflow: hidden;
-}
-
-/* Couche sombre pour améliorer la lisibilité du texte */
-#hero::before {
-    content: '';
+/* Overlay sombre pour améliorer la lisibilité du texte */
+#hero .bg-black {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Couleur sombre avec opacité */
-    z-index: 1;
+    z-index: 1; /* Place l'overlay au-dessus du GIF */
+    background-color: rgba(0, 0, 0, 0.5); /* Ajuste l'opacité pour un effet sombre */
 }
 
-.container {
+/* Contenu du Hero (Texte) */
+#hero .container {
     position: relative;
-    z-index: 2; /* Place le contenu au-dessus de la couche sombre */
+    z-index: 10; /* Place le texte au-dessus de l'overlay */
 }
 
-.hero-title {
-    font-size: 2.8rem;
+/* Sections */
+section {
+    padding: 80px 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
     font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.section-description {
+    color: var(--gray-text);
+    font-size: 1.1rem;
+}
+
+/* Skill Cards */
+.skill-card {
+    background: var(--secondary-color); /* Couleur de fond des cartes */
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.skill-card:hover {
+    transform: translateY(-8px); /* Légère élévation */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Ombre plus forte */
+    background: var(--primary-color); /* Change la couleur de fond au survol */
+}
+
+.skill-card:hover .icon-container i {
+    color: #fff; /* Change la couleur de l'icône au survol */
+    transform: scale(1.2); /* Agrandit légèrement l'icône */
+}
+
+.skill-card:hover p {
+    color: #fff; /* Change la couleur du texte au survol */
+}
+
+.skill-card .icon-container i {
+    font-size: 4rem;
+    color: var(--primary-color);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Texte */
+.skill-card p {
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+    margin-top: 0.5rem;
+}
+
+.skill-card span {
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+    display: block;
+    margin-top: 0.2rem;
+    color: var(--gray-text);
+}
+
+/* Bordures dynamiques */
+.skill-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 12px;
+    border: 2px solid var(--primary-color);
+    transition: width 0.3s ease;
+    z-index: 0;
+}
+
+.skill-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 0;
+    border-radius: 12px;
+    border: 2px solid var(--primary-color);
+    transition: height 0.3s ease;
+    z-index: 0;
+}
+
+.skill-card:hover::before {
+    width: 100%; /* Développe la largeur de la bordure */
+}
+
+.skill-card:hover::after {
+    height: 100%; /* Développe la hauteur de la bordure */
+}
+
+/* Animation d'icône */
+.icon-container {
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Texte */
+.skill-card p {
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+/* Bordures dynamiques */
+.skill-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 12px;
+    border: 2px solid var(--primary-color);
+    transition: width 0.3s ease;
+    z-index: 0;
+}
+
+.skill-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 0;
+    border-radius: 12px;
+    border: 2px solid var(--primary-color);
+    transition: height 0.3s ease;
+    z-index: 0;
+}
+
+.skill-card:hover::before {
+    width: 0%; /* Développe la largeur de la bordure */
+}
+
+.skill-card:hover::after {
+    height: 0%; /* Développe la hauteur de la bordure */
+}
+
+.skill-card .icon-container i {
+    font-size: 4rem; /* Taille des icônes */
+    color: var(--primary-color);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Projects Section */
+.project-card {
+    background: var(--dark-bg);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Formulaire */
+input, textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: var(--secondary-color);
+    border: none;
+    border-radius: 8px;
+    color: var(--light-text);
+    font-size: 1rem;
+}
+
+input:focus, textarea:focus {
+    outline: 2px solid var(--primary-color);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Modale */
+#cert-modal {
+    display: none; /* La modale est cachée par défaut */
+    position: fixed;
+    inset: 0; /* Occupe toute la fenêtre */
+    background-color: rgba(0, 0, 0, 0.8); /* Fond sombre transparent */
+    z-index: 50; /* Toujours au-dessus du contenu */
+    justify-content: center;
+    align-items: center;
+}
+
+#cert-modal.active {
+    display: flex; /* Affiche la modale */
+}
+
+#cert-modal .btn-primary {
+    background: var(--primary-color);
+    color: var(--light-text);
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+#cert-modal .btn-primary:hover {
+    background: #3730a3;
+    transform: translateY(-2px);
+}
+
+/* Boutons de navigation dans la modale */
+#prev-skill, #next-skill {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    z-index: 60; /* Assure qu'ils soient au-dessus de tout */
+    transition: transform 0.2s ease, color 0.3s ease;
+    color: var(--light-text);
+}
+
+#prev-skill:hover, #next-skill:hover {
+    transform: scale(1.2); /* Légère mise en évidence au survol */
     color: var(--primary-color);
 }
 
-.hero-subtitle {
-    color: #c2c2c2;
+/* Bouton de fermeture */
+#close-modal {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    z-index: 60;
+}
+
+#close-modal:hover {
+    color: var(--primary-color);
+    transform: scale(1.2);
 }
