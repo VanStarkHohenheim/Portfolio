@@ -36,14 +36,9 @@ Bienvenue sur le dépôt de mon portfolio personnel ! Ce projet a été conçu p
 
 ---
 
-## 📸 Aperçu visuel
-
-![Aperçu Portfolio](./images/portfolio-preview.png)
-
----
-
 ## 📂 Structure du projet
 
+```
 └── vanstarkhohenheim-portfolio/
     ├── README.md
     └── Portfolio/
@@ -51,8 +46,7 @@ Bienvenue sur le dépôt de mon portfolio personnel ! Ce projet a été conçu p
         ├── script.js
         ├── style.css
         └── photo/
-            └── Thumbs.db
-
+```
 
 ---
 
