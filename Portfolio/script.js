@@ -54,3 +54,10 @@ document.querySelectorAll('.skill-card').forEach(card => {
         openModal(skillKey);
     });
 });
+
+modal.addEventListener('click', (event) => {
+    if (event.target === modal) { // Vérifie qu'on clique bien en dehors
+        modal.classList.remove('active');
+        modal.style.display = "none";
+    }
+});
