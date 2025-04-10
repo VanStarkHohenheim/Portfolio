@@ -6,12 +6,7 @@ Bienvenue sur le dépôt de mon portfolio personnel ! Ce projet a été conçu p
 
 ## 🎯 À propos de moi
 
-👋 Je suis **Mohamed Belmokhtar**, étudiant en **BTS SIO (Solutions Logicielles et Applications Métiers)**. Passionné par la cybersécurité, les systèmes Linux et le DevOps, je suis actuellement à la recherche d'un stage pour mettre en pratique mes compétences techniques et collaboratives.
-
-**📅 Stage recherché :**  
-👉 **DevOps** ou **Administration système et réseau**  
-🗓 **Du 15 mai au 20 juin**
-
+👋 Je suis **Mohamed Belmokhtar**, étudiant en **BTS SIO (Solutions Logicielles et Applications Métiers)**. Passionné par la cybersécurité, les systèmes Linux et le DevOps.
 ---
 
 ## 🚀 Fonctionnalités de mon portfolio
