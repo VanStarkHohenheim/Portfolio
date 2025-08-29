@@ -1,60 +1,66 @@
-# 🌐 Portfolio - Mohamed Belmokhtar
+# 🌐 Portfolio - Mohamed Belmokhtar  
 
-Bienvenue sur le dépôt de mon portfolio personnel ! Ce projet a été conçu pour présenter mon parcours, mes compétences et mes projets dans les domaines de la cybersécurité, du développement web, et de l'administration système.
-
----
-
-## 🎯 À propos de moi
-
-👋 Je suis **Mohamed Belmokhtar**, étudiant en **BTS SIO (Solutions Logicielles et Applications Métiers)**. Passionné par la cybersécurité, les systèmes Linux et le DevOps.
----
-
-## 🚀 Fonctionnalités de mon portfolio
-
-### 🌟 Points clés
-- Présentation de mon **parcours** et de mes **compétences**.
-- Affichage de mes **projets GitHub** les plus récents.
-- Section **À propos de moi** avec des informations personnelles.
-- **Téléchargement de mon CV** et liens vers mes profils professionnels :
-  - [LinkedIn](https://www.linkedin.com/in/votre-profile)
-  - [GitHub](https://github.com/votre-profile)
-
-### 📐 Technologies utilisées
-- **Frontend :**
-  - HTML5, CSS3
-  - [Tailwind CSS](https://tailwindcss.com/) pour une mise en page moderne et responsive.
-- **Effets et animations :**
-  - [Locomotive Scroll](https://github.com/locomotivemtl/locomotive-scroll) pour les animations de défilement fluide.
-  - [Font Awesome](https://fontawesome.com/) pour les icônes interactives.
-- **Scripts :**
-  - JavaScript natif pour des interactions dynamiques.
+Bienvenue sur le dépôt de mon **portfolio personnel** !  
+Ce projet a pour objectif de mettre en valeur mon **parcours**, mes **compétences** et mes **réalisations** dans les domaines de la **cybersécurité**, du **développement web** et de l’**administration système**.  
 
 ---
 
-## 📂 Structure du projet
+## 👤 À propos de moi  
+Je m’appelle **Mohamed Belmokhtar**, étudiant en **BTS SIO (Solutions Logicielles et Applications Métiers)**.  
+Je suis passionné par la **cybersécurité**, les **systèmes Linux** et le **DevOps**, et j’aspire à développer mes compétences techniques à travers divers projets.  
+
+---
+
+## 🚀 Fonctionnalités du portfolio  
+
+### 🌟 Points clés  
+- Présentation claire de mon **parcours** et de mes **compétences**.  
+- Mise en avant de mes **projets GitHub** récents.  
+- Une section **À propos** pour mieux me connaître.  
+- Possibilité de **télécharger mon CV** et d’accéder à mes profils professionnels :  
+  - [LinkedIn](https://www.linkedin.com/in/votre-profile)  
+  - [GitHub](https://github.com/votre-profile)  
+
+### 🛠️ Technologies utilisées  
+- **Frontend :**  
+  - HTML5, CSS3  
+  - [Tailwind CSS](https://tailwindcss.com/) pour un design moderne et responsive  
+- **Effets & animations :**  
+  - [Locomotive Scroll](https://github.com/locomotivemtl/locomotive-scroll) pour des animations fluides  
+  - [Font Awesome](https://fontawesome.com/) pour les icônes interactives  
+- **Scripts :**  
+  - JavaScript natif pour les interactions dynamiques  
+
+---
+
+## 📂 Structure du projet  
 
 ```
-└── vanstarkhohenheim-portfolio/
-    ├── README.md
-    └── Portfolio/
-        ├── index.html
-        ├── script.js
-        ├── style.css
-        └── photo/
+vanstarkhohenheim-portfolio/
+├── README.md
+└── Portfolio/
+    ├── index.html
+    ├── script.js
+    ├── style.css
+    └── photo/
 ```
 
 ---
 
-## 🌐 Lien vers mon portfolio
+## 🌐 Portfolio en ligne  
 
-👉 **[Consultez mon portfolio en ligne ici](https://portfolio-portfolio-aegon.vercel.app/)**  
+👉 **[Découvrez mon portfolio ici](https://portfolio-portfolio-aegon.vercel.app/)**  
 
 ---
 
-## 🛠 Instructions pour exécuter le projet en local
+## ⚡ Exécution en local  
 
-1. Clonez le dépôt :
+1. Clonez le dépôt :  
    ```bash
    git clone https://github.com/VotreNomUtilisateur/portfolio.git
-  ```
-
+   ```
+2. Accédez au dossier du projet :  
+   ```bash
+   cd portfolio/Portfolio
+   ```
+3. Ouvrez le fichier `index.html` dans votre navigateur préféré.  
