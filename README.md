@@ -1,4 +1,4 @@
-# 🌐 Portfolio - Mohamed Belmokhtar  
+# 🌐 Portfolio - Mon Portfolio  
 
 Bienvenue sur le dépôt de mon **portfolio personnel** !  
 Ce projet a pour objectif de mettre en valeur mon **parcours**, mes **compétences** et mes **réalisations** dans les domaines de la **cybersécurité**, du **développement web** et de l’**administration système**.  
@@ -6,7 +6,7 @@ Ce projet a pour objectif de mettre en valeur mon **parcours**, mes **compétenc
 ---
 
 ## 👤 À propos de moi  
-Je m’appelle **Mohamed Belmokhtar**, étudiant en **BTS SIO (Solutions Logicielles et Applications Métiers)**.  
+Je suis étudiant en **BTS SIO (Solutions Logicielles et Applications Métiers)**.  
 Je suis passionné par la **cybersécurité**, les **systèmes Linux** et le **DevOps**, et j’aspire à développer mes compétences techniques à travers divers projets.  
 
 ---
@@ -18,8 +18,8 @@ Je suis passionné par la **cybersécurité**, les **systèmes Linux** et le **D
 - Mise en avant de mes **projets GitHub** récents.  
 - Une section **À propos** pour mieux me connaître.  
 - Possibilité de **télécharger mon CV** et d’accéder à mes profils professionnels :  
-  - [LinkedIn](https://www.linkedin.com/in/votre-profile)  
-  - [GitHub](https://github.com/votre-profile)  
+  - [LinkedIn](https://www.linkedin.com/in/votre-profil)  
+  - [GitHub](https://github.com/votre-profil)  
 
 ### 🛠️ Technologies utilisées  
 - **Frontend :**  
@@ -36,7 +36,7 @@ Je suis passionné par la **cybersécurité**, les **systèmes Linux** et le **D
 ## 📂 Structure du projet  
 
 ```
-vanstarkhohenheim-portfolio/
+portfolio/
 ├── README.md
 └── Portfolio/
     ├── index.html
@@ -49,7 +49,7 @@ vanstarkhohenheim-portfolio/
 
 ## 🌐 Portfolio en ligne  
 
-👉 **[Découvrez mon portfolio ici](https://portfolio-portfolio-aegon.vercel.app/)**  
+👉 **[Découvrez le portfolio ici](https://portfolio-exemple.vercel.app/)**  
 
 ---
 
@@ -57,7 +57,7 @@ vanstarkhohenheim-portfolio/
 
 1. Clonez le dépôt :  
    ```bash
-   git clone https://github.com/VotreNomUtilisateur/portfolio.git
+   git clone https://github.com/utilisateur/portfolio.git
    ```
 2. Accédez au dossier du projet :  
    ```bash
