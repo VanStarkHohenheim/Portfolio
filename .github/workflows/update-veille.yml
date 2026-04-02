@@ -24,12 +24,12 @@ jobs:
         run: pip install feedparser
 
       - name: Run RSS fetcher
-        run: python scripts/update_veille.py
+        run: python Portfolio/scripts/update_veille.py
 
       - name: Commit & push if changed
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add veille-data.json
+          git add Portfolio/veille-data.json
           git diff --staged --quiet || git commit -m "chore: auto-update veille [skip ci]"
           git push

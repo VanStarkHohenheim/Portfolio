@@ -40,7 +40,7 @@ KEYWORDS = [
 ]
 
 MAX_ARTICLES = 20
-OUTPUT_FILE = "veille-data.json"
+OUTPUT_FILE = "Portfolio/veille-data.json"
 
 
 def strip_html(text: str) -> str:
