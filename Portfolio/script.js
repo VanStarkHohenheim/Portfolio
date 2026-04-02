@@ -6,6 +6,7 @@
   const updatedEl = document.getElementById('veille-updated');
   if (!container) return;
 
+  if (location.protocol === 'file:') return; // fetch bloqué en local, ok sur GitHub Pages
   fetch('veille-data.json?_=' + Date.now())
     .then(r => { if (!r.ok) throw new Error('no data'); return r.json(); })
     .then(data => {
