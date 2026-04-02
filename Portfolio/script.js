@@ -49,7 +49,13 @@
     entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('is-inview'); });
   }, { threshold: 0, rootMargin: '0px 0px -40px 0px' });
   window.__scrollRevealObserver = io;
-  document.querySelectorAll('[data-scroll]').forEach(el => io.observe(el));
+  // Uniquement les sections hors Stages pour éviter que les cards disparaissent
+  document.querySelectorAll('[data-scroll]').forEach(el => {
+    if (!el.closest('#Stages')) {
+      el.classList.add('reveal');
+      io.observe(el);
+    }
+  });
 })();
 
 // ==============================

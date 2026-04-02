@@ -19,13 +19,13 @@
 
 *{box-sizing:border-box}
 
-/* Scroll reveal */
-[data-scroll]{
+/* Scroll reveal — uniquement sur éléments avec classe .reveal */
+.reveal{
   opacity:0;
   transform:translateY(24px);
   transition:opacity .55s ease, transform .55s ease;
 }
-[data-scroll].is-inview{
+.reveal.is-inview{
   opacity:1;
   transform:translateY(0);
 }
