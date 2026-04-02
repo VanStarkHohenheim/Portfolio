@@ -1,4 +1,101 @@
 {
-  "updated": "",
-  "articles": []
+  "updated": "02/04/2026 09:33 UTC",
+  "articles": [
+    {
+      "title": "« L’IA, un outil pour le travail social ? » : « Ne pas confondre justesse statistique et pertinence sociale »",
+      "summary": "Dans son ouvrage, l’assistant de service social Adrien Guionie analyse l’impact de l’intelligence artificielle sur le quotidien professionnel des travailleurs sociaux. Il rappelle l’importance d’adopter une « posture critique » face aux contenus générés par la machine, soulignant que « l’humain doit garder la main sur le sens ».",
+      "link": "https://www.lemonde.fr/emploi/article/2026/04/02/l-ia-un-outil-pour-le-travail-social-ne-pas-confondre-justesse-statistique-et-pertinence-sociale_6676071_1698637.html",
+      "date": "Avril 2026",
+      "timestamp": 1775102416.0,
+      "source": "Pixels : Toute l’actualité sur Le Monde.fr."
+    },
+    {
+      "title": "CERT-UA Impersonation Campaign Spread AGEWHEEZE Malware to 1 Million Emails",
+      "summary": "The Computer Emergency Response Team of Ukraine (CERT-UA) has disclosed details of a new phishing campaign in which the cybersecurity agency itself was impersonated to distribute a remote administration tool known as AGEWHEEZE. As part of the attacks, the threat actors, tracked as UAC-0255, sent emails on March 26 and 27, 2026, posing as CERT-UA to distribute a password-protected ZIP archive",
+      "link": "https://thehackernews.com/2026/04/cert-ua-impersonation-campaign-spread.html",
+      "date": "Avril 2026",
+      "timestamp": 1775059800.0,
+      "source": "The Hacker News"
+    },
+    {
+      "title": "Toy Giant Hasbro Hit by Cyberattack",
+      "summary": "The company is investigating the full scope of the incident, including whether any files have been compromised. The post Toy Giant Hasbro Hit by Cyberattack appeared first on SecurityWeek .",
+      "link": "https://www.securityweek.com/toy-giant-hasbro-hit-by-cyberattack/",
+      "date": "Avril 2026",
+      "timestamp": 1775057747.0,
+      "source": "SecurityWeek"
+    },
+    {
+      "title": "Block the Prompt, Not the Work: The End of \"Doctor No\"",
+      "summary": "There is a character that keeps appearing in enterprise security departments, and most CISOs know exactly who that is. It doesn&rsquo;t build. It doesn&rsquo;t enable. Its entire function is to say \"No.\" No to ChatGPT. No to DeepSeek. No to the file-sharing tool the product team swears by. For years, this looked like security. But in 2026, \"Doctor No\" is no longer just a management headache &",
+      "link": "https://thehackernews.com/2026/04/block-prompt-not-work-end-of-doctor-no.html",
+      "date": "Avril 2026",
+      "timestamp": 1775047560.0,
+      "source": "The Hacker News"
+    },
+    {
+      "title": "Casbaneiro Phishing Targets Latin America and Europe Using Dynamic PDF Lures",
+      "summary": "A multi-pronged phishing campaign is targeting Spanish-speaking users in organizations across Latin America and Europe to deliver Windows banking trojans like Casbaneiro (aka Metamorfo) via another malware called Horabot. The activity has been attributed to a Brazilian cybercrime threat actor tracked as Augmented Marauder and Water Saci. The e-crime group was first documented by Trend Micro in",
+      "link": "https://thehackernews.com/2026/04/casbaneiro-phishing-targets-latin.html",
+      "date": "Avril 2026",
+      "timestamp": 1775046960.0,
+      "source": "The Hacker News"
+    },
+    {
+      "title": "3 Reasons Attackers Are Using Your Trusted Tools Against You (And Why You Don’t See It Coming)",
+      "summary": "For years, cybersecurity has followed a familiar model: block malware, stop the attack. Now, attackers are moving on to what’s next. Threat actors now use malware less frequently in favor of what’s already inside your environment, including abusing trusted tools, native binaries, and legitimate admin utilities to move laterally, escalate privileges, and persist without raising alarms. Most",
+      "link": "https://thehackernews.com/2026/04/3-reasons-attackers-are-using-your.html",
+      "date": "Avril 2026",
+      "timestamp": 1775041080.0,
+      "source": "The Hacker News"
+    },
+    {
+      "title": "Claude Code Source Leaked via npm Packaging Error, Anthropic Confirms",
+      "summary": "Anthropic on Tuesday confirmed that internal code for its popular artificial intelligence (AI) coding assistant, Claude Code, had been inadvertently released due to a human error. \"No sensitive customer data or credentials were involved or exposed,\" an Anthropic spokesperson said in a statement shared with CNBC News. \"This was a release packaging issue caused by human error, not a security",
+      "link": "https://thehackernews.com/2026/04/claude-code-tleaked-via-npm-packaging.html",
+      "date": "Avril 2026",
+      "timestamp": 1775023920.0,
+      "source": "The Hacker News"
+    },
+    {
+      "title": "Comment les entreprises profitent de l’usage dissimulé de l’IA au travail",
+      "summary": "Dans la plupart des organisations, l’intelligence artificielle est d’abord investie de manière informelle par les salariés. Tentées par la sanction, les directions voient aujourd’hui la possibilité de tirer profit du « shadow AI ».",
+      "link": "https://www.lemonde.fr/emploi/article/2026/04/01/comment-les-entreprises-profitent-de-l-usage-dissimule-de-l-intelligence-artificielle-au-travail_6675840_1698637.html",
+      "date": "Avril 2026",
+      "timestamp": 1775017800.0,
+      "source": "Pixels : Toute l’actualité sur Le Monde.fr."
+    },
+    {
+      "title": "Vertex AI Vulnerability Exposes Google Cloud Data and Private Artifacts",
+      "summary": "Cybersecurity researchers have disclosed a security \"blind spot\" in Google Cloud's Vertex AI platform that could allow artificial intelligence (AI) agents to be weaponized by an attacker to gain unauthorized access to sensitive data and compromise an organization's cloud environment. According to Palo Alto Networks Unit 42, the issue relates to how the Vertex AI permission model can be misused",
+      "link": "https://thehackernews.com/2026/03/vertex-ai-vulnerability-exposes-google.html",
+      "date": "Mars 2026",
+      "timestamp": 1774962540.0,
+      "source": "The Hacker News"
+    },
+    {
+      "title": "The AI Arms Race – Why Unified Exposure Management Is Becoming a Boardroom Priority",
+      "summary": "The cybersecurity landscape is accelerating at an unprecedented rate. What is emerging is not simply a rise in the number of vulnerabilities or tools, but a dramatic increase in speed. Speed of attack, speed of exploitation, and speed of change across modern environments. This is the defining challenge of the new era of digital warfare: the weaponization of Artificial Intelligence. Threat actors",
+      "link": "https://thehackernews.com/2026/03/the-ai-arms-race-why-unified-exposure.html",
+      "date": "Mars 2026",
+      "timestamp": 1774957800.0,
+      "source": "The Hacker News"
+    },
+    {
+      "title": "Silver Fox Expands Asia Cyber Campaign with AtlasCross RAT and Fake Domains",
+      "summary": "Chinese-speaking users are the target of an active campaign that uses typosquatted domains impersonating trusted software brands to deliver a previously undocumented remote access trojan named AtlasCross RAT. \"The operation covers VPN clients, encrypted messengers, video conferencing tools, cryptocurrency trackers, and e-commerce applications, with eleven confirmed delivery domains impersonating",
+      "link": "https://thehackernews.com/2026/03/silver-fox-expands-asia-cyber-campaign.html",
+      "date": "Mars 2026",
+      "timestamp": 1774957560.0,
+      "source": "The Hacker News"
+    },
+    {
+      "title": "Is “Hackback” Official US Cybersecurity Strategy?",
+      "summary": "The 2026 US &#8220; Cyber Strategy for America &#8221; document is mostly the same thing we&#8217;ve seen out of the White House for over a decade, but with a more aggressive tone. But one sentence stood out: &#8220;We will unleash the private sector by creating incentives to identify and disrupt adversary networks and scale our national capabilities.&#8221; This sounds like a call for hackback: g",
+      "link": "https://www.schneier.com/blog/archives/2026/04/is-hackback-official-us-cybersecurity-strategy.html",
+      "date": "Récent",
+      "timestamp": 0.0,
+      "source": "Schneier on Security"
+    }
+  ]
 }
