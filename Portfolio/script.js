@@ -414,7 +414,7 @@ document.addEventListener('keydown', (e) => {
   let current = 0;
 
   // Crée les dots
-  slides.forEach(_ => {
+  slides.forEach((_, i) => {
     const d = document.createElement('button');
     d.className = 'carousel-dot' + (i === 0 ? ' active' : '');
     d.setAttribute('aria-label', 'Slide ' + (i + 1));
@@ -426,7 +426,7 @@ document.addEventListener('keydown', (e) => {
     current = (index + slides.length) % slides.length;
     track.style.transform = 'translateX(-' + (current * 100) + '%)';
     // Applique transform à chaque slide via le conteneur flex
-    slides.forEach((s, i) => {
+    slides.forEach(s => {
       s.style.transform = 'translateX(-' + (current * 100) + '%)';
     });
     dotsEl.querySelectorAll('.carousel-dot').forEach((d, i) => {
