@@ -47,7 +47,7 @@
 (function scrollReveal() {
   const io = new IntersectionObserver((entries) => {
     entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('is-inview'); });
-  }, { threshold: 0.12 });
+  }, { threshold: 0, rootMargin: '0px 0px -40px 0px' });
   window.__scrollRevealObserver = io;
   document.querySelectorAll('[data-scroll]').forEach(el => io.observe(el));
 })();
