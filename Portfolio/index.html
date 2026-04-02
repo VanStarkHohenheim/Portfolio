@@ -1,292 +1,847 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohamed Belmokhtar - Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mohamed Belmokhtar - Portfolio</title>
 
-    <!-- Tailwind CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
 
-    <!-- Locomotive Scroll CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/locomotive-scroll/4.1.4/locomotive-scroll.min.css" integrity="sha512-D8OJ3q93E9rrNsKNYZWCH2PH+fcb4BsyLQdI9QlLjEtVqRhT88T0PTPPlGGKnBb8rdF6N44RGfLtJDOgFuvh5A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Locomotive Scroll CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/locomotive-scroll/4.1.4/locomotive-scroll.min.css" integrity="sha512-D8OJ3q93E9rrNsKNYZWCH2PH+fcb4BsyLQdI9QlLjEtVqRhT88T0PTPPlGGKnBb8rdF6N44RGfLtJDOgFuvh5A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
-    <!-- Fichier CSS -->
-    <link rel="stylesheet" href="style.css">
+  <!-- Ton CSS -->
+  <link rel="stylesheet" href="style.css"/>
 
-    <!-- FontAwesome -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="bg-dark text-light font-sans leading-relaxed overflow-x-hidden">
+  <!-- Navbar -->
+  <header class="fixed top-0 left-0 w-full bg-dark/90 backdrop-filter backdrop-blur z-50 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-primary text-2xl font-bold tracking-tight">MB.</h1>
 
-    <!-- Navbar -->
-    <header class="fixed top-0 left-0 w-full bg-dark z-50 shadow-lg">
-        <div class="container mx-auto flex justify-between items-center py-4 px-6">
-            <h1 class="text-primary text-2xl font-bold">MB.</h1>
-            <nav class="hidden md:flex space-x-8">
-                <a href="#hero" class="nav-link">Accueil</a>
-                <a href="#about" class="nav-link">À propos</a>
-                <a href="#bts-sio" class="nav-link">BTS SIO</a>
-                <a href="#skills" class="nav-link">Certifications</a>
-                <a href="#projects" class="nav-link">Projets</a>
-                <a href="#Veille" class="nav-link">Veille Informatique</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </nav>
-            <button id="menu-toggle" class="block text-light md:hidden focus:outline-none">
-                <i class="fas fa-bars text-xl"></i>
-            </button>
-        </div>
-    </header>
+      <nav class="hidden md:flex items-center space-x-6">
+        <a href="#hero" class="nav-link">Accueil</a>
+        <a href="#about" class="nav-link">À propos</a>
+        <a href="#bts-sio" class="nav-link">BTS SIO</a>
+        <a href="#skills" class="nav-link">Certifications</a>
+        <a href="#competences" class="nav-link">Compétences</a>
+        <a href="#projects-pro" class="nav-link">Projets</a>
+        <a href="#Veille" class="nav-link">Veille</a>
+        <a href="#Stages" class="nav-link">Stages</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
 
-    <!-- Hero Section -->
-    <section id="hero" class="h-screen flex items-center justify-center bg-dark relative">
-        <div class="container text-center" data-scroll>
-            <h1 class="text-5xl font-bold text-primary mb-4">Mohamed Belmokhtar</h1>
-            <p class="text-xl text-gray-300 mb-8">Cybersecurity & Linux Enthusiast</p>
-            <a href="#projects" class="btn-primary">Voir mes projets</a>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="min-h-screen bg-secondary py-20">
-        <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold text-primary mb-6" data-scroll>À propos de moi</h2>
-            <p class="text-lg max-w-3xl mx-auto" data-scroll>
-               Je suis étudiant en BTS SIO, passionné par la cybersécurité et les systèmes Linux. Actuellement à la recherche d’une alternance en cybersécurité ou en administration système et réseau pour l’année 2025/2026, je souhaite mettre en pratique mes compétences au travers de projets concrets et développer mon expérience professionnelle dans ce domaine qui me passionne profondément.
-            </p>
-        </div>
-               <!-- Section des boutons -->
-        <section id="cv-and-links" class="min-h-screen bg-secondary py-20">
-            <div class="container mx-auto text-center">
-                <div class="flex flex-col md:flex-row justify-center items-center gap-6">
-                    <!-- Bouton Upload CV -->
-                    <a href="CV-ATS-ALTERNANCE.pdf" 
-                       target="_blank" 
-                       class="btn-primary">
-                        Mon CV
-                    </a>
-                    <!-- Bouton LinkedIn -->
-                    <a href="https://www.linkedin.com/in/mohamed-belmokhtar-b399312a4" 
-                       target="_blank" 
-                       class="btn-primary">
-                        Mon LinkedIn
-                    </a>
-                    <!-- Bouton GitHub -->
-                    <a href="https://github.com/VanStarkHohenheim" 
-                       target="_blank" 
-                       class="btn-primary">
-                        Mon GitHub
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        
-    </section>
-
-    <!-- BTS SIO Section -->
-    <section id="bts-sio" class="min-h-screen bg-dark py-20">
-        <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold text-primary mb-6" data-scroll>BTS Services Informatiques aux Organisations</h2>
-            <div class="max-w-3xl mx-auto text-left text-gray-300 space-y-6">
-                <div>
-                    <h3 class="text-2xl font-bold text-primary mb-4">C'est quoi le BTS SIO ?</h3>
-                    <p>
-                        Le Brevet de Technicien Supérieur en Services Informatiques aux Organisations s'adresse à ceux qui souhaitent se former en deux ans aux métiers d'administrateur réseau ou de développeur.
-                    </p>
-                    <p class="mt-4">
-                        Il permet, par la suite, d'intégrer directement le marché du travail ou de continuer des études dans le domaine de l'informatique.
-                    </p>
-                </div>
-
-                <div>
-                    <h3 class="text-2xl font-bold text-primary mb-4">Option SLAM</h3>
-                    <p>
-                        Le diplômé participe à la production et à la fourniture de services en développant, en adaptant ou en maintenant des solutions applicatives.
-                    </p>
-                </div>
-
-                <div>
-                    <h3 class="text-2xl font-bold text-primary mb-4">Option SISR</h3>
-                    <p>
-                        Le diplômé contribue à la production et à la fourniture de services en réalisant ou en adaptant des solutions d'infrastructure et en assurant le fonctionnement optimal des équipements et des services informatiques.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-
-    <!-- Skills Section -->
-    <section id="skills" class="bg-dark py-20">
-        <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold text-primary mb-10">Compétences et Certifications</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-                <!-- Skill 1 -->
-                <div class="skill-card group cursor-pointer" data-skill="html">
-                    <div class="icon-container">
-                        <i class="fab fa-html5 text-6xl text-primary"></i>
-                    </div>
-                    <p class="mt-4 font-semibold text-gray-300 group-hover:text-light">
-                        ANSSI <br>
-                        <span class="text-sm text-gray-400 group-hover:text-light">(SecNumacadémie)</span>
-                    </p>
-                </div>
-    
-                <!-- Skill 2 -->
-                <div class="skill-card group cursor-pointer" data-skill="css">
-                    <div class="icon-container">
-                        <i class="fab fa-css3-alt text-6xl text-primary"></i>
-                    </div>
-                    <p class="mt-4 font-semibold text-gray-300 group-hover:text-light">
-                        Try Hack Me <br>
-                        <span class="text-sm text-gray-400 group-hover:text-light">(Pre Security Certificate)</span>
-                    </p>
-                </div>
-    
-                <!-- Skill 3 -->
-                <div class="skill-card group cursor-pointer" data-skill="python">
-                    <div class="icon-container">
-                        <i class="fab fa-python text-6xl text-primary"></i>
-                    </div>
-                    <p class="mt-4 font-semibold text-gray-300 group-hover:text-light">
-                        Cisco <br>
-                        <span class="text-sm text-gray-400 group-hover:text-light">(Python Essentials 1)</span>
-                    </p>
-                </div>
-    
-                <!-- Skill 4 -->
-                <div class="skill-card group cursor-pointer" data-skill="cybersecurity">
-                    <div class="icon-container">
-                        <i class="fas fa-lock text-6xl text-primary"></i>
-                    </div>
-                    <p class="mt-4 font-semibold text-gray-300 group-hover:text-light">
-                        Cisco <br>
-                        <span class="text-sm text-gray-400 group-hover:text-light">(Introduction to Cybersecurity)</span>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Modale pour afficher la certification -->
-    <div id="cert-modal" class="hidden fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
-        <div class="bg-dark p-8 rounded-lg relative max-w-3xl w-full">
-            <!-- Bouton de fermeture -->
-            <button id="close-modal" class="absolute top-4 right-4 text-gray-300 hover:text-white">
-                <i class="fas fa-times text-2xl"></i>
-            </button>
-    
-            <!-- Contenu de la modale -->
-            <h3 id="modal-title" class="text-2xl font-bold text-primary mb-4">Titre de la compétence</h3>
-            <iframe id="modal-pdf" src="" class="w-full h-80 rounded-lg border border-gray-700"></iframe>
-            <a id="modal-link" href="#" target="_blank" class="btn-primary mt-6 inline-block">Voir la certification complète</a>
-        </div>
+      <button id="menu-toggle" class="block text-light md:hidden focus:outline-none" aria-label="Ouvrir le menu">
+        <i class="fas fa-bars text-xl"></i>
+      </button>
     </div>
-    
 
-    <!-- Modale pour afficher la certification -->
-<div id="cert-modal" class="hidden fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
-    <div class="bg-dark p-8 rounded-lg relative max-w-3xl w-full">
-        <!-- Bouton de fermeture -->
-        <button id="close-modal" class="absolute top-4 right-4 text-gray-300 hover:text-white">
-            <i class="fas fa-times text-2xl"></i>
-        </button>
-
-        <!-- Boutons pour naviguer -->
-        <button id="prev-skill" class="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-300 hover:text-white">
-            <i class="fas fa-chevron-left text-3xl"></i>
-        </button>
-        <button id="next-skill" class="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-300 hover:text-white">
-            <i class="fas fa-chevron-right text-3xl"></i>
-        </button>
-
-        <!-- Contenu de la modale -->
-        <h3 id="modal-title" class="text-2xl font-bold text-primary mb-4">Titre de la compétence</h3>
-        <iframe id="modal-pdf" src="" class="w-full h-80 rounded-lg border border-gray-700"></iframe>
-        <a id="modal-link" href="#" target="_blank" class="btn-primary mt-6 inline-block">Voir la certification complète</a>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="md:hidden hidden border-t border-gray-800">
+      <nav class="px-6 py-4 space-y-3">
+        <a href="#hero" class="mobile-link">Accueil</a>
+        <a href="#about" class="mobile-link">À propos</a>
+        <a href="#bts-sio" class="mobile-link">BTS SIO</a>
+        <a href="#skills" class="mobile-link">Certifications</a>
+        <a href="#projects-pro" class="mobile-link">Projets</a>
+        <a href="#Veille" class="mobile-link">Veille</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+      </nav>
     </div>
+  </header>
+
+  <!-- Hero (NE PAS MODIFIER) -->
+  <section id="hero" class="h-screen flex items-center justify-center bg-dark relative">
+    <div class="container text-center" data-scroll>
+      <h1 class="text-5xl font-bold text-primary mb-4">Mohamed Belmokhtar</h1>
+      <p class="text-xl text-gray-300 mb-8">Cybersecurity & Linux Enthusiast</p>
+      <a href="#contact" class="btn-primary">Me contacter</a>
+    </div>
+  </section>
+
+  <!-- À propos -->
+<section id="about" class="min-h-screen bg-secondary py-24">
+  <div class="container mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold text-primary" data-scroll>À propos de moi</h2>
+      <p class="text-gray-300 mt-4 max-w-3xl mx-auto" data-scroll>
+  Étudiant en <strong>BTS SIO</strong> (option <strong>SLAM</strong>, choisie pour sa rigueur méthodologique — analyse, conception et qualité logicielle),
+  je m’oriente vers la <strong>cybersécurité</strong> et l’<strong>administration Linux/Réseaux</strong>.  
+  Mon objectif pour cette année est de <strong>me dépasser académiquement</strong>, de renforcer mes bases techniques et théoriques, 
+  et d’obtenir mon BTS <strong>haut la main</strong> afin d’intégrer, dès 2026, la <strong>prépa ATS Génie Industriel</strong>.  
+  Cette voie représente pour moi la continuité logique de mon exigence : allier la rigueur scientifique, l’ingénierie et la sécurité des systèmes.
+</p>
+
+    </div>
+
+    <!-- Cartes Objectifs d'Avenir -->
+    <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+
+      <!-- 1) Prépa ATS Génie Industriel -->
+      <div class="glass-card p-6" data-scroll>
+        <div class="flex items-center gap-3">
+          <i class="fas fa-cogs text-primary text-2xl"></i>
+          <h3 class="font-semibold text-lg">Prépa ATS – Génie Industriel</h3>
+        </div>
+        <div class="mt-3 flex flex-wrap gap-2">
+          <span class="badge">1 an</span>
+          <span class="badge">Maths/Physique/Indus</span>
+        </div>
+        <p class="text-gray-300 mt-3">
+          Classe passerelle exigeante pour renforcer le socle scientifique et ouvrir vers les
+          <strong>écoles d’ingénieurs</strong> (ex. CentraleSupélec via concours ATS). 
+          Idéal pour coupler culture industrielle, méthodes d’ingénierie et vision système.
+        </p>
+        <ul class="text-gray-300 mt-4 space-y-2 list-disc list-inside">
+          <li>Consolidation <em>maths/physique</em>, modélisation, systèmes.</li>
+          <li>Rigueur, capacité d’abstraction et travail soutenu.</li>
+          <li>Objectif : concours ATS → école d’ingénieurs (cyber/indus).</li>
+        </ul>
+      </div>
+
+      <!-- 2) BUT Réseaux & Télécom — Parcours Cybersécurité -->
+      <div class="glass-card p-6" data-scroll>
+        <div class="flex items-center gap-3">
+          <i class="fas fa-network-wired text-primary text-2xl"></i>
+          <h3 class="font-semibold text-lg">BUT R&T — Parcours Cybersécurité</h3>
+        </div>
+        <div class="mt-3 flex flex-wrap gap-2">
+          <span class="badge">3 ans</span>
+          <span class="badge">Alternance possible</span>
+        </div>
+        <p class="text-gray-300 mt-3">
+          Formation orientée <strong>réseaux, télécoms et sécurité</strong> : 
+          architecture IP, supervision, durcissement, SOC, réponse à incident.
+          Très cohérente avec mon profil <strong>Linux & sécurité</strong>.
+        </p>
+        <ul class="text-gray-300 mt-4 space-y-2 list-disc list-inside">
+          <li>Adressage, VLAN, routage, pare-feu, IDS/IPS.</li>
+          <li>Pratiques de <em>blue team</em>, supervision & journalisation.</li>
+          <li>Objectif : SOC analyst / admin sécu / netsec.</li>
+        </ul>
+      </div>
+
+      <!-- 3) Licence Pro ASSTRI -->
+      <div class="glass-card p-6" data-scroll>
+        <div class="flex items-center gap-3">
+          <i class="fas fa-shield-alt text-primary text-2xl"></i>
+          <h3 class="font-semibold text-lg">Licence Pro ASSTRI</h3>
+        </div>
+        <div class="mt-3 flex flex-wrap gap-2">
+          <span class="badge">1 an</span>
+          <span class="badge">Alternance</span>
+        </div>
+        <p class="text-gray-300 mt-3">
+          Licence professionnelle axée <strong>sécurité des systèmes et réseaux</strong>, 
+          très opérationnelle pour intégrer directement des équipes cyber (PME/ESN/SSII).
+        </p>
+        <ul class="text-gray-300 mt-4 space-y-2 list-disc list-inside">
+          <li>Durcissement systèmes, sauvegardes & PRA, conformité.</li>
+          <li>Déploiement sécurisé, bastionnement, gestion des accès.</li>
+          <li>Objectif : poste opérationnel <em>secops</em> / admin sécu.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Ce que je prépare dès maintenant -->
+    <div class="max-w-6xl mx-auto mt-12 grid md:grid-cols-3 gap-6">
+      <div class="glass-card p-5">
+        <h4 class="font-semibold text-primary">Préparation commune</h4>
+        <p class="text-gray-300 mt-2">Maths/Algo (rigueur SLAM), Linux, scripting Bash/Python, Git.</p>
+      </div>
+      <div class="glass-card p-5">
+        <h4 class="font-semibold text-primary">Expérience terrain</h4>
+        <p class="text-gray-300 mt-2">Alternance/stage 2025–2026 en cyber/admin systèmes & réseaux.</p>
+      </div>
+      <div class="glass-card p-5">
+        <h4 class="font-semibold text-primary">Veille & sécurité</h4>
+        <p class="text-gray-300 mt-2">Veille active, bonnes pratiques, hygiène sécu, projets ciblés.</p>
+      </div>
+    </div>
+  </div>
+</section>
+ <!-- Section Réseaux & Profil -->
+<section id="reseaux" class="bg-dark py-24">
+  <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-bold text-primary mb-12" data-scroll>Réseaux & Profil professionnel</h2>
+    <p class="text-gray-300 max-w-3xl mx-auto mb-16" data-scroll>
+      Retrouvez mes profils et documents professionnels.  
+      Ces plateformes reflètent mon parcours, mes projets et mes ambitions dans la cybersécurité et le développement.
+    </p>
+
+    <!-- Grille des cartes -->
+    <div class="grid gap-8 md:grid-cols-3 max-w-6xl mx-auto">
+      
+      <!-- Carte CV -->
+      <a href="CV-ATS-ALTERNANCE.pdf" target="_blank" data-scroll
+         class="glass-card p-8 flex flex-col items-center justify-center text-center transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg">
+        <div class="text-primary text-5xl mb-4">
+          <i class="fas fa-file-alt"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-light mb-2">Mon CV</h3>
+        <p class="text-gray-400 mb-4">
+          Consultez mon <strong>CV à jour</strong> (BTS SIO SLAM & Prépa ATS) pour découvrir mes compétences et projets récents.
+        </p>
+        <span class="inline-flex items-center gap-2 text-primary font-medium">
+          Ouvrir le CV <i class="fas fa-arrow-right"></i>
+        </span>
+      </a>
+
+      <!-- Carte LinkedIn -->
+      <a href="https://www.linkedin.com/in/mohamed-belmokhtar-b399312a4" target="_blank" data-scroll
+         class="glass-card p-8 flex flex-col items-center justify-center text-center transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg">
+        <div class="text-[#0A66C2] text-5xl mb-4">
+          <i class="fab fa-linkedin"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-light mb-2">LinkedIn</h3>
+        <p class="text-gray-400 mb-4">
+          Mon profil <strong>LinkedIn</strong> met en avant mon parcours académique, mes expériences et ma veille professionnelle.
+        </p>
+        <span class="inline-flex items-center gap-2 text-[#0A66C2] font-medium">
+          Voir mon profil <i class="fas fa-arrow-right"></i>
+        </span>
+      </a>
+
+      <!-- Carte GitHub -->
+      <a href="https://github.com/VanStarkHohenheim" target="_blank" data-scroll
+         class="glass-card p-8 flex flex-col items-center justify-center text-center transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg">
+        <div class="text-gray-300 text-5xl mb-4">
+          <i class="fab fa-github"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-light mb-2">GitHub</h3>
+        <p class="text-gray-400 mb-4">
+          Retrouvez tous mes <strong>projets open-source</strong> : scripts, sites web, SaaS et expérimentations en cybersécurité.
+        </p>
+        <span class="inline-flex items-center gap-2 text-primary font-medium">
+          Explorer mes dépôts <i class="fas fa-arrow-right"></i>
+        </span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+
+ <!-- BTS SIO -->
+<section id="bts-sio" class="min-h-screen bg-dark py-24">
+  <div class="container mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold text-primary" data-scroll>BTS Services Informatiques aux Organisations</h2>
+      <p class="text-gray-300 max-w-3xl mx-auto mt-4" data-scroll>
+        Un diplôme en 2 ans qui prépare aux métiers de l’IT, avec deux options complémentaires : <strong>SLAM</strong> (développement) et <strong>SISR</strong> (infrastructures).
+        Il permet l’insertion pro rapide ou la poursuite d’études.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <!-- Présentation -->
+      <div class="info-card p-8" data-scroll>
+        <div class="flex items-center gap-3">
+          <i class="fas fa-graduation-cap text-primary text-2xl"></i>
+          <h3 class="text-2xl font-bold text-light">Présentation</h3>
+        </div>
+        <p class="text-gray-300 mt-4">
+          Le BTS SIO forme à la mise en œuvre de solutions numériques au sein des organisations : analyse des besoins,
+          sécurité, qualité de service, documentation et collaboration.
+        </p>
+        <ul class="text-gray-300 mt-4 space-y-2 list-disc list-inside">
+          <li>Approche professionnelle (projets, stages, support aux utilisateurs).</li>
+          <li>Culture de la sécurité et des bonnes pratiques IT.</li>
+          <li>Montée en compétences progressive (de la maîtrise d’outils à l’autonomie).</li>
+        </ul>
+      </div>
+
+      <!-- SLAM -->
+      <div class="info-card p-8" data-scroll>
+        <div class="flex items-center gap-3">
+          <i class="fas fa-code-branch text-primary text-2xl"></i>
+          <h3 class="text-2xl font-bold text-light">Option SLAM — Développement</h3>
+        </div>
+        <p class="text-gray-300 mt-4">
+          Conception et réalisation d’applications (web, API), intégration continue, tests et maintenance.
+          Le cœur du parcours : <strong>rigueur méthodologique</strong> et qualité logicielle.
+        </p>
+        <ul class="text-gray-300 mt-4 space-y-2 list-disc list-inside">
+          <li>Analyse & modélisation (UML/MCD), <em>patterns</em> (MVC), documentation.</li>
+          <li>Back-end (ex. Laravel, Python), front (HTML/CSS/JS, frameworks), APIs REST.</li>
+          <li>Bases de données (SQL, migrations, optimisation), sécurité applicative.</li>
+          <li>Tests (unitaires/fonctionnels), CI/CD, revues de code, versionning Git.</li>
+        </ul>
+        <div class="mt-4">
+          <span class="badge">Choix personnel</span>
+          <p class="text-gray-300 mt-2">
+            <strong>J’ai choisi l’option SLAM pour sa rigueur</strong> : cadrage des besoins, conception structurée,
+            exigence de qualité (tests, revues, sécurité), et traçabilité (docs & versions).
+            Cette discipline correspond à ma manière de travailler et à mes projets (Linux, cybersécurité, web).
+          </p>
+        </div>
+      </div>
+
+      <!-- SISR -->
+      <div class="info-card p-8" data-scroll>
+        <div class="flex items-center gap-3">
+          <i class="fas fa-network-wired text-primary text-2xl"></i>
+          <h3 class="text-2xl font-bold text-light">Option SISR — Infrastructures</h3>
+        </div>
+        <p class="text-gray-300 mt-4">
+          Conception, déploiement et supervision d’infrastructures : réseaux, systèmes, virtualisation et sécurité opérationnelle.
+        </p>
+        <ul class="text-gray-300 mt-4 space-y-2 list-disc list-inside">
+          <li>Administration systèmes (Linux/Windows), services (SSH, HTTP, DNS, etc.).</li>
+          <li>Réseaux (adressage, VLAN, routage), pare-feu, haute disponibilité.</li>
+          <li>Virtualisation & conteneurs (VMware, Docker), sauvegardes & PRA.</li>
+          <li>Supervision, journalisation, durcissement, conformité et continuité de service.</li>
+        </ul>
+        <p class="text-gray-300 mt-4">
+          Parcours idéal pour les métiers d’<em>admin système/réseau</em>, d’<em>ops</em> ou de <em>support/production</em>,
+          en lien direct avec la sécurité opérationnelle.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="bg-dark py-24">
+  <div class="container mx-auto text-center">
+    <h2 class="section-title">Certifications</h2>
+    <p class="section-description max-w-3xl mx-auto">
+      Mes certifications vérifiées (clique pour ouvrir la preuve).
+    </p>
+
+    <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+      <!-- ANSSI -->
+      <button class="skill-card group" data-type="cert" data-skill="html" aria-label="Voir la certification ANSSI SecNumacadémie">
+        <div class="icon-container">
+          <img src="photo/anssi-icon.png" alt="ANSSI - SecNumacadémie" class="w-full h-full object-cover rounded-lg transition-all duration-300 group-hover:scale-105 group-hover:brightness-110">
+        </div>
+        <p class="mt-4 font-semibold">ANSSI</p>
+        <span>(SecNumacadémie)</span>
+      </button>
+
+      <!-- TryHackMe -->
+      <button class="skill-card group" data-type="cert" data-skill="css" aria-label="Voir la certification TryHackMe Pre Security">
+        <div class="icon-container">
+          <img src="photo/thm-icon.png" alt="TryHackMe - Pre Security" class="w-full h-full object-cover rounded-lg transition-all duration-300 group-hover:scale-105 group-hover:brightness-110">
+        </div>
+        <p class="mt-4 font-semibold">TryHackMe</p>
+        <span>(Pre Security)</span>
+      </button>
+
+      <!-- Cisco Python -->
+      <button class="skill-card group" data-type="cert" data-skill="python" aria-label="Voir la certification Cisco Python Essentials 1">
+        <div class="icon-container">
+          <img src="photo/cisco-icon.png" alt="Cisco - Python Essentials 1" class="w-full h-full object-cover rounded-lg transition-all duration-300 group-hover:scale-105 group-hover:brightness-110">
+        </div>
+        <p class="mt-4 font-semibold">Cisco</p>
+        <span>(Python Essentials 1)</span>
+      </button>
+
+      <!-- Cisco Cybersecurity -->
+      <button class="skill-card group" data-type="cert" data-skill="cybersecurity" aria-label="Voir la certification Cisco Introduction to Cybersecurity">
+        <div class="icon-container">
+          <img src="photo/cisco-icon.png" alt="Cisco - Introduction to Cybersecurity" class="w-full h-full object-cover rounded-lg transition-all duration-300 group-hover:scale-105 group-hover:brightness-110">
+        </div>
+        <p class="mt-4 font-semibold">Cisco</p>
+        <span>(Intro to Cybersecurity)</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<section id="competences" class="bg-dark py-24 skills-section">
+  <div class="container mx-auto">
+    <h2 class="text-3xl font-bold text-primary text-center mb-8">Compétences</h2>
+
+    <div class="flex flex-wrap items-center justify-center gap-2 mb-10" id="competences-filters">
+      <button class="filter-btn active" data-filter="all">Tous</button>
+      <button class="filter-btn" data-filter="langage">Langages</button>
+      <button class="filter-btn" data-filter="frontend">Front-end</button>
+      <button class="filter-btn" data-filter="backend">Back-end</button>
+      <button class="filter-btn" data-filter="database">Data</button>
+      <button class="filter-btn" data-filter="devops">DevOps</button>
+      <button class="filter-btn" data-filter="tools">Outils</button>
+    </div>
+
+    <div class="skills-grid" id="skills-grid">
+      
+      <div class="skill-card" data-category="langage" data-title="Python" data-color="55,118,171" 
+           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"></div>
+      
+      <div class="skill-card" data-category="langage backend" data-title="Django" data-color="65,184,131" 
+           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"></div>
+      
+      <div class="skill-card" data-category="langage" data-title="Java" data-color="224,31,31" 
+           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"></div>
+      
+      <div class="skill-card" data-category="langage frontend" data-title="JavaScript" data-color="247,223,30" 
+           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"></div>
+      
+      <div class="skill-card" data-category="langage devops" data-title="Bash" data-color="78,170,37" 
+           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg"></div>
+
+      <div class="skill-card" data-category="frontend" data-title="HTML5" data-color="227,76,38" 
+           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"></div>
+      
+      <div class="skill-card" data-category="frontend" data-title="CSS3" data-color="38,77,228" 
+           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"></div>
+      
+      <div class="skill-card" data-category="frontend" data-title="Tailwind" data-color="56,189,248" 
+           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"></div>
+      
+      <div class="skill-card" data-category="frontend" data-title="Vue.js" data-color="65,184,131" 
+           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"></div>
+
+      <div class="skill-card" data-category="backend" data-title="Laravel" data-color="255,45,32" 
+           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg"></div>
+
+      <div class="skill-card" data-category="database" data-title="PostgreSQL" data-color="51,103,145" 
+           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"></div>
+      
+      <div class="skill-card" data-category="database" data-title="SQLite" data-color="68,165,255" 
+           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg"></div>
+
+      <div class="skill-card" data-category="devops" data-title="Docker" data-color="36,150,237" 
+           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"></div>
+      
+      <div class="skill-card" data-category="devops" data-title="Nginx" data-color="0,150,57" 
+           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg"></div>
+      
+      <div class="skill-card" data-category="devops" data-title="Linux" data-color="255,204,51" 
+           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"></div>
+
+      <div class="skill-card" data-category="tools" data-title="Git" data-color="240,80,50" 
+           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"></div>
+      
+      <div class="skill-card" data-category="tools" data-title="VS Code" data-color="0,120,215" 
+           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"></div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Modale (unique, corrigée) -->
+  <div id="cert-modal" class="hidden fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
+    <div class="bg-dark p-8 rounded-xl relative max-w-3xl w-full border border-gray-800">
+      <button id="close-modal" class="absolute top-4 right-4 text-gray-300 hover:text-white" aria-label="Fermer">
+        <i class="fas fa-times text-2xl"></i>
+      </button>
+
+      <button id="prev-skill" class="nav-dot left-4" aria-label="Précédent"><i class="fas fa-chevron-left text-2xl"></i></button>
+      <button id="next-skill" class="nav-dot right-4" aria-label="Suivant"><i class="fas fa-chevron-right text-2xl"></i></button>
+
+      <h3 id="modal-title" class="text-2xl font-bold text-primary mb-4">Titre de la certification</h3>
+      <iframe id="modal-pdf" src="" class="w-full h-80 rounded-lg border border-gray-700"></iframe>
+      <a id="modal-link" href="#" target="_blank" class="btn-primary mt-6 inline-block">Voir la certification complète</a>
+    </div>
+  </div>
+
+
+<!-- Projets -->
+<section id="projects-pro" class="bg-surface-1 py-24">
+  <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-bold text-primary mb-8" data-scroll>Projets</h2>
+
+    <!-- Filtres -->
+    <div id="projects-filters" class="flex flex-wrap items-center justify-center gap-2 mb-10">
+      <button class="proj-filter-btn filter-btn active" data-proj-filter="all">Tous</button>
+      <button class="proj-filter-btn filter-btn" data-proj-filter="personal">Personnels</button>
+      <button class="proj-filter-btn filter-btn" data-proj-filter="school">Scolaires</button>
+    </div>
+
+    <!-- Grille des projets -->
+    <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- ====== Projet Personnel : Portfolio ====== -->
+      <a href="https://github.com/VanStarkHohenheim/Portfolio" target="_blank"
+         class="project-card" data-scroll data-category="personal">
+        <div class="project-card-body">
+          <div class="flex items-start justify-between">
+            <h3 class="text-2xl font-bold text-light">Portfolio</h3>
+            <span class="badge">Front-End</span>
+          </div>
+          <p class="text-gray-400 mt-3">
+            Mon site personnel développé en HTML, Tailwind et JavaScript. Présente mes compétences, parcours et projets en cybersécurité et développement.
+          </p>
+          <div class="mt-5 flex items-center gap-3 text-sm text-gray-400">
+            <span class="tag">HTML</span><span class="tag">Tailwind</span><span class="tag">JS</span><span class="tag">UX</span>
+          </div>
+        </div>
+        <div class="project-card-footer">
+          <span class="inline-flex items-center gap-2">Voir <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <!-- ====== Projet Personnel : Elden Ring Landing ====== -->
+      <a href="https://github.com/VanStarkHohenheim/elden-ring-landing" target="_blank"
+         class="project-card" data-scroll data-category="personal">
+        <div class="project-card-body">
+          <div class="flex items-start justify-between">
+            <h3 class="text-2xl font-bold text-light">Elden Ring Landing</h3>
+            <span class="badge">Design Web</span>
+          </div>
+          <p class="text-gray-400 mt-3">
+            Page d’accueil immersive inspirée du jeu <strong>Elden Ring</strong>. Conçue avec HTML, CSS et JS pour un rendu visuel cinématique et responsive.
+          </p>
+          <div class="mt-5 flex items-center gap-3 text-sm text-gray-400">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span><span class="tag">Animation</span>
+          </div>
+        </div>
+        <div class="project-card-footer">
+          <span class="inline-flex items-center gap-2">Voir <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <!-- ====== Projet Scolaire : NotiLog ====== -->
+      <a href="https://github.com/VanStarkHohenheim/NotiLog" target="_blank"
+         class="project-card" data-scroll data-category="school">
+        <div class="project-card-body">
+          <div class="flex items-start justify-between">
+            <h3 class="text-2xl font-bold text-light">NotiLog</h3>
+            <span class="badge">Script</span>
+          </div>
+          <p class="text-gray-400 mt-3">
+            Script Bash affichant au démarrage les connexions SSH sur Debian. Objectif : renforcer la sécurité et la traçabilité.
+          </p>
+          <div class="mt-5 flex items-center gap-3 text-sm text-gray-400">
+            <span class="tag">Bash</span><span class="tag">Linux</span><span class="tag">SSH</span>
+          </div>
+        </div>
+        <div class="project-card-footer">
+          <span class="inline-flex items-center gap-2">Voir <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <!-- ====== Projet Scolaire : Auto Mailer iCloud ====== -->
+      <a href="https://github.com/VanStarkHohenheim/Portfolio" target="_blank"
+         class="project-card" data-scroll data-category="school">
+        <div class="project-card-body">
+          <div class="flex items-start justify-between">
+            <h3 class="text-2xl font-bold text-light">Auto Mailer iCloud</h3>
+            <span class="badge">Python</span>
+          </div>
+          <p class="text-gray-400 mt-3">
+            Application Python permettant d’envoyer automatiquement des emails personnalisés depuis un fichier Excel via iCloud.
+          </p>
+          <div class="mt-5 flex items-center gap-3 text-sm text-gray-400">
+            <span class="tag">Python</span><span class="tag">SMTP</span><span class="tag">Automatisation</span>
+          </div>
+        </div>
+        <div class="project-card-footer">
+          <span class="inline-flex items-center gap-2">Voir <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+</section>
+
+
+<!-- Veille (frise) -->
+<section id="Veille" class="bg-surface-2 py-24">
+  <div class="container mx-auto text-center">
+
+    <!-- Sujet principal de la veille -->
+    <h1 class="text-5xl font-extrabold text-primary mb-8" data-scroll>
+      L’intelligence artificielle et l’armement : entre innovation technologique et enjeux éthiques
+    </h1>
+
+    <p class="text-gray-300 max-w-3xl mx-auto mb-14 text-lg leading-relaxed" data-scroll>
+      Cette veille explore l’évolution rapide de l’<strong>intelligence artificielle</strong> dans le domaine de l’<strong>armement</strong> 
+      et de la <strong>cybersécurité</strong>. L’IA bouleverse les doctrines militaires, la détection des menaces, 
+      l’analyse des données et les stratégies de défense.  
+      Cependant, elle soulève de profondes questions éthiques : jusqu’où déléguer la décision à la machine ?  
+      Comment encadrer l’autonomie des systèmes d’armes et prévenir leur utilisation abusive ?
+    </p>
+
+    <h3 class="text-3xl font-bold text-primary mb-6" data-scroll>- Outils de veille -</h3>
+    <p class="mb-14 max-w-3xl mx-auto text-gray-200">
+      <strong>Feedly</strong>, <strong>Google Alerts</strong>, <strong>X/Twitter</strong>, <strong>LinkedIn</strong>,
+      <strong>GitHub Trending</strong>, <strong>ZDNet</strong>, <strong>BleepingComputer</strong>, 
+      <strong>The Hacker News</strong>, <strong>Le Monde</strong>, <strong>Defense News</strong>.
+    </p>
+
+    <!-- Frise chronologique -->
+    <div class="relative text-left max-w-4xl mx-auto">
+      <!-- Ligne verticale continue -->
+      <div class="absolute left-1/2 -translate-x-1/2 h-full w-[3px] bg-gradient-to-b from-primary via-primary/70 to-primary hidden lg:block"></div>
+
+      <!-- Mars 2025 -->
+      <div class="timeline-item" data-scroll>
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <time class="timeline-time">Mars 2025</time>
+          <h3 class="timeline-title">
+            <a href="https://www.defensenews.com/artificial-intelligence/2025/03/01/ai-military-autonomy-debate/" target="_blank" class="text-primary hover:underline">
+              IA et autonomie militaire : le débat s’intensifie à l’ONU
+            </a>
+          </h3>
+          <p class="timeline-text">
+            Les Nations unies discutent de la régulation des systèmes d’armes autonomes. 
+            De nombreux pays appellent à un traité international garantissant le contrôle humain sur les décisions létales.
+          </p>
+        </div>
+      </div>
+
+      <!-- Février 2025 -->
+      <div class="timeline-item lg:timeline-item-right" data-scroll>
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <time class="timeline-time">Février 2025</time>
+          <h3 class="timeline-title">
+            <a href="https://www.bfmtv.com/tech/intelligence-artificielle/deepseek-un-code-cache-envoie-les-donnees-a-une-entreprise-proche-de-l-armee-chinoise-selon-des-chercheurs_AV-202502050733.html" target="_blank" class="text-primary hover:underline">
+              DeepSeek : soupçons de transfert de données vers un acteur militaire
+            </a>
+          </h3>
+          <p class="timeline-text">
+            Des chercheurs découvrent un code caché envoyant des données à une entreprise liée à l’armée chinoise, 
+            relançant le débat sur la dualité civile/militaire des IA open-source.
+          </p>
+        </div>
+      </div>
+
+      <!-- Janvier 2025 -->
+      <div class="timeline-item" data-scroll>
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <time class="timeline-time">Janvier 2025</time>
+          <h3 class="timeline-title">
+            <a href="https://www.lemonde.fr/pixels/article/2025/01/20/l-intelligence-artificielle-et-la-cybersecurite-les-nouvelles-frontieres-du-risque_6211485_4408996.html" target="_blank" class="text-primary hover:underline">
+              IA & cybersécurité : nouvelles frontières du risque
+            </a>
+          </h3>
+          <p class="timeline-text">
+            Les IA génératives sont désormais capables d’imiter des communications militaires et de générer de faux ordres.
+            Les États renforcent leurs protocoles d’authentification pour éviter les détournements.
+          </p>
+        </div>
+      </div>
+
+      <!-- Décembre 2024 -->
+      <div class="timeline-item lg:timeline-item-right" data-scroll>
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <time class="timeline-time">Décembre 2024</time>
+          <h3 class="timeline-title">
+            <a href="https://www.zdnet.fr/actualites/openai-renforce-les-mesures-de-securite-de-chatgpt-face-aux-abus-en-cybersecurite-39967235.htm" target="_blank" class="text-primary hover:underline">
+              OpenAI renforce la sécurité de ChatGPT
+            </a>
+          </h3>
+          <p class="timeline-text">
+            OpenAI introduit de nouvelles mesures contre l’exploitation militaire ou politique de ses modèles : 
+            détection des requêtes liées à la reconnaissance d’images satellites et aux armes automatisées.
+          </p>
+        </div>
+      </div>
+
+      <!-- Novembre 2024 -->
+      <div class="timeline-item" data-scroll>
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <time class="timeline-time">Novembre 2024</time>
+          <h3 class="timeline-title">
+            <a href="https://www.theverge.com/2024/11/10/google-deepmind-cyberdefense-ai" target="_blank" class="text-primary hover:underline">
+              DeepMind : IA de cyberdéfense prédictive
+            </a>
+          </h3>
+          <p class="timeline-text">
+            L’IA de Google DeepMind permet de simuler des attaques cyber offensives pour mieux renforcer la défense des réseaux critiques militaires et civils.
+          </p>
+        </div>
+      </div>
+
+      <!-- Octobre 2024 -->
+      <div class="timeline-item lg:timeline-item-right" data-scroll>
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <time class="timeline-time">Octobre 2024</time>
+          <h3 class="timeline-title">
+            <a href="https://www.defense.gov/newsroom/releases/ai-battlefield-simulation-2024" target="_blank" class="text-primary hover:underline">
+              Simulations de champ de bataille par IA
+            </a>
+          </h3>
+          <p class="timeline-text">
+            Des IA tactiques testées par plusieurs armées occidentales assistent les états-majors dans la prévision des mouvements ennemis 
+            et la coordination des unités sur le terrain.
+          </p>
+        </div>
+      </div>
+
+      <!-- Septembre 2024 -->
+      <div class="timeline-item" data-scroll>
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <time class="timeline-time">Septembre 2024</time>
+          <h3 class="timeline-title">
+            <a href="https://www.cybersecurity-insiders.com/soc-automation-ai/" target="_blank" class="text-primary hover:underline">
+              SOC automatisés : vers une cybersécurité militaire en temps réel
+            </a>
+          </h3>
+          <p class="timeline-text">
+            L’IA automatise les réponses dans les centres de commandement cyber militaires, 
+            permettant d’identifier et d’isoler une menace avant propagation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Stages (frise) -->
+<section id="Stages" class="bg-surface-1 py-24">
+  <div class="container mx-auto text-center">
+    <h1 class="text-4xl font-bold text-primary mb-6" data-scroll>Stages</h1>
+    <p class="mb-10 max-w-3xl mx-auto text-gray-200" data-scroll>
+      Mes <strong>expériences en entreprise</strong> sous forme de frise chronologique. Filtre par statut pour aller à l’essentiel.
+    </p>
+
+    <!-- Filtres -->
+    <div id="stages-filters" class="flex flex-wrap items-center justify-center gap-2 mb-12">
+      <button class="stage-filter-btn proj-filter-btn active" data-stage-filter="all">Tous</button>
+      <button class="stage-filter-btn proj-filter-btn" data-stage-filter="done">Réalisé</button>
+      <button class="stage-filter-btn proj-filter-btn" data-stage-filter="planned">Prévu</button>
+    </div>
+
+    <!-- Frise -->
+    <div class="relative text-left max-w-4xl mx-auto">
+      <!-- Ligne verticale continue -->
+      <div class="absolute left-1/2 -translate-x-1/2 h-full w-[3px] bg-gradient-to-b from-primary via-primary/70 to-primary hidden lg:block"></div>
+
+      <!-- 2026 — Rectorat (Prévu) -->
+      <div class="timeline-item" data-scroll data-status="planned">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card hover:translate-y-[-2px] transition">
+          <div class="flex items-center gap-3 flex-wrap">
+            <span class="stage-badge stage-badge--planned">Prévu</span>
+            <time class="timeline-time">Janvier – Février 2026</time>
+            <span class="stage-meta"><i class="fas fa-map-marker-alt"></i> Rectorat</span>
+            <span class="stage-meta"><i class="far fa-clock"></i> ~6–8 semaines</span>
+          </div>
+          <h3 class="timeline-title mt-2">Stagiaire Support & Exploitation — Rectorat</h3>
+          <p class="timeline-text mt-2">
+            Stage orienté <strong>support IT</strong> & <strong>exploitation</strong> : assistance utilisateurs, inventaire, durcissement des postes,
+            supervision basique réseau/serveurs et contribution aux procédures internes (ITIL “lite”).
+          </p>
+          <div class="mt-3 flex flex-wrap gap-2">
+            <span class="tag">Windows / Linux</span>
+            <span class="tag">AD / GPO</span>
+            <span class="tag">Supervision</span>
+            <span class="tag">Sécurité poste</span>
+          </div>
+          <!-- <a href="#" class="btn-ghost mt-4 inline-block">Lettre de mission</a> -->
+        </div>
+      </div>
+
+<!-- 2025 — AWC (Réalisé) -->
+<div class="timeline-item lg:timeline-item-right" data-scroll data-status="done">
+  <div class="timeline-dot"></div>
+  <div class="timeline-card hover:translate-y-[-2px] transition">
+    <div class="flex items-center gap-3 flex-wrap">
+      <span class="stage-badge stage-badge--done">Réalisé</span>
+      <time class="timeline-time">Mai – Juin 2025</time>
+      <span class="stage-meta"><i class="fas fa-map-marker-alt"></i> AWC</span>
+      <span class="stage-meta"><i class="far fa-clock"></i> 6 semaines</span>
+    </div>
+
+    <h3 class="timeline-title mt-2">Développeur Full-Stack (Stage) — AWC</h3>
+
+    <p class="timeline-text mt-2">
+      Stage de <strong>1ʳᵉ année BTS SIO (SLAM)</strong>. Conception d’un <strong>site vitrine professionnel</strong> 
+      et d’<strong>outils internes</strong> pour faciliter la gestion de projets. 
+      Mise en pratique : <strong>HTML</strong>, <strong>Tailwind CSS</strong>, <strong>JavaScript</strong>,
+      et scripts d’<strong>automatisation</strong> simples en <strong>Bash</strong> et <strong>Python</strong>.
+    </p>
+
+    <div class="mt-3 flex flex-wrap gap-2">
+      <span class="tag">HTML</span>
+      <span class="tag">Tailwind</span>
+      <span class="tag">JavaScript</span>
+      <span class="tag">Bash</span>
+      <span class="tag">Python</span>
+    </div>
+
+    <!-- Bouton de rapport de stage -->
+    <a href="photo/rapport_de_stage.pdf" target="_blank"
+       class="btn-report mt-5 inline-flex items-center gap-2 group">
+      <i class="fas fa-file-alt text-primary group-hover:text-light transition"></i>
+      <span>Voir le rapport de stage</span>
+    </a>
+  </div>
 </div>
 
-
-    <!-- Projects Section -->
-    <section id="projects" class="bg-secondary py-20">
-        <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold text-primary mb-10" data-scroll>Projets professionnels</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Projet 1 -->
-
-                <a href="https://github.com/VanStarkHohenheim/Portfolio" target="_blank" class="project-card bg-dark p-6 rounded-lg shadow-lg transition duration-300 transform hover:scale-105" data-scroll>
-                    <h3 class="text-2xl font-bold text-light mb-4">Portfolio</h3>
-                    <p class="text-gray-400">Ce projet a été conçu pour présenter mon parcours, mes compétences et mes projets dans les domaines de la cybersécurité, du développement web, et de l'administration système.</p>
-                </a>
-
-            </div>
+      <!-- 2020 — ENGIE Cofely (Réalisé) -->
+      <div class="timeline-item" data-scroll data-status="done">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card hover:translate-y-[-2px] transition">
+          <div class="flex items-center gap-3 flex-wrap">
+            <span class="stage-badge stage-badge--done">Réalisé</span>
+            <time class="timeline-time">Février 2020 (5 jours)</time>
+            <span class="stage-meta"><i class="fas fa-map-marker-alt"></i> Saint-Denis</span>
+          </div>
+          <h3 class="timeline-title mt-2">Stage de 3ᵉ — Analyste SOC — ENGIE Cofely</h3>
+          <p class="timeline-text mt-2">
+            Immersion au sein d’un <strong>SOC</strong> : observation de l’<strong>analyse d’alertes</strong>, sensibilisation à la <strong>cyberdéfense</strong> 
+            et aux <strong>bonnes pratiques de surveillance</strong>. Une première expérience qui a confirmé mon intérêt pour la <strong>cybersécurité</strong>.
+          </p>
+          <div class="mt-3 flex flex-wrap gap-2">
+            <span class="tag">SOC</span>
+            <span class="tag">Cyberdéfense</span>
+            <span class="tag">Surveillance réseau</span>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <!-- Projects Section -->
-    <section id="projects" class="bg-secondary py-20">
-        <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold text-primary mb-10" data-scroll>Projets Scolaire</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Projet 1 -->
-                <a href="https://github.com/VanStarkHohenheim/NotiLog" target="_blank" class="project-card bg-dark p-6 rounded-lg shadow-lg transition duration-300 transform hover:scale-105" data-scroll>
-                    <h3 class="text-2xl font-bold text-light mb-4">NotiLog</h3>
-                    <p class="text-gray-400">Un script simple pour afficher au démarrage les connexions (SSH) sur une machine Linux Debian.</p>
-                </a>
+    </div>
+  </div>
+</section>
 
-                <a href="https://github.com/VanStarkHohenheim/Portfolio" target="_blank" class="project-card bg-dark p-6 rounded-lg shadow-lg transition duration-300 transform hover:scale-105" data-scroll>
-                    <h3 class="text-2xl font-bold text-light mb-4">Portfolio</h3>
-                    <p class="text-gray-400">Ce projet a été conçu pour présenter mon parcours, mes compétences et mes projets dans les domaines de la cybersécurité, du développement web, et de l'administration système.</p>
-                </a>
 
-                <a href="https://github.com/VanStarkHohenheim/Portfolio" target="_blank" class="project-card bg-dark p-6 rounded-lg shadow-lg transition duration-300 transform hover:scale-105" data-scroll>
-                    <h3 class="text-2xl font-bold text-light mb-4">Automatic Email Sender with iCloud</h3>
-                    <p class="text-gray-400">Script Python pour envoyer des emails personnalisés avec pièces jointes à partir d'un fichier Excel, utilisant un compte iCloud comme expéditeur.</p>
-                </a>
 
-            </div>
+  <!-- Contact -->
+  <section id="contact" class="bg-surface-2 py-24">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold text-primary mb-10" data-scroll>Contactez-moi</h2>
+
+      <form action="https://formspree.io/f/manoggyp" method="post" class="max-w-xl mx-auto glass-card p-8 text-left space-y-4" data-scroll>
+        <!-- anti-bot -->
+        <input type="text" name="_gotcha" class="hidden" aria-hidden="true" tabindex="-1"/>
+
+        <div>
+          <label for="name" class="block text-sm text-gray-400 mb-1">Votre nom</label>
+          <input id="name" name="name" type="text" required
+                 class="input"/>
         </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section id="Veille" class="bg-secondary py-20">
-        <div class="container mx-auto text-center">
-            <h1 class="text-4xl font-bold text-primary mb-10" data-scroll>Veille Informatique</h1>
-            <h3 class="text-4xl font-bold text-primary mb-10" data-scroll>- C'est quoi une veille informatique ? -</h3>
-            <p class="mb-6">
-                La veille informatique consiste à surveiller et analyser en continu les évolutions du secteur technologique. Elle englobe l’identification des nouvelles tendances, des menaces émergentes et des innovations, qu’il s’agisse de logiciels, de matériels ou de nouvelles pratiques. L’objectif est d’anticiper les changements, d’évaluer leur impact et d’adapter ses connaissances ou stratégies en conséquence. Essentielle pour les professionnels comme pour les passionnés, la veille permet de rester compétitif et informé dans un domaine en perpétuelle évolution.
-            </p>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Projet 1 -->
-                <a href="https://www.bfmtv.com/tech/intelligence-artificielle/deepseek-un-code-cache-envoie-les-donnees-a-une-entreprise-proche-de-l-armee-chinoise-selon-des-chercheurs_AV-202502050733.html" target="_blank" class="project-card bg-dark p-6 rounded-lg shadow-lg transition duration-300 transform hover:scale-105" data-scroll>
-                    <h3 class="text-2xl font-bold text-light mb-4">Deepseek: un code caché envoie les données à une entreprise proche de l'armée chinoise, selon des chercheurs</h3>
-                    <p class="text-gray-400">Un script simple pour afficher au démarrage les connexions (SSH) sur une machine Linux Debian.</p>
-                </a>
-            </div>
+        <div>
+          <label for="email" class="block text-sm text-gray-400 mb-1">Votre email</label>
+          <input id="email" name="email" type="email" required
+                 class="input"/>
         </div>
-    </section>
-    
 
-    <!-- Contact Section -->
-    <section id="contact" class="bg-dark py-20">
-        <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold text-primary mb-10" data-scroll>Contactez-moi</h2>
-            <form action="https://formspree.io/f/manoggyp" method="post" class="max-w-lg mx-auto" data-scroll>
-                <input type="text" placeholder="Votre nom" class="w-full bg-gray-800 p-4 rounded-lg mb-4">
-                <input type="email" placeholder="Votre email" class="w-full bg-gray-800 p-4 rounded-lg mb-4">
-                <textarea placeholder="Votre message" class="w-full bg-gray-800 p-4 rounded-lg mb-4"></textarea>
-                <button class="btn-primary w-full">Envoyer</button>
-            </form>
+        <div>
+          <label for="message" class="block text-sm text-gray-400 mb-1">Votre message</label>
+          <textarea id="message" name="message" rows="5" required
+                    class="input"></textarea>
         </div>
-    </section>
 
-    <!-- JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/locomotive-scroll/4.1.4/locomotive-scroll.min.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+        <button class="btn-primary w-full inline-flex items-center justify-center gap-2">
+          <i class="fas fa-paper-plane"></i> Envoyer
+        </button>
+
+        <p id="form-status" class="text-sm text-gray-400 mt-2 hidden">Envoi en cours…</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/locomotive-scroll/4.1.4/locomotive-scroll.min.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
-
 </html>
