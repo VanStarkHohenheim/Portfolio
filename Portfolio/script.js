@@ -403,21 +403,58 @@ document.addEventListener('keydown', (e) => {
   });
 })();
 
-(function stagesFilter(){
-  const bar  = document.getElementById('stages-filters');
-  const items = Array.from(document.querySelectorAll('#Stages .timeline-item'));
-  if(!bar || !items.length) return;
+(function stagesCarousel(){
+  const track  = document.getElementById('stages-track');
+  const prevBtn = document.getElementById('stage-prev');
+  const nextBtn = document.getElementById('stage-next');
+  const dotsEl  = document.getElementById('stages-dots');
+  if (!track) return;
 
-  bar.addEventListener('click', e=>{
-    const btn = e.target.closest('[data-stage-filter]');
-    if(!btn) return;
-    const current = (btn.dataset.stageFilter || 'all').toLowerCase();
-    bar.querySelectorAll('.stage-filter-btn').forEach(b=>b.classList.toggle('active', b===btn));
-    
-    items.forEach(it=>{
-      const status = (it.dataset.status || '').toLowerCase();
-      it.style.display = ((current==='all') || (status===current)) ? '' : 'none';
+  const slides = Array.from(track.querySelectorAll('.stage-slide'));
+  let current = 0;
+
+  // Crée les dots
+  slides.forEach(_ => {
+    const d = document.createElement('button');
+    d.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+    d.setAttribute('aria-label', 'Slide ' + (i + 1));
+    d.addEventListener('click', () => goTo(i));
+    dotsEl.appendChild(d);
+  });
+
+  function goTo(index) {
+    current = (index + slides.length) % slides.length;
+    track.style.transform = 'translateX(-' + (current * 100) + '%)';
+    // Applique transform à chaque slide via le conteneur flex
+    slides.forEach((s, i) => {
+      s.style.transform = 'translateX(-' + (current * 100) + '%)';
     });
+    dotsEl.querySelectorAll('.carousel-dot').forEach((d, i) => {
+      d.classList.toggle('active', i === current);
+    });
+  }
+
+  // Le track est flex : on translate le premier slide suffit pas — on utilise translateX sur le track
+  track.style.transition = 'transform .4s ease';
+  slides.forEach(s => { s.style.transform = ''; }); // reset
+
+  function move(index) {
+    current = (index + slides.length) % slides.length;
+    track.style.transform = 'translateX(-' + (current * 100) + '%)';
+    dotsEl.querySelectorAll('.carousel-dot').forEach((d, i) => {
+      d.classList.toggle('active', i === current);
+    });
+  }
+
+  prevBtn && prevBtn.addEventListener('click', () => move(current - 1));
+  nextBtn && nextBtn.addEventListener('click', () => move(current + 1));
+
+  // Swipe tactile
+  let startX = 0;
+  track.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, { passive: true });
+  track.addEventListener('touchend', e => {
+    const diff = startX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 40) move(diff > 0 ? current + 1 : current - 1);
   });
 })();
 

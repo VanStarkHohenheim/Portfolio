@@ -698,120 +698,120 @@
     </div>
   </div>
 </section>
-<!-- Stages (frise) -->
+<!-- Stages (carousel) -->
 <section id="Stages" class="bg-surface-1 py-24">
   <div class="container mx-auto text-center">
     <h1 class="text-4xl font-bold text-primary mb-6" data-scroll>Stages</h1>
     <p class="mb-10 max-w-3xl mx-auto text-gray-200" data-scroll>
-      Mes <strong>expériences en entreprise</strong> sous forme de frise chronologique. Filtre par statut pour aller à l’essentiel.
+      Mes <strong>expériences en entreprise</strong>.
     </p>
 
-    <!-- Filtres -->
-    <div id="stages-filters" class="flex flex-wrap items-center justify-center gap-2 mb-12">
-      <button class="stage-filter-btn proj-filter-btn active" data-stage-filter="all">Tous</button>
-      <button class="stage-filter-btn proj-filter-btn" data-stage-filter="done">Réalisé</button>
-      <button class="stage-filter-btn proj-filter-btn" data-stage-filter="planned">Prévu</button>
-    </div>
+    <!-- Carousel wrapper -->
+    <div class="stages-carousel-wrapper">
+      <!-- Bouton précédent -->
+      <button class="carousel-btn carousel-btn--prev" id="stage-prev" aria-label="Précédent">
+        <i class="fas fa-chevron-left"></i>
+      </button>
 
-    <!-- Frise -->
-    <div class="relative text-left max-w-4xl mx-auto">
-      <!-- Ligne verticale continue -->
-      <div class="absolute left-1/2 -translate-x-1/2 h-full w-[3px] bg-gradient-to-b from-primary via-primary/70 to-primary hidden lg:block"></div>
+      <!-- Track -->
+      <div class="stages-carousel-track" id="stages-track">
 
-      <!-- 2026 — Rectorat (Réalisé) -->
-      <div class="timeline-item" data-status="done">
-        <div class="timeline-dot"></div>
-        <div class="timeline-card">
-          <div class="flex items-center gap-3 flex-wrap">
-            <span class="stage-badge stage-badge--done">Réalisé</span>
-            <time class="timeline-time">Janvier – Février 2026</time>
-            <span class="stage-meta"><i class="fas fa-map-marker-alt"></i> Rectorat</span>
-            <span class="stage-meta"><i class="far fa-clock"></i> ~6–8 semaines</span>
-          </div>
-          <h3 class="timeline-title mt-2">Stagiaire Support &amp; Exploitation — Rectorat</h3>
-          <p class="timeline-text mt-2">
-            Stage orienté <strong>infrastructure &amp; sécurité</strong> : virtualisation de serveurs Linux sur Proxmox,
-            déploiement automatisé avec Ansible, mise en place d'une PKI et sécurisation TLS conforme ANSSI.
-          </p>
-          <ul class="timeline-text mt-2 space-y-1 list-disc list-inside text-left">
-            <li>Virtualisation et administration de serveurs Linux sur <strong>Proxmox</strong> (Dell PowerEdge R630)</li>
-            <li>Déploiement et configuration automatisés d'un serveur web avec <strong>Ansible</strong></li>
-            <li>Conception et déploiement d'une <strong>PKI</strong> pour la sécurisation des communications</li>
-            <li>Implémentation de <strong>TLS 1.3</strong> avec politiques de chiffrement conformes <strong>ANSSI</strong></li>
-            <li>Sécurisation des flux serveur → client → machine interne</li>
-          </ul>
-          <div class="mt-3 flex flex-wrap gap-2">
-            <span class="tag">Proxmox</span>
-            <span class="tag">Linux</span>
-            <span class="tag">Ansible</span>
-            <span class="tag">PKI</span>
-            <span class="tag">TLS 1.3</span>
-            <span class="tag">ANSSI</span>
+        <!-- Slide 1 — Rectorat -->
+        <div class="stage-slide" data-status="done">
+          <div class="timeline-card stage-card">
+            <div class="flex items-center gap-3 flex-wrap mb-3">
+              <span class="stage-badge stage-badge--done">Réalisé</span>
+              <time class="timeline-time">Janvier – Février 2026</time>
+              <span class="stage-meta"><i class="fas fa-map-marker-alt"></i> Rectorat</span>
+              <span class="stage-meta"><i class="far fa-clock"></i> ~6–8 semaines</span>
+            </div>
+            <h3 class="timeline-title">Stagiaire Infrastructure &amp; Sécurité — Rectorat</h3>
+            <p class="timeline-text mt-2">
+              Stage orienté <strong>infrastructure &amp; sécurité</strong> : virtualisation de serveurs Linux sur Proxmox,
+              déploiement automatisé avec Ansible, mise en place d’une PKI et sécurisation TLS conforme ANSSI.
+            </p>
+            <ul class="timeline-text mt-3 space-y-1 list-disc list-inside text-left">
+              <li>Virtualisation et administration de serveurs Linux sur <strong>Proxmox</strong> (Dell PowerEdge R630)</li>
+              <li>Déploiement et configuration automatisés d’un serveur web avec <strong>Ansible</strong></li>
+              <li>Conception et déploiement d’une <strong>PKI</strong> pour la sécurisation des communications</li>
+              <li>Implémentation de <strong>TLS 1.3</strong> avec politiques de chiffrement conformes <strong>ANSSI</strong></li>
+              <li>Sécurisation des flux serveur → client → machine interne</li>
+            </ul>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="tag">Proxmox</span>
+              <span class="tag">Linux</span>
+              <span class="tag">Ansible</span>
+              <span class="tag">PKI</span>
+              <span class="tag">TLS 1.3</span>
+              <span class="tag">ANSSI</span>
+            </div>
           </div>
         </div>
-      </div>
 
-
-<!-- 2025 — AWC (Réalisé) -->
-<div class="timeline-item lg:timeline-item-right" data-status="done">
-  <div class="timeline-dot"></div>
-  <div class="timeline-card hover:translate-y-[-2px] transition">
-    <div class="flex items-center gap-3 flex-wrap">
-      <span class="stage-badge stage-badge--done">Réalisé</span>
-      <time class="timeline-time">Mai – Juin 2025</time>
-      <span class="stage-meta"><i class="fas fa-map-marker-alt"></i> AWC</span>
-      <span class="stage-meta"><i class="far fa-clock"></i> 6 semaines</span>
-    </div>
-
-    <h3 class="timeline-title mt-2">Développeur Full-Stack (Stage) — AWC</h3>
-
-    <p class="timeline-text mt-2">
-      Stage de <strong>1ʳᵉ année BTS SIO (SLAM)</strong>. Conception d’un <strong>site vitrine professionnel</strong> 
-      et d’<strong>outils internes</strong> pour faciliter la gestion de projets. 
-      Mise en pratique : <strong>HTML</strong>, <strong>Tailwind CSS</strong>, <strong>JavaScript</strong>,
-      et scripts d’<strong>automatisation</strong> simples en <strong>Bash</strong> et <strong>Python</strong>.
-    </p>
-
-    <div class="mt-3 flex flex-wrap gap-2">
-      <span class="tag">HTML</span>
-      <span class="tag">Tailwind</span>
-      <span class="tag">JavaScript</span>
-      <span class="tag">Bash</span>
-      <span class="tag">Python</span>
-    </div>
-
-    <!-- Bouton de rapport de stage -->
-    <a href="photo/rapport_de_stage.pdf" target="_blank"
-       class="btn-report mt-5 inline-flex items-center gap-2 group">
-      <i class="fas fa-file-alt text-primary group-hover:text-light transition"></i>
-      <span>Voir le rapport de stage</span>
-    </a>
-  </div>
-</div>
-
-      <!-- 2020 — ENGIE Cofely (Réalisé) -->
-      <div class="timeline-item" data-status="done">
-        <div class="timeline-dot"></div>
-        <div class="timeline-card hover:translate-y-[-2px] transition">
-          <div class="flex items-center gap-3 flex-wrap">
-            <span class="stage-badge stage-badge--done">Réalisé</span>
-            <time class="timeline-time">Février 2020 (5 jours)</time>
-            <span class="stage-meta"><i class="fas fa-map-marker-alt"></i> Saint-Denis</span>
-          </div>
-          <h3 class="timeline-title mt-2">Stage de 3ᵉ — Analyste SOC — ENGIE Cofely</h3>
-          <p class="timeline-text mt-2">
-            Immersion au sein d’un <strong>SOC</strong> : observation de l’<strong>analyse d’alertes</strong>, sensibilisation à la <strong>cyberdéfense</strong> 
-            et aux <strong>bonnes pratiques de surveillance</strong>. Une première expérience qui a confirmé mon intérêt pour la <strong>cybersécurité</strong>.
-          </p>
-          <div class="mt-3 flex flex-wrap gap-2">
-            <span class="tag">SOC</span>
-            <span class="tag">Cyberdéfense</span>
-            <span class="tag">Surveillance réseau</span>
+        <!-- Slide 2 — AWC -->
+        <div class="stage-slide" data-status="done">
+          <div class="timeline-card stage-card">
+            <div class="flex items-center gap-3 flex-wrap mb-3">
+              <span class="stage-badge stage-badge--done">Réalisé</span>
+              <time class="timeline-time">Mai – Juin 2025</time>
+              <span class="stage-meta"><i class="fas fa-map-marker-alt"></i> AWC</span>
+              <span class="stage-meta"><i class="far fa-clock"></i> 6 semaines</span>
+            </div>
+            <h3 class="timeline-title">Développeur Full-Stack (Stage) — AWC</h3>
+            <p class="timeline-text mt-2">
+              Stage de <strong>1ʳᵉ année BTS SIO (SLAM)</strong>. Conception d’un <strong>site vitrine professionnel</strong>
+              et d’<strong>outils internes</strong> pour faciliter la gestion de projets.
+              Mise en pratique : <strong>HTML</strong>, <strong>Tailwind CSS</strong>, <strong>JavaScript</strong>,
+              et scripts d’<strong>automatisation</strong> simples en <strong>Bash</strong> et <strong>Python</strong>.
+            </p>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="tag">HTML</span>
+              <span class="tag">Tailwind</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Bash</span>
+              <span class="tag">Python</span>
+            </div>
+            <a href="photo/rapport_de_stage.pdf" target="_blank"
+               class="btn-report mt-5 inline-flex items-center gap-2">
+              <i class="fas fa-file-alt text-primary"></i>
+              <span>Voir le rapport de stage</span>
+            </a>
           </div>
         </div>
-      </div>
 
+        <!-- Slide 3 — ENGIE Cofely -->
+        <div class="stage-slide" data-status="done">
+          <div class="timeline-card stage-card">
+            <div class="flex items-center gap-3 flex-wrap mb-3">
+              <span class="stage-badge stage-badge--done">Réalisé</span>
+              <time class="timeline-time">Février 2020 (5 jours)</time>
+              <span class="stage-meta"><i class="fas fa-map-marker-alt"></i> Saint-Denis</span>
+            </div>
+            <h3 class="timeline-title">Stage de 3ᵉ — Analyste SOC — ENGIE Cofely</h3>
+            <p class="timeline-text mt-2">
+              Immersion au sein d’un <strong>SOC</strong> : observation de l’<strong>analyse d’alertes</strong>,
+              sensibilisation à la <strong>cyberdéfense</strong> et aux <strong>bonnes pratiques de surveillance</strong>.
+              Une première expérience qui a confirmé mon intérêt pour la <strong>cybersécurité</strong>.
+            </p>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="tag">SOC</span>
+              <span class="tag">Cyberdéfense</span>
+              <span class="tag">Surveillance réseau</span>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /#stages-track -->
+
+      <!-- Bouton suivant -->
+      <button class="carousel-btn carousel-btn--next" id="stage-next" aria-label="Suivant">
+        <i class="fas fa-chevron-right"></i>
+      </button>
     </div>
+
+    <!-- Indicateurs -->
+    <div class="carousel-dots" id="stages-dots"></div>
+
   </div>
 </section>
 
