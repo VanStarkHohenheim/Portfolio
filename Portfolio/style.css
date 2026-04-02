@@ -19,6 +19,17 @@
 
 *{box-sizing:border-box}
 
+/* Scroll reveal */
+[data-scroll]{
+  opacity:0;
+  transform:translateY(24px);
+  transition:opacity .55s ease, transform .55s ease;
+}
+[data-scroll].is-inview{
+  opacity:1;
+  transform:translateY(0);
+}
+
 /* Base */
 body {
   background: var(--dark-bg);
@@ -311,14 +322,17 @@ button { cursor:pointer }
 
 @media (min-width:1024px){
   .timeline-item{
-    width:48%;
+    width:50%;
     padding-left:0; padding-right:2rem; margin-left:0;
   }
   .lg\:timeline-item-right{
-    margin-left:auto; padding-left:2rem; padding-right:0;
+    margin-left:50%; padding-left:2rem; padding-right:0;
   }
   .timeline-dot{
-    left:50%; margin-left:-6px;
+    left:auto; right:-6px;
+  }
+  .lg\:timeline-item-right .timeline-dot{
+    left:-6px; right:auto;
   }
 }
 

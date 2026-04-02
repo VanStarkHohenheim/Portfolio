@@ -1,4 +1,58 @@
 // ==============================
+// 0. Veille dynamique (veille-data.json)
+// ==============================
+(function loadVeille() {
+  const container = document.getElementById('veille-items');
+  const updatedEl = document.getElementById('veille-updated');
+  if (!container) return;
+
+  fetch('veille-data.json?_=' + Date.now())
+    .then(r => { if (!r.ok) throw new Error('no data'); return r.json(); })
+    .then(data => {
+      if (!data.articles || !data.articles.length) return;
+
+      container.innerHTML = data.articles.map((a, i) => {
+        const right = i % 2 === 1 ? ' lg:timeline-item-right' : '';
+        const src   = a.source ? ` · <span class="font-normal">${a.source}</span>` : '';
+        return `
+          <div class="timeline-item${right}" data-scroll>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <time class="timeline-time">${a.date}${src}</time>
+              <h3 class="timeline-title">
+                <a href="${a.link}" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
+                  ${a.title}
+                </a>
+              </h3>
+              <p class="timeline-text">${a.summary}</p>
+            </div>
+          </div>`;
+      }).join('');
+
+      if (updatedEl && data.updated) {
+        updatedEl.textContent = 'Dernière mise à jour : ' + data.updated;
+      }
+
+      // Re-observe nouveaux éléments pour le scroll reveal
+      container.querySelectorAll('[data-scroll]').forEach(el => {
+        if (window.__scrollRevealObserver) window.__scrollRevealObserver.observe(el);
+      });
+    })
+    .catch(() => { /* Fallback : les items statiques restent affichés */ });
+})();
+
+// ==============================
+// 0b. Scroll Reveal (data-scroll)
+// ==============================
+(function scrollReveal() {
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('is-inview'); });
+  }, { threshold: 0.12 });
+  window.__scrollRevealObserver = io;
+  document.querySelectorAll('[data-scroll]').forEach(el => io.observe(el));
+})();
+
+// ==============================
 // 1. Modale Certifications — UX+A11y
 // ==============================
 const modal = document.getElementById('cert-modal');

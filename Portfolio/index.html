@@ -574,6 +574,9 @@
       <!-- Ligne verticale continue -->
       <div class="absolute left-1/2 -translate-x-1/2 h-full w-[3px] bg-gradient-to-b from-primary via-primary/70 to-primary hidden lg:block"></div>
 
+      <!-- Items dynamiques (remplacés par JS si veille-data.json est disponible) -->
+      <div id="veille-items">
+
       <!-- Mars 2025 -->
       <div class="timeline-item" data-scroll>
         <div class="timeline-dot"></div>
@@ -691,6 +694,10 @@
           </p>
         </div>
       </div>
+
+      </div><!-- /#veille-items -->
+
+      <p id="veille-updated" class="text-center text-gray-500 text-sm mt-8"></p>
     </div>
   </div>
 </section>
