@@ -308,13 +308,14 @@ button { cursor:pointer }
   box-shadow: 0 0 0 4px rgba(79,70,229,.18);
 }
 .timeline-card{
-  background: rgba(255,255,255,.03);
-  border:1px solid rgba(255,255,255,.08);
+  background: rgba(0,0,0,0.45);
+  border:1px solid rgba(255,255,255,.12);
   border-radius: var(--radius);
   padding:1.25rem;
   box-shadow: var(--shadow-sm);
-  transition: box-shadow .25s ease;
+  transition: box-shadow .25s ease, transform .25s ease;
 }
+.timeline-card:hover { transform: translateY(-2px); }
 .timeline-card:hover { box-shadow: 0 10px 24px rgba(0,0,0,.35); }
 .timeline-time{ color:#a9adba; font-size:.9rem; font-weight:600 }
 .timeline-title{ margin-top:.2rem; font-size:1.15rem; font-weight:700; color:#fff }
