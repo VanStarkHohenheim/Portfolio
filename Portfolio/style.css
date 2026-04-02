@@ -448,18 +448,19 @@ a:focus-visible, button:focus-visible, .skill-card:focus-visible, .project-card:
    Stages Carousel
    ===================== */
 .stages-carousel-wrapper {
-  position: relative;
   display: flex;
   align-items: center;
   gap: 1rem;
-  max-width: 820px;
+  max-width: 860px;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .stages-carousel-track {
+  flex: 1;
+  min-width: 0;
   display: flex;
   overflow: hidden;
-  width: 100%;
   border-radius: var(--radius-lg);
   transition: transform .4s ease;
   will-change: transform;
@@ -468,6 +469,7 @@ a:focus-visible, button:focus-visible, .skill-card:focus-visible, .project-card:
 .stage-slide {
   min-width: 100%;
   flex-shrink: 0;
+  box-sizing: border-box;
 }
 
 .stages-carousel-wrapper .stage-card {
