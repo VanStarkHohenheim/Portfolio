@@ -435,7 +435,8 @@ a:focus-visible, button:focus-visible, .skill-card:focus-visible, .project-card:
   opacity: .35;
   filter: blur(.4px);
 }
-.bg-surface-1 .project-card, .bg-surface-2 .project-card, .bg-surface-2 .timeline-card, .bg-surface-2 .glass-card {
+.bg-surface-1 .project-card, .bg-surface-1 .timeline-card,
+.bg-surface-2 .project-card, .bg-surface-2 .timeline-card, .bg-surface-2 .glass-card {
   background: rgba(0,0,0,0.55);
   border-color: rgba(255,255,255,0.08);
 }
