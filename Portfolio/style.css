@@ -42,7 +42,12 @@ body {
 ::selection { background: rgba(79,70,229,.35); color:#fff; }
 
 /* Navbar */
-header { box-shadow: 0 4px 6px rgba(0,0,0,.3); backdrop-filter: blur(6px); }
+.navbar-bg {
+  background: rgba(26,26,26,0.92);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+header { box-shadow: 0 4px 6px rgba(0,0,0,.3); }
 .nav-link {
   color: var(--light-text);
   text-transform: uppercase;
@@ -68,7 +73,7 @@ header { box-shadow: 0 4px 6px rgba(0,0,0,.3); backdrop-filter: blur(6px); }
 
 /* Hero */
 #hero{
-  background-image:url('photo/kill_4.gif');
+  background-image:url('photo/hero-bg.gif');
   background-size:cover;background-position:center;background-repeat:no-repeat;
   position:relative;overflow:hidden;min-height:100vh;
   display:flex;align-items:center;justify-content:center;text-align:center;
@@ -315,8 +320,7 @@ button { cursor:pointer }
   box-shadow: var(--shadow-sm);
   transition: box-shadow .25s ease, transform .25s ease;
 }
-.timeline-card:hover { transform: translateY(-2px); }
-.timeline-card:hover { box-shadow: 0 10px 24px rgba(0,0,0,.35); }
+.timeline-card:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(0,0,0,.35); }
 .timeline-time{ color:#a9adba; font-size:.9rem; font-weight:600 }
 .timeline-title{ margin-top:.2rem; font-size:1.15rem; font-weight:700; color:#fff }
 .timeline-text{ color:#d1d5db; margin-top:.35rem }
@@ -360,13 +364,11 @@ button { cursor:pointer }
 .bg-dark{ background:var(--dark-bg) }
 .bg-secondary{ background:var(--secondary-color) }
 
-/* Accessibilité */
-a, button, [role="button"], .skill-card, .project-card, input, textarea {
-  outline: none;
-}
+/* Accessibilité — focus visible uniquement au clavier */
 a:focus-visible, button:focus-visible, .skill-card:focus-visible, .project-card:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
   box-shadow: var(--ring);
-  border-color: var(--primary-color);
 }
 
 /* Filtres */
@@ -466,11 +468,11 @@ a:focus-visible, button:focus-visible, .skill-card:focus-visible, .project-card:
   transition: transform .4s ease;
 }
 
-.stage-card {
-  background: rgba(0,0,0,0.55) !important;
-  border: 1px solid rgba(255,255,255,0.1) !important;
-  border-radius: var(--radius-lg) !important;
-  padding: 2rem !important;
+.stages-carousel-wrapper .stage-card {
+  background: rgba(0,0,0,0.55);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
   text-align: left;
 }
 

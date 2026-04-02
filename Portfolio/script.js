@@ -6,7 +6,23 @@
   const updatedEl = document.getElementById('veille-updated');
   if (!container) return;
 
-  if (location.protocol === 'file:') return; // fetch bloqué en local, ok sur GitHub Pages
+  function escapeHtml(str) {
+    return String(str || '')
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
+  function safeUrl(url) {
+    try {
+      const u = new URL(url);
+      return (u.protocol === 'https:' || u.protocol === 'http:') ? url : '#';
+    } catch (_) { return '#'; }
+  }
+
+  if (location.protocol === 'file:') return;
   fetch('veille-data.json?_=' + Date.now())
     .then(r => { if (!r.ok) throw new Error('no data'); return r.json(); })
     .then(data => {
@@ -14,18 +30,18 @@
 
       container.innerHTML = data.articles.map((a, i) => {
         const right = i % 2 === 1 ? ' lg:timeline-item-right' : '';
-        const src   = a.source ? ` · <span class="font-normal">${a.source}</span>` : '';
+        const src   = a.source ? ` · <span class="font-normal">${escapeHtml(a.source)}</span>` : '';
         return `
           <div class="timeline-item${right}" data-scroll>
             <div class="timeline-dot"></div>
             <div class="timeline-card">
-              <time class="timeline-time">${a.date}${src}</time>
+              <time class="timeline-time">${escapeHtml(a.date)}${src}</time>
               <h3 class="timeline-title">
-                <a href="${a.link}" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
-                  ${a.title}
+                <a href="${safeUrl(a.link)}" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
+                  ${escapeHtml(a.title)}
                 </a>
               </h3>
-              <p class="timeline-text">${a.summary}</p>
+              <p class="timeline-text">${escapeHtml(a.summary)}</p>
             </div>
           </div>`;
       }).join('');
@@ -34,7 +50,6 @@
         updatedEl.textContent = 'Dernière mise à jour : ' + data.updated;
       }
 
-      // Re-observe nouveaux éléments pour le scroll reveal
       container.querySelectorAll('[data-scroll]').forEach(el => {
         if (window.__scrollRevealObserver) window.__scrollRevealObserver.observe(el);
       });
@@ -404,7 +419,7 @@ document.addEventListener('keydown', (e) => {
 })();
 
 (function stagesCarousel(){
-  const track  = document.getElementById('stages-track');
+  const track   = document.getElementById('stages-track');
   const prevBtn = document.getElementById('stage-prev');
   const nextBtn = document.getElementById('stage-next');
   const dotsEl  = document.getElementById('stages-dots');
@@ -412,6 +427,16 @@ document.addEventListener('keydown', (e) => {
 
   const slides = Array.from(track.querySelectorAll('.stage-slide'));
   let current = 0;
+
+  track.style.transition = 'transform .4s ease';
+
+  function goTo(index) {
+    current = (index + slides.length) % slides.length;
+    track.style.transform = 'translateX(-' + (current * 100) + '%)';
+    dotsEl.querySelectorAll('.carousel-dot').forEach((d, i) => {
+      d.classList.toggle('active', i === current);
+    });
+  }
 
   // Crée les dots
   slides.forEach((_, i) => {
@@ -422,47 +447,31 @@ document.addEventListener('keydown', (e) => {
     dotsEl.appendChild(d);
   });
 
-  function goTo(index) {
-    current = (index + slides.length) % slides.length;
-    track.style.transform = 'translateX(-' + (current * 100) + '%)';
-    // Applique transform à chaque slide via le conteneur flex
-    slides.forEach(s => {
-      s.style.transform = 'translateX(-' + (current * 100) + '%)';
-    });
-    dotsEl.querySelectorAll('.carousel-dot').forEach((d, i) => {
-      d.classList.toggle('active', i === current);
-    });
-  }
-
-  // Le track est flex : on translate le premier slide suffit pas — on utilise translateX sur le track
-  track.style.transition = 'transform .4s ease';
-  slides.forEach(s => { s.style.transform = ''; }); // reset
-
-  function move(index) {
-    current = (index + slides.length) % slides.length;
-    track.style.transform = 'translateX(-' + (current * 100) + '%)';
-    dotsEl.querySelectorAll('.carousel-dot').forEach((d, i) => {
-      d.classList.toggle('active', i === current);
-    });
-  }
-
-  prevBtn && prevBtn.addEventListener('click', () => move(current - 1));
-  nextBtn && nextBtn.addEventListener('click', () => move(current + 1));
+  prevBtn && prevBtn.addEventListener('click', () => goTo(current - 1));
+  nextBtn && nextBtn.addEventListener('click', () => goTo(current + 1));
 
   // Swipe tactile
   let startX = 0;
   track.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, { passive: true });
   track.addEventListener('touchend', e => {
     const diff = startX - e.changedTouches[0].clientX;
-    if (Math.abs(diff) > 40) move(diff > 0 ? current + 1 : current - 1);
+    if (Math.abs(diff) > 40) goTo(diff > 0 ? current + 1 : current - 1);
   });
 })();
 
 // ==============================
-// 6. NOUVEAU : Moteur de Particules (Skills)
+// 6. Moteur de Particules (Skills)
 // ==============================
 (function initParticleSystem() {
   document.documentElement.classList.remove('no-js');
+
+  // Un seul listener resize global avec debounce
+  const resizeHandlers = [];
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => resizeHandlers.forEach(fn => fn()), 150);
+  });
 
   const CONFIG = {
     particleCount: 25,
@@ -608,7 +617,7 @@ document.addEventListener('keydown', (e) => {
     });
     observer.observe(card);
 
-    window.addEventListener('resize', () => { resize(); createParticles(); });
+    resizeHandlers.push(() => { resize(); createParticles(); });
     card.addEventListener('mousemove', onMove);
     card.addEventListener('mouseleave', onLeave);
     card.addEventListener('touchstart', onMove, {passive:true});

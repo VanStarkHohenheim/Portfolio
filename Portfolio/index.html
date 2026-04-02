@@ -3,23 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mohamed Belmokhtar - Portfolio</title>
+  <title>Mohamed Belmokhtar — Portfolio Cybersécurité & Infra Linux</title>
+  <meta name="description" content="Portfolio de Mohamed Belmokhtar, étudiant BTS SIO SLAM passionné par la cybersécurité et l'administration Linux. Stage Rectorat : Proxmox, Ansible, PKI, TLS 1.3."/>
+  <meta property="og:title" content="Mohamed Belmokhtar — Portfolio Cybersécurité & Infra Linux"/>
+  <meta property="og:description" content="BTS SIO SLAM | Infra & Sécurité Linux | Stage Rectorat (Ansible, PKI, TLS 1.3)"/>
+  <meta property="og:type" content="website"/>
+  <meta name="theme-color" content="#4f46e5"/>
 
   <!-- Tailwind CSS -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
 
+  <!-- Google Fonts — Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+
   <!-- Ton CSS -->
   <link rel="stylesheet" href="style.css"/>
 
-  <!-- FontAwesome -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <!-- FontAwesome (defer pour ne pas bloquer le rendu) -->
+  <script defer src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="bg-dark text-light font-sans leading-relaxed overflow-x-hidden">
   <!-- Navbar -->
-  <header class="fixed top-0 left-0 w-full bg-dark/90 backdrop-filter backdrop-blur z-50 shadow-lg">
+  <header class="fixed top-0 left-0 w-full navbar-bg z-50 shadow-lg">
     <div class="container mx-auto flex justify-between items-center py-4 px-6">
-      <h1 class="text-primary text-2xl font-bold tracking-tight">MB.</h1>
+      <a href="#hero" class="text-primary text-2xl font-bold tracking-tight" aria-label="Accueil">MB.</a>
 
       <nav class="hidden md:flex items-center space-x-6">
         <a href="#hero" class="nav-link">Accueil</a>
@@ -45,8 +55,10 @@
         <a href="#about" class="mobile-link">À propos</a>
         <a href="#bts-sio" class="mobile-link">BTS SIO</a>
         <a href="#skills" class="mobile-link">Certifications</a>
+        <a href="#competences" class="mobile-link">Compétences</a>
         <a href="#projects-pro" class="mobile-link">Projets</a>
         <a href="#Veille" class="mobile-link">Veille</a>
+        <a href="#Stages" class="mobile-link">Stages</a>
         <a href="#contact" class="mobile-link">Contact</a>
       </nav>
     </div>
@@ -175,7 +187,7 @@
     <div class="grid gap-8 md:grid-cols-3 max-w-6xl mx-auto">
       
       <!-- Carte CV -->
-      <a href="CV-ATS-ALTERNANCE.pdf" target="_blank" data-scroll
+      <a href="CV-ATS-ALTERNANCE.pdf" target="_blank" rel="noopener noreferrer" data-scroll
          class="glass-card p-8 flex flex-col items-center justify-center text-center transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg">
         <div class="text-primary text-5xl mb-4">
           <i class="fas fa-file-alt"></i>
@@ -190,7 +202,7 @@
       </a>
 
       <!-- Carte LinkedIn -->
-      <a href="https://www.linkedin.com/in/mohamed-belmokhtar-b399312a4" target="_blank" data-scroll
+      <a href="https://www.linkedin.com/in/mohamed-belmokhtar-b399312a4" target="_blank" rel="noopener noreferrer" data-scroll
          class="glass-card p-8 flex flex-col items-center justify-center text-center transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg">
         <div class="text-[#0A66C2] text-5xl mb-4">
           <i class="fab fa-linkedin"></i>
@@ -205,7 +217,7 @@
       </a>
 
       <!-- Carte GitHub -->
-      <a href="https://github.com/VanStarkHohenheim" target="_blank" data-scroll
+      <a href="https://github.com/VanStarkHohenheim" target="_blank" rel="noopener noreferrer" data-scroll
          class="glass-card p-8 flex flex-col items-center justify-center text-center transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg">
         <div class="text-gray-300 text-5xl mb-4">
           <i class="fab fa-github"></i>
@@ -436,7 +448,7 @@
 
       <h3 id="modal-title" class="text-2xl font-bold text-primary mb-4">Titre de la certification</h3>
       <iframe id="modal-pdf" src="" class="w-full h-80 rounded-lg border border-gray-700"></iframe>
-      <a id="modal-link" href="#" target="_blank" class="btn-primary mt-6 inline-block">Voir la certification complète</a>
+      <a id="modal-link" href="#" target="_blank" rel="noopener noreferrer" class="btn-primary mt-6 inline-block">Voir la certification complète</a>
     </div>
   </div>
 
@@ -449,6 +461,7 @@
     <!-- Filtres -->
     <div id="projects-filters" class="flex flex-wrap items-center justify-center gap-2 mb-10">
       <button class="proj-filter-btn filter-btn active" data-proj-filter="all">Tous</button>
+      <button class="proj-filter-btn filter-btn" data-proj-filter="cyber">Cyber / Infra</button>
       <button class="proj-filter-btn filter-btn" data-proj-filter="personal">Personnels</button>
       <button class="proj-filter-btn filter-btn" data-proj-filter="school">Scolaires</button>
     </div>
@@ -456,19 +469,19 @@
     <!-- Grille des projets -->
     <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-      <!-- ====== Projet Personnel : Portfolio ====== -->
-      <a href="https://github.com/VanStarkHohenheim/Portfolio" target="_blank"
-         class="project-card" data-scroll data-category="personal">
+      <!-- infra-osint-graph -->
+      <a href="https://github.com/VanStarkHohenheim/infra-osint-graph" target="_blank" rel="noopener noreferrer"
+         class="project-card" data-scroll data-category="cyber">
         <div class="project-card-body">
           <div class="flex items-start justify-between">
-            <h3 class="text-2xl font-bold text-light">Portfolio</h3>
-            <span class="badge">Front-End</span>
+            <h3 class="text-2xl font-bold text-light">Infra OSINT Graph</h3>
+            <span class="badge">Cyber</span>
           </div>
           <p class="text-gray-400 mt-3">
-            Mon site personnel développé en HTML, Tailwind et JavaScript. Présente mes compétences, parcours et projets en cybersécurité et développement.
+            Cartographie d’infrastructure via OSINT : relations domaine/sous-domaines avec Certificate Transparency, DNS brute-force, résolution IP/ASN et scoring d’anomalies (IsolationForest) avec rendu interactif PyVis.
           </p>
-          <div class="mt-5 flex items-center gap-3 text-sm text-gray-400">
-            <span class="tag">HTML</span><span class="tag">Tailwind</span><span class="tag">JS</span><span class="tag">UX</span>
+          <div class="mt-5 flex flex-wrap gap-2 text-sm text-gray-400">
+            <span class="tag">Python</span><span class="tag">OSINT</span><span class="tag">Django</span><span class="tag">PyVis</span><span class="tag">Network</span>
           </div>
         </div>
         <div class="project-card-footer">
@@ -476,19 +489,19 @@
         </div>
       </a>
 
-      <!-- ====== Projet Personnel : Elden Ring Landing ====== -->
-      <a href="https://github.com/VanStarkHohenheim/elden-ring-landing" target="_blank"
-         class="project-card" data-scroll data-category="personal">
+      <!-- tor-network-visualization -->
+      <a href="https://github.com/VanStarkHohenheim/tor-network-visualization" target="_blank" rel="noopener noreferrer"
+         class="project-card" data-scroll data-category="cyber">
         <div class="project-card-body">
           <div class="flex items-start justify-between">
-            <h3 class="text-2xl font-bold text-light">Elden Ring Landing</h3>
-            <span class="badge">Design Web</span>
+            <h3 class="text-2xl font-bold text-light">Tor Network Viz</h3>
+            <span class="badge">Cyber</span>
           </div>
           <p class="text-gray-400 mt-3">
-            Page d’accueil immersive inspirée du jeu <strong>Elden Ring</strong>. Conçue avec HTML, CSS et JS pour un rendu visuel cinématique et responsive.
+            Application interactive affichant les nœuds du réseau Tor sur une carte mondiale en temps réel, visualisant la décentralisation et la distribution globale de l’infrastructure Tor.
           </p>
-          <div class="mt-5 flex items-center gap-3 text-sm text-gray-400">
-            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span><span class="tag">Animation</span>
+          <div class="mt-5 flex flex-wrap gap-2 text-sm text-gray-400">
+            <span class="tag">HTML</span><span class="tag">JS</span><span class="tag">Tor</span><span class="tag">Cartographie</span>
           </div>
         </div>
         <div class="project-card-footer">
@@ -496,18 +509,18 @@
         </div>
       </a>
 
-      <!-- ====== Projet Scolaire : NotiLog ====== -->
-      <a href="https://github.com/VanStarkHohenheim/NotiLog" target="_blank"
-         class="project-card" data-scroll data-category="school">
+      <!-- NotiLog -->
+      <a href="https://github.com/VanStarkHohenheim/NotiLog" target="_blank" rel="noopener noreferrer"
+         class="project-card" data-scroll data-category="cyber">
         <div class="project-card-body">
           <div class="flex items-start justify-between">
             <h3 class="text-2xl font-bold text-light">NotiLog</h3>
-            <span class="badge">Script</span>
+            <span class="badge">Cyber</span>
           </div>
           <p class="text-gray-400 mt-3">
-            Script Bash affichant au démarrage les connexions SSH sur Debian. Objectif : renforcer la sécurité et la traçabilité.
+            Script Bash affichant au démarrage les connexions SSH actives sur Debian. Renforce la sécurité et la traçabilité des accès système.
           </p>
-          <div class="mt-5 flex items-center gap-3 text-sm text-gray-400">
+          <div class="mt-5 flex flex-wrap gap-2 text-sm text-gray-400">
             <span class="tag">Bash</span><span class="tag">Linux</span><span class="tag">SSH</span>
           </div>
         </div>
@@ -516,19 +529,199 @@
         </div>
       </a>
 
-      <!-- ====== Projet Scolaire : Auto Mailer iCloud ====== -->
-      <a href="https://github.com/VanStarkHohenheim/Portfolio" target="_blank"
-         class="project-card" data-scroll data-category="school">
+      <!-- Portfolio -->
+      <a href="https://github.com/VanStarkHohenheim/Portfolio" target="_blank" rel="noopener noreferrer"
+         class="project-card" data-scroll data-category="personal">
         <div class="project-card-body">
           <div class="flex items-start justify-between">
-            <h3 class="text-2xl font-bold text-light">Auto Mailer iCloud</h3>
+            <h3 class="text-2xl font-bold text-light">Portfolio</h3>
+            <span class="badge">Front-End</span>
+          </div>
+          <p class="text-gray-400 mt-3">
+            Site personnel développé en HTML, Tailwind CSS et JavaScript. Veille automatisée via GitHub Actions + RSS, carousel de stages, moteur de particules canvas.
+          </p>
+          <div class="mt-5 flex flex-wrap gap-2 text-sm text-gray-400">
+            <span class="tag">HTML</span><span class="tag">Tailwind</span><span class="tag">JS</span><span class="tag">GitHub Actions</span>
+          </div>
+        </div>
+        <div class="project-card-footer">
+          <span class="inline-flex items-center gap-2">Voir <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <!-- elden-ring-landing -->
+      <a href="https://github.com/VanStarkHohenheim/elden-ring-landing" target="_blank" rel="noopener noreferrer"
+         class="project-card" data-scroll data-category="personal">
+        <div class="project-card-body">
+          <div class="flex items-start justify-between">
+            <h3 class="text-2xl font-bold text-light">Elden Ring Landing</h3>
+            <span class="badge">Design Web</span>
+          </div>
+          <p class="text-gray-400 mt-3">
+            Page d’accueil immersive inspirée d’Elden Ring. Rendu visuel cinématique, animations CSS et JavaScript, entièrement responsive.
+          </p>
+          <div class="mt-5 flex flex-wrap gap-2 text-sm text-gray-400">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span><span class="tag">Animation</span>
+          </div>
+        </div>
+        <div class="project-card-footer">
+          <span class="inline-flex items-center gap-2">Voir <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <!-- Coinverter -->
+      <a href="https://github.com/VanStarkHohenheim/Coinverter" target="_blank" rel="noopener noreferrer"
+         class="project-card" data-scroll data-category="personal">
+        <div class="project-card-body">
+          <div class="flex items-start justify-between">
+            <h3 class="text-2xl font-bold text-light">Coinverter</h3>
+            <span class="badge">JS</span>
+          </div>
+          <p class="text-gray-400 mt-3">
+            Convertisseur de devises en JavaScript utilisant l’API ExchangeRate. Conversion en temps réel sur 160+ devises via Fetch API.
+          </p>
+          <div class="mt-5 flex flex-wrap gap-2 text-sm text-gray-400">
+            <span class="tag">JavaScript</span><span class="tag">API REST</span><span class="tag">HTML</span><span class="tag">CSS</span>
+          </div>
+        </div>
+        <div class="project-card-footer">
+          <span class="inline-flex items-center gap-2">Voir <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <!-- Auto-mail-excel -->
+      <a href="https://github.com/VanStarkHohenheim/Auto-mail-excel" target="_blank" rel="noopener noreferrer"
+         class="project-card" data-scroll data-category="personal">
+        <div class="project-card-body">
+          <div class="flex items-start justify-between">
+            <h3 class="text-2xl font-bold text-light">Auto Mail Excel</h3>
             <span class="badge">Python</span>
           </div>
           <p class="text-gray-400 mt-3">
-            Application Python permettant d’envoyer automatiquement des emails personnalisés depuis un fichier Excel via iCloud.
+            Script Python d’envoi d’emails personnalisés avec pièces jointes à partir d’un fichier Excel, via un compte iCloud comme expéditeur.
           </p>
-          <div class="mt-5 flex items-center gap-3 text-sm text-gray-400">
-            <span class="tag">Python</span><span class="tag">SMTP</span><span class="tag">Automatisation</span>
+          <div class="mt-5 flex flex-wrap gap-2 text-sm text-gray-400">
+            <span class="tag">Python</span><span class="tag">SMTP</span><span class="tag">Automatisation</span><span class="tag">Excel</span>
+          </div>
+        </div>
+        <div class="project-card-footer">
+          <span class="inline-flex items-center gap-2">Voir <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <!-- hackinnov -->
+      <a href="https://github.com/VanStarkHohenheim/hackinnov" target="_blank" rel="noopener noreferrer"
+         class="project-card" data-scroll data-category="school">
+        <div class="project-card-body">
+          <div class="flex items-start justify-between">
+            <h3 class="text-2xl font-bold text-light">Hackinnov</h3>
+            <span class="badge">PHP</span>
+          </div>
+          <p class="text-gray-400 mt-3">
+            Projet scolaire BTS SIO développé en PHP. Application web complète avec back-end PHP et base de données.
+          </p>
+          <div class="mt-5 flex flex-wrap gap-2 text-sm text-gray-400">
+            <span class="tag">PHP</span><span class="tag">Web</span><span class="tag">BTS SIO</span>
+          </div>
+        </div>
+        <div class="project-card-footer">
+          <span class="inline-flex items-center gap-2">Voir <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <!-- Locagest -->
+      <a href="https://github.com/VanStarkHohenheim/Locagest" target="_blank" rel="noopener noreferrer"
+         class="project-card" data-scroll data-category="school">
+        <div class="project-card-body">
+          <div class="flex items-start justify-between">
+            <h3 class="text-2xl font-bold text-light">Locagest</h3>
+            <span class="badge">Java</span>
+          </div>
+          <p class="text-gray-400 mt-3">
+            Application de gestion de baux locatifs développée en Java avec JavaFX. Interface graphique desktop pour la gestion de propriétés et contrats.
+          </p>
+          <div class="mt-5 flex flex-wrap gap-2 text-sm text-gray-400">
+            <span class="tag">Java</span><span class="tag">JavaFX</span><span class="tag">GUI</span><span class="tag">Gestion</span>
+          </div>
+        </div>
+        <div class="project-card-footer">
+          <span class="inline-flex items-center gap-2">Voir <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <!-- restiloc -->
+      <a href="https://github.com/VanStarkHohenheim/restiloc" target="_blank" rel="noopener noreferrer"
+         class="project-card" data-scroll data-category="school">
+        <div class="project-card-body">
+          <div class="flex items-start justify-between">
+            <h3 class="text-2xl font-bold text-light">Restiloc</h3>
+            <span class="badge">Java</span>
+          </div>
+          <p class="text-gray-400 mt-3">
+            Projet Java développé dans le cadre du BTS SIO SLAM. Application orientée objet avec gestion de données et interface utilisateur.
+          </p>
+          <div class="mt-5 flex flex-wrap gap-2 text-sm text-gray-400">
+            <span class="tag">Java</span><span class="tag">POO</span><span class="tag">BTS SIO</span>
+          </div>
+        </div>
+        <div class="project-card-footer">
+          <span class="inline-flex items-center gap-2">Voir <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <!-- SwingPendu -->
+      <a href="https://github.com/VanStarkHohenheim/SwingPendu" target="_blank" rel="noopener noreferrer"
+         class="project-card" data-scroll data-category="school">
+        <div class="project-card-body">
+          <div class="flex items-start justify-between">
+            <h3 class="text-2xl font-bold text-light">Swing Pendu</h3>
+            <span class="badge">Java</span>
+          </div>
+          <p class="text-gray-400 mt-3">
+            Jeu du Pendu en Java avec interface graphique Swing. Jeu interactif à deux joueurs avec rendu visuel complet.
+          </p>
+          <div class="mt-5 flex flex-wrap gap-2 text-sm text-gray-400">
+            <span class="tag">Java</span><span class="tag">Swing</span><span class="tag">GUI</span><span class="tag">Jeu</span>
+          </div>
+        </div>
+        <div class="project-card-footer">
+          <span class="inline-flex items-center gap-2">Voir <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <!-- Mini-Calc -->
+      <a href="https://github.com/VanStarkHohenheim/Mini-Calc" target="_blank" rel="noopener noreferrer"
+         class="project-card" data-scroll data-category="school">
+        <div class="project-card-body">
+          <div class="flex items-start justify-between">
+            <h3 class="text-2xl font-bold text-light">Mini-Calc</h3>
+            <span class="badge">Java</span>
+          </div>
+          <p class="text-gray-400 mt-3">
+            Calculatrice interactive en Java permettant des opérations mathématiques en cascade : addition, soustraction, multiplication et division.
+          </p>
+          <div class="mt-5 flex flex-wrap gap-2 text-sm text-gray-400">
+            <span class="tag">Java</span><span class="tag">CLI</span><span class="tag">Algorithmique</span>
+          </div>
+        </div>
+        <div class="project-card-footer">
+          <span class="inline-flex items-center gap-2">Voir <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <!-- Salle-du-temps -->
+      <a href="https://github.com/VanStarkHohenheim/Salle-du-temps" target="_blank" rel="noopener noreferrer"
+         class="project-card" data-scroll data-category="school">
+        <div class="project-card-body">
+          <div class="flex items-start justify-between">
+            <h3 class="text-2xl font-bold text-light">Salle du Temps</h3>
+            <span class="badge">C#</span>
+          </div>
+          <p class="text-gray-400 mt-3">
+            Collection d’exercices de programmation C# couvrant les concepts fondamentaux à intermédiaires : POO, gestion d’exceptions, structures de données.
+          </p>
+          <div class="mt-5 flex flex-wrap gap-2 text-sm text-gray-400">
+            <span class="tag">C#</span><span class="tag">POO</span><span class="tag">Algorithmique</span>
           </div>
         </div>
         <div class="project-card-footer">
@@ -538,7 +731,6 @@
 
     </div>
   </div>
-
 </section>
 
 
@@ -580,7 +772,7 @@
         <div class="timeline-card">
           <time class="timeline-time">Mars 2025</time>
           <h3 class="timeline-title">
-            <a href="https://www.defensenews.com/artificial-intelligence/2025/03/01/ai-military-autonomy-debate/" target="_blank" class="text-primary hover:underline">
+            <a href="https://www.defensenews.com/artificial-intelligence/2025/03/01/ai-military-autonomy-debate/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
               IA et autonomie militaire : le débat s’intensifie à l’ONU
             </a>
           </h3>
@@ -597,7 +789,7 @@
         <div class="timeline-card">
           <time class="timeline-time">Février 2025</time>
           <h3 class="timeline-title">
-            <a href="https://www.bfmtv.com/tech/intelligence-artificielle/deepseek-un-code-cache-envoie-les-donnees-a-une-entreprise-proche-de-l-armee-chinoise-selon-des-chercheurs_AV-202502050733.html" target="_blank" class="text-primary hover:underline">
+            <a href="https://www.bfmtv.com/tech/intelligence-artificielle/deepseek-un-code-cache-envoie-les-donnees-a-une-entreprise-proche-de-l-armee-chinoise-selon-des-chercheurs_AV-202502050733.html" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
               DeepSeek : soupçons de transfert de données vers un acteur militaire
             </a>
           </h3>
@@ -614,7 +806,7 @@
         <div class="timeline-card">
           <time class="timeline-time">Janvier 2025</time>
           <h3 class="timeline-title">
-            <a href="https://www.lemonde.fr/pixels/article/2025/01/20/l-intelligence-artificielle-et-la-cybersecurite-les-nouvelles-frontieres-du-risque_6211485_4408996.html" target="_blank" class="text-primary hover:underline">
+            <a href="https://www.lemonde.fr/pixels/article/2025/01/20/l-intelligence-artificielle-et-la-cybersecurite-les-nouvelles-frontieres-du-risque_6211485_4408996.html" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
               IA & cybersécurité : nouvelles frontières du risque
             </a>
           </h3>
@@ -631,7 +823,7 @@
         <div class="timeline-card">
           <time class="timeline-time">Décembre 2024</time>
           <h3 class="timeline-title">
-            <a href="https://www.zdnet.fr/actualites/openai-renforce-les-mesures-de-securite-de-chatgpt-face-aux-abus-en-cybersecurite-39967235.htm" target="_blank" class="text-primary hover:underline">
+            <a href="https://www.zdnet.fr/actualites/openai-renforce-les-mesures-de-securite-de-chatgpt-face-aux-abus-en-cybersecurite-39967235.htm" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
               OpenAI renforce la sécurité de ChatGPT
             </a>
           </h3>
@@ -648,7 +840,7 @@
         <div class="timeline-card">
           <time class="timeline-time">Novembre 2024</time>
           <h3 class="timeline-title">
-            <a href="https://www.theverge.com/2024/11/10/google-deepmind-cyberdefense-ai" target="_blank" class="text-primary hover:underline">
+            <a href="https://www.theverge.com/2024/11/10/google-deepmind-cyberdefense-ai" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
               DeepMind : IA de cyberdéfense prédictive
             </a>
           </h3>
@@ -664,7 +856,7 @@
         <div class="timeline-card">
           <time class="timeline-time">Octobre 2024</time>
           <h3 class="timeline-title">
-            <a href="https://www.defense.gov/newsroom/releases/ai-battlefield-simulation-2024" target="_blank" class="text-primary hover:underline">
+            <a href="https://www.defense.gov/newsroom/releases/ai-battlefield-simulation-2024" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
               Simulations de champ de bataille par IA
             </a>
           </h3>
@@ -681,7 +873,7 @@
         <div class="timeline-card">
           <time class="timeline-time">Septembre 2024</time>
           <h3 class="timeline-title">
-            <a href="https://www.cybersecurity-insiders.com/soc-automation-ai/" target="_blank" class="text-primary hover:underline">
+            <a href="https://www.cybersecurity-insiders.com/soc-automation-ai/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
               SOC automatisés : vers une cybersécurité militaire en temps réel
             </a>
           </h3>
@@ -771,7 +963,7 @@
               <span class="tag">Bash</span>
               <span class="tag">Python</span>
             </div>
-            <a href="photo/rapport_de_stage.pdf" target="_blank"
+            <a href="photo/rapport_de_stage.pdf" target="_blank" rel="noopener noreferrer"
                class="btn-report mt-5 inline-flex items-center gap-2">
               <i class="fas fa-file-alt text-primary"></i>
               <span>Voir le rapport de stage</span>
