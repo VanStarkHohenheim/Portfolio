@@ -428,8 +428,6 @@ document.addEventListener('keydown', (e) => {
   const slides = Array.from(track.querySelectorAll('.stage-slide'));
   let current = 0;
 
-  track.style.transition = 'transform .4s ease';
-
   function goTo(index) {
     current = (index + slides.length) % slides.length;
     track.style.transform = 'translateX(-' + (current * 100) + '%)';
