@@ -261,6 +261,37 @@ section{ padding:80px 0 }
 .veille-card:hover, .stage-hcard:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(0,0,0,.35); }
 .stage-hcard { flex-basis: 340px; }
 
+/* ===== Profile Card (gamification) ===== */
+.profile-card { border: 1px solid rgba(79,70,229,.35); box-shadow: 0 0 24px rgba(79,70,229,.12); }
+.profile-card-header {
+  background: var(--primary-color);
+  letter-spacing: .08em;
+}
+.profile-label {
+  font-family: monospace;
+  font-size: .7rem;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  min-width: 3.5rem;
+}
+.lang-bar {
+  height: 7px;
+  background: rgba(255,255,255,.08);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.lang-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary-color), #818cf8);
+  border-radius: 4px;
+  animation: fillBar .9s ease forwards;
+  transform-origin: left;
+}
+@keyframes fillBar {
+  from { width: 0 !important; }
+}
+
 .project-card{
   background: var(--dark-bg);
   border:1px solid rgba(255,255,255,.08);
