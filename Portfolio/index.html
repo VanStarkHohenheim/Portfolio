@@ -472,8 +472,8 @@
       <button class="proj-filter-btn filter-btn" data-proj-filter="school">Scolaires</button>
     </div>
 
-    <!-- Grille des projets -->
-    <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Frise horizontale des projets -->
+    <div id="projects-grid" class="hscroll-track">
 
       <!-- infra-osint-graph -->
       <a href="https://github.com/VanStarkHohenheim/infra-osint-graph" target="_blank" rel="noopener noreferrer"
@@ -786,136 +786,108 @@
       <strong>The Hacker News</strong>, <strong>Le Monde</strong>, <strong>Defense News</strong>.
     </p>
 
-    <!-- Frise chronologique -->
-    <div class="relative text-left max-w-4xl mx-auto">
-      <!-- Ligne verticale continue -->
-      <div class="absolute left-1/2 -translate-x-1/2 h-full w-[3px] bg-gradient-to-b from-primary via-primary/70 to-primary hidden lg:block"></div>
-
-      <!-- Items dynamiques (remplacés par JS si veille-data.json est disponible) -->
-      <div id="veille-items">
+    <!-- Frise horizontale articles -->
+    <div id="veille-items" class="hscroll-track">
 
       <!-- Mars 2025 -->
-      <div class="timeline-item" data-scroll>
-        <div class="timeline-dot"></div>
-        <div class="timeline-card">
-          <time class="timeline-time">Mars 2025</time>
-          <h3 class="timeline-title">
-            <a href="https://www.defensenews.com/artificial-intelligence/2025/03/01/ai-military-autonomy-debate/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
-              IA et autonomie militaire : le débat s’intensifie à l’ONU
-            </a>
-          </h3>
-          <p class="timeline-text">
-            Les Nations unies discutent de la régulation des systèmes d’armes autonomes. 
-            De nombreux pays appellent à un traité international garantissant le contrôle humain sur les décisions létales.
-          </p>
-        </div>
+      <div class="veille-card">
+        <time class="timeline-time">Mars 2025</time>
+        <h3 class="timeline-title">
+          <a href="https://www.defensenews.com/artificial-intelligence/2025/03/01/ai-military-autonomy-debate/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
+            IA et autonomie militaire : le débat s’intensifie à l’ONU
+          </a>
+        </h3>
+        <p class="timeline-text">
+          Les Nations unies discutent de la régulation des systèmes d’armes autonomes.
+          De nombreux pays appellent à un traité international garantissant le contrôle humain sur les décisions létales.
+        </p>
       </div>
 
       <!-- Février 2025 -->
-      <div class="timeline-item lg:timeline-item-right" data-scroll>
-        <div class="timeline-dot"></div>
-        <div class="timeline-card">
-          <time class="timeline-time">Février 2025</time>
-          <h3 class="timeline-title">
-            <a href="https://www.bfmtv.com/tech/intelligence-artificielle/deepseek-un-code-cache-envoie-les-donnees-a-une-entreprise-proche-de-l-armee-chinoise-selon-des-chercheurs_AV-202502050733.html" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
-              DeepSeek : soupçons de transfert de données vers un acteur militaire
-            </a>
-          </h3>
-          <p class="timeline-text">
-            Des chercheurs découvrent un code caché envoyant des données à une entreprise liée à l’armée chinoise, 
-            relançant le débat sur la dualité civile/militaire des IA open-source.
-          </p>
-        </div>
+      <div class="veille-card">
+        <time class="timeline-time">Février 2025</time>
+        <h3 class="timeline-title">
+          <a href="https://www.bfmtv.com/tech/intelligence-artificielle/deepseek-un-code-cache-envoie-les-donnees-a-une-entreprise-proche-de-l-armee-chinoise-selon-des-chercheurs_AV-202502050733.html" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
+            DeepSeek : soupçons de transfert de données vers un acteur militaire
+          </a>
+        </h3>
+        <p class="timeline-text">
+          Des chercheurs découvrent un code caché envoyant des données à une entreprise liée à l’armée chinoise,
+          relançant le débat sur la dualité civile/militaire des IA open-source.
+        </p>
       </div>
 
       <!-- Janvier 2025 -->
-      <div class="timeline-item" data-scroll>
-        <div class="timeline-dot"></div>
-        <div class="timeline-card">
-          <time class="timeline-time">Janvier 2025</time>
-          <h3 class="timeline-title">
-            <a href="https://www.lemonde.fr/pixels/article/2025/01/20/l-intelligence-artificielle-et-la-cybersecurite-les-nouvelles-frontieres-du-risque_6211485_4408996.html" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
-              IA & cybersécurité : nouvelles frontières du risque
-            </a>
-          </h3>
-          <p class="timeline-text">
-            Les IA génératives sont désormais capables d’imiter des communications militaires et de générer de faux ordres.
-            Les États renforcent leurs protocoles d’authentification pour éviter les détournements.
-          </p>
-        </div>
+      <div class="veille-card">
+        <time class="timeline-time">Janvier 2025</time>
+        <h3 class="timeline-title">
+          <a href="https://www.lemonde.fr/pixels/article/2025/01/20/l-intelligence-artificielle-et-la-cybersecurite-les-nouvelles-frontieres-du-risque_6211485_4408996.html" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
+            IA &amp; cybersécurité : nouvelles frontières du risque
+          </a>
+        </h3>
+        <p class="timeline-text">
+          Les IA génératives sont désormais capables d’imiter des communications militaires et de générer de faux ordres.
+          Les États renforcent leurs protocoles d’authentification pour éviter les détournements.
+        </p>
       </div>
 
       <!-- Décembre 2024 -->
-      <div class="timeline-item lg:timeline-item-right" data-scroll>
-        <div class="timeline-dot"></div>
-        <div class="timeline-card">
-          <time class="timeline-time">Décembre 2024</time>
-          <h3 class="timeline-title">
-            <a href="https://www.zdnet.fr/actualites/openai-renforce-les-mesures-de-securite-de-chatgpt-face-aux-abus-en-cybersecurite-39967235.htm" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
-              OpenAI renforce la sécurité de ChatGPT
-            </a>
-          </h3>
-          <p class="timeline-text">
-            OpenAI introduit de nouvelles mesures contre l’exploitation militaire ou politique de ses modèles : 
-            détection des requêtes liées à la reconnaissance d’images satellites et aux armes automatisées.
-          </p>
-        </div>
+      <div class="veille-card">
+        <time class="timeline-time">Décembre 2024</time>
+        <h3 class="timeline-title">
+          <a href="https://www.zdnet.fr/actualites/openai-renforce-les-mesures-de-securite-de-chatgpt-face-aux-abus-en-cybersecurite-39967235.htm" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
+            OpenAI renforce la sécurité de ChatGPT
+          </a>
+        </h3>
+        <p class="timeline-text">
+          OpenAI introduit de nouvelles mesures contre l’exploitation militaire ou politique de ses modèles :
+          détection des requêtes liées à la reconnaissance d’images satellites et aux armes automatisées.
+        </p>
       </div>
 
       <!-- Novembre 2024 -->
-      <div class="timeline-item" data-scroll>
-        <div class="timeline-dot"></div>
-        <div class="timeline-card">
-          <time class="timeline-time">Novembre 2024</time>
-          <h3 class="timeline-title">
-            <a href="https://www.theverge.com/2024/11/10/google-deepmind-cyberdefense-ai" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
-              DeepMind : IA de cyberdéfense prédictive
-            </a>
-          </h3>
-          <p class="timeline-text">
-            L’IA de Google DeepMind permet de simuler des attaques cyber offensives pour mieux renforcer la défense des réseaux critiques militaires et civils.
-          </p>
-        </div>
+      <div class="veille-card">
+        <time class="timeline-time">Novembre 2024</time>
+        <h3 class="timeline-title">
+          <a href="https://www.theverge.com/2024/11/10/google-deepmind-cyberdefense-ai" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
+            DeepMind : IA de cyberdéfense prédictive
+          </a>
+        </h3>
+        <p class="timeline-text">
+          L’IA de Google DeepMind permet de simuler des attaques cyber offensives pour mieux renforcer la défense des réseaux critiques militaires et civils.
+        </p>
       </div>
 
       <!-- Octobre 2024 -->
-      <div class="timeline-item lg:timeline-item-right" data-scroll>
-        <div class="timeline-dot"></div>
-        <div class="timeline-card">
-          <time class="timeline-time">Octobre 2024</time>
-          <h3 class="timeline-title">
-            <a href="https://www.defense.gov/newsroom/releases/ai-battlefield-simulation-2024" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
-              Simulations de champ de bataille par IA
-            </a>
-          </h3>
-          <p class="timeline-text">
-            Des IA tactiques testées par plusieurs armées occidentales assistent les états-majors dans la prévision des mouvements ennemis 
-            et la coordination des unités sur le terrain.
-          </p>
-        </div>
+      <div class="veille-card">
+        <time class="timeline-time">Octobre 2024</time>
+        <h3 class="timeline-title">
+          <a href="https://www.defense.gov/newsroom/releases/ai-battlefield-simulation-2024" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
+            Simulations de champ de bataille par IA
+          </a>
+        </h3>
+        <p class="timeline-text">
+          Des IA tactiques testées par plusieurs armées occidentales assistent les états-majors dans la prévision des mouvements ennemis et la coordination des unités sur le terrain.
+        </p>
       </div>
 
       <!-- Septembre 2024 -->
-      <div class="timeline-item" data-scroll>
-        <div class="timeline-dot"></div>
-        <div class="timeline-card">
-          <time class="timeline-time">Septembre 2024</time>
-          <h3 class="timeline-title">
-            <a href="https://www.cybersecurity-insiders.com/soc-automation-ai/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
-              SOC automatisés : vers une cybersécurité militaire en temps réel
-            </a>
-          </h3>
-          <p class="timeline-text">
-            L’IA automatise les réponses dans les centres de commandement cyber militaires, 
-            permettant d’identifier et d’isoler une menace avant propagation.
-          </p>
-        </div>
+      <div class="veille-card">
+        <time class="timeline-time">Septembre 2024</time>
+        <h3 class="timeline-title">
+          <a href="https://www.cybersecurity-insiders.com/soc-automation-ai/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
+            SOC automatisés : vers une cybersécurité militaire en temps réel
+          </a>
+        </h3>
+        <p class="timeline-text">
+          L’IA automatise les réponses dans les centres de commandement cyber militaires,
+          permettant d’identifier et d’isoler une menace avant propagation.
+        </p>
       </div>
 
-      </div><!-- /#veille-items -->
+    </div><!-- /#veille-items -->
 
-      <p id="veille-updated" class="text-center text-gray-500 text-sm mt-8"></p>
-    </div>
+    <p id="veille-updated" class="text-center text-gray-500 text-sm mt-4"></p>
   </div>
 </section>
 <!-- Stages (frise) -->

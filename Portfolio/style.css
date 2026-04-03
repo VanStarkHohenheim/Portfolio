@@ -231,6 +231,35 @@ section{ padding:80px 0 }
 
 
 /* Projects */
+/* ===== Frise horizontale (Veille + Projets) ===== */
+.hscroll-track {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding: 0.5rem 0.25rem 1.25rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-color) rgba(255,255,255,.05);
+}
+.hscroll-track::-webkit-scrollbar       { height: 5px; }
+.hscroll-track::-webkit-scrollbar-track { background: rgba(255,255,255,.05); border-radius: 3px; }
+.hscroll-track::-webkit-scrollbar-thumb { background: var(--primary-color); border-radius: 3px; }
+
+.veille-card {
+  flex: 0 0 300px;
+  scroll-snap-align: start;
+  background: rgba(0,0,0,.35);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.veille-card:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(0,0,0,.35); }
+
 .project-card{
   background: var(--dark-bg);
   border:1px solid rgba(255,255,255,.08);
@@ -239,6 +268,8 @@ section{ padding:80px 0 }
   transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
   text-align:left; overflow:hidden;
   display:flex; flex-direction:column;
+  flex: 0 0 300px;
+  scroll-snap-align: start;
 }
 .project-card:hover{ transform:translateY(-5px); box-shadow:var(--shadow-md); border-color:rgba(255,255,255,.14) }
 .project-card-body{ padding:1.5rem }

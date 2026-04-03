@@ -28,31 +28,23 @@
     .then(data => {
       if (!data.articles || !data.articles.length) return;
 
-      container.innerHTML = data.articles.map((a, i) => {
-        const right = i % 2 === 1 ? ' lg:timeline-item-right' : '';
-        const src   = a.source ? ` · <span class="font-normal">${escapeHtml(a.source)}</span>` : '';
+      container.innerHTML = data.articles.map(a => {
+        const src = a.source ? ` · <span class="font-normal">${escapeHtml(a.source)}</span>` : '';
         return `
-          <div class="timeline-item${right}" data-scroll>
-            <div class="timeline-dot"></div>
-            <div class="timeline-card">
-              <time class="timeline-time">${escapeHtml(a.date)}${src}</time>
-              <h3 class="timeline-title">
-                <a href="${safeUrl(a.link)}" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
-                  ${escapeHtml(a.title)}
-                </a>
-              </h3>
-              <p class="timeline-text">${escapeHtml(a.summary)}</p>
-            </div>
+          <div class="veille-card">
+            <time class="timeline-time">${escapeHtml(a.date)}${src}</time>
+            <h3 class="timeline-title">
+              <a href="${safeUrl(a.link)}" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
+                ${escapeHtml(a.title)}
+              </a>
+            </h3>
+            <p class="timeline-text">${escapeHtml(a.summary)}</p>
           </div>`;
       }).join('');
 
       if (updatedEl && data.updated) {
         updatedEl.textContent = 'Dernière mise à jour : ' + data.updated;
       }
-
-      container.querySelectorAll('[data-scroll]').forEach(el => {
-        if (window.__scrollRevealObserver) window.__scrollRevealObserver.observe(el);
-      });
     })
     .catch(() => { /* Fallback : les items statiques restent affichés */ });
 })();
@@ -67,7 +59,7 @@
   window.__scrollRevealObserver = io;
   // Uniquement les sections hors Stages pour éviter que les cards disparaissent
   document.querySelectorAll('[data-scroll]').forEach(el => {
-    if (!el.closest('#Stages')) {
+    if (!el.closest('#Stages') && !el.closest('.hscroll-track')) {
       el.classList.add('reveal');
       io.observe(el);
     }
