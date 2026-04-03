@@ -1,6 +1,6 @@
 """
-Fetches RSS feeds from cybersecurity / AI-military sources,
-filters by keywords and writes veille-data.json at the repo root.
+Fetches RSS feeds, filters articles that mention BOTH AI and military topics,
+and writes veille-data.json.
 """
 
 import feedparser
@@ -16,27 +16,36 @@ from email.utils import parsedate_to_datetime
 RSS_FEEDS = [
     "https://feeds.feedburner.com/TheHackersNews",
     "https://feeds.feedburner.com/Securityweek",
-    "https://www.schneier.com/feed/atom/",
-    "https://www.cert.ssi.gouv.fr/feed/",
-    "https://www.bleepingcomputer.com/feed/",
-    "https://www.zdnet.fr/feeds/rss/actualites/securite/",
+    "https://www.defensenews.com/arc/outboundfeeds/rss/",
+    "https://www.lemonde.fr/international/rss_full.xml",
     "https://www.lemonde.fr/pixels/rss_full.xml",
     "https://www.01net.com/feed/",
+    "https://www.lefigaro.fr/rss/figaro_international.xml",
 ]
 
 # ---------------------------------------------------------------------------
-# Mots-clés (un seul suffit pour garder l'article)
+# Deux groupes : un article doit matcher AU MOINS UN de chaque groupe
 # ---------------------------------------------------------------------------
-KEYWORDS = [
+AI_KEYWORDS = [
     "intelligence artificielle", "artificial intelligence",
     "machine learning", "deep learning",
-    "armement", "arme", "weapon", "military", "militaire",
-    "drone", "autonomous weapon", "armes autonomes",
-    "cyber", "cybersécurité", "cybersecurity",
-    "défense", "defense", "defence",
-    "deepseek", "openai", "chatgpt", "llm", "gpt",
-    "robot soldat", "killbot", "lethal autonomous",
-    "renseignement artificiel", "algorithme militaire",
+    "algorithme", "autonome", "autonomous",
+    "deepseek", "chatgpt", "gpt", "llm",
+    "modèle d'ia", "système d'ia", "ai system",
+    "réseau de neurones", "neural network",
+]
+
+MILITARY_KEYWORDS = [
+    "armement", "armes autonomes", "autonomous weapon", "lethal autonomous",
+    "militaire", "military", "armée", "army",
+    "soldat", "soldier", "combat", "battlefield", "champ de bataille",
+    "guerre", "warfare", "war ",
+    "drone", "uav", "missile",
+    "otan", "nato", "pentagone", "pentagon", "darpa",
+    "défense nationale", "national defense", "national defence",
+    "robot soldat", "killbot", "systèmes d'armes", "weapon system",
+    "renseignement militaire", "cyber militaire", "cyberguerre", "cyberwar",
+    "lavender", "project convergence", "sala", "laws ",
 ]
 
 MAX_ARTICLES = 20
@@ -44,13 +53,11 @@ OUTPUT_FILE = "Portfolio/veille-data.json"
 
 
 def strip_html(text: str) -> str:
-    """Remove HTML tags and collapse whitespace."""
     text = re.sub(r"<[^>]+>", " ", text or "")
     return re.sub(r"\s+", " ", text).strip()
 
 
 def parse_date(entry) -> tuple[str, float]:
-    """Return (human-readable month/year, unix timestamp)."""
     for field in ("published", "updated"):
         raw = entry.get(field, "")
         if not raw:
@@ -70,7 +77,9 @@ def parse_date(entry) -> tuple[str, float]:
 
 def matches(text: str) -> bool:
     t = text.lower()
-    return any(kw in t for kw in KEYWORDS)
+    has_ai       = any(kw in t for kw in AI_KEYWORDS)
+    has_military = any(kw in t for kw in MILITARY_KEYWORDS)
+    return has_ai and has_military
 
 
 def fetch_all() -> list[dict]:
@@ -82,7 +91,7 @@ def fetch_all() -> list[dict]:
             source_name = feed.feed.get("title", url)
 
             for entry in feed.entries[:15]:
-                title = strip_html(entry.get("title", ""))
+                title   = strip_html(entry.get("title", ""))
                 summary = strip_html(
                     entry.get("summary", "") or entry.get("description", "")
                 )[:400]
@@ -90,24 +99,22 @@ def fetch_all() -> list[dict]:
 
                 if not title or not link:
                     continue
-                if not (matches(title) or matches(summary)):
+                combined = title + " " + summary
+                if not matches(combined):
                     continue
 
                 date_label, ts = parse_date(entry)
-                articles.append(
-                    {
-                        "title": title,
-                        "summary": summary,
-                        "link": link,
-                        "date": date_label,
-                        "timestamp": ts,
-                        "source": source_name,
-                    }
-                )
+                articles.append({
+                    "title":     title,
+                    "summary":   summary,
+                    "link":      link,
+                    "date":      date_label,
+                    "timestamp": ts,
+                    "source":    source_name,
+                })
         except Exception as exc:
             print(f"[WARN] {url} → {exc}", file=sys.stderr)
 
-    # Deduplicate by title, sort newest first
     seen: set[str] = set()
     unique: list[dict] = []
     for a in sorted(articles, key=lambda x: x["timestamp"], reverse=True):

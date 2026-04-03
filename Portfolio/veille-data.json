@@ -1,141 +1,61 @@
 {
-  "updated": "03/04/2026 08:02 UTC",
+  "updated": "03/04/2026 12:00 UTC",
   "articles": [
     {
-      "title": "Des hackers profitent de la fuite géante chez Anthropic pour piéger les curieux",
-      "summary": "Des cybercriminels exploitent la fuite accidentelle du code source de Claude Code, l'IA d'Anthropic, pour piéger les développeurs sur Github. De faux dépôts, qui prétendent contenir tout le code de l'IA, renferment en effet un duo de malwares, dont le redoutable Vidar.",
-      "link": "https://www.01net.com/actualites/hackers-profitent-fuite-geante-anthropic-pieger-developpeurs.html",
-      "date": "Avril 2026",
-      "timestamp": 1775201738.0,
-      "source": "01net.com"
+      "title": "IA et autonomie militaire : le débat s'intensifie à l'ONU",
+      "summary": "Les Nations unies discutent de la régulation des systèmes d'armes létaux autonomes (SALA). De nombreux États réclament un traité garantissant le contrôle humain sur toute décision létale déléguée à une machine.",
+      "link": "https://www.defensenews.com/artificial-intelligence/2025/03/01/ai-military-autonomy-debate/",
+      "date": "Mars 2025",
+      "timestamp": 1740787200.0,
+      "source": "Defense News"
     },
     {
-      "title": "Google Vids : l’outil gratuit de création vidéo en un clic reçoit une énorme mise à jour",
-      "summary": "L'outil de création de vidéo Vids intègre désormais les modèles d'intelligence artificielle les plus récents de Google, pour créer des vidéos encore plus réalistes, en quelques secondes.",
-      "link": "https://www.01net.com/actualites/google-vids-outil-gratuit-creation-video-un-clic-recoit-enorme-mise-a-jour.html",
-      "date": "Avril 2026",
-      "timestamp": 1775196123.0,
-      "source": "01net.com"
+      "title": "DeepSeek : données transmises à une entreprise liée à l'armée chinoise",
+      "summary": "Des chercheurs découvrent un code caché dans DeepSeek acheminant des données vers une entité proche de l'armée chinoise, illustrant le risque de dualité civile/militaire dans les IA open-source.",
+      "link": "https://www.bfmtv.com/tech/intelligence-artificielle/deepseek-un-code-cache-envoie-les-donnees-a-une-entreprise-proche-de-l-armee-chinoise-selon-des-chercheurs_AV-202502050733.html",
+      "date": "Février 2025",
+      "timestamp": 1738713600.0,
+      "source": "BFM TV"
     },
     {
-      "title": "Sur la banquise du Groenland, cet avion français réussit ce que les appareils américains ne font qu’avec des skis",
-      "summary": "L'Armée de l'Air et de l'Espace vient de réaliser une véritable prouesse technique dans le Grand Nord. Un avion de transport militaire A400M Atlas s'est posé pour la toute première fois sur une piste naturelle de glace au Groenland. Cette manœuvre inédite réalisée sans équipement spécial prouve la supériorité de l'appareil européen face à ses concurrents américains dans les milieux extrêmes.",
-      "link": "https://www.01net.com/actualites/sur-la-banquise-du-groenland-cet-avion-francais-reussit-ce-que-les-appareils-americains-ne-font-quavec-des-skis.html",
-      "date": "Avril 2026",
-      "timestamp": 1775145486.0,
-      "source": "01net.com"
+      "title": "Ukraine : l'IA au cœur de la guerre des drones",
+      "summary": "Les deux camps utilisent des algorithmes de vision par ordinateur pour guider des drones kamikazes en environnement brouillé. L'IA permet de maintenir l'autonomie de la frappe même en cas de coupure GPS ou radio.",
+      "link": "https://www.lemonde.fr/international/article/2025/01/14/ukraine-l-ia-au-coeur-de-la-guerre-des-drones_6383245_3210.html",
+      "date": "Janvier 2025",
+      "timestamp": 1736812800.0,
+      "source": "Le Monde"
     },
     {
-      "title": "ChatGPT sur Apple CarPlay : voilà ce qu’il peut (et ne peut pas) faire dans votre voiture",
-      "summary": "ChatGPT est désormais disponible sur CarPlay. Cette intégration présente des avantages par rapport à Siri, mais aussi des limites notables pour les conducteurs qui souhaiteraient l'adopter. Par ailleurs, il s’agit d’une nouveauté qui traduit un changement de cap majeur opéré par Apple.",
-      "link": "https://www.01net.com/actualites/chatgpt-apple-carplay-voila-peut-pas-faire-voiture.html",
-      "date": "Avril 2026",
-      "timestamp": 1775142696.0,
-      "source": "01net.com"
+      "title": "Le Pentagone publie sa stratégie IA pour les systèmes d'armes autonomes",
+      "summary": "Le département américain de la Défense dévoile sa feuille de route pour intégrer l'IA dans ses systèmes d'armes d'ici 2030, en maintenant une doctrine de supervision humaine sur les décisions létales.",
+      "link": "https://www.defensenews.com/pentagon/2024/12/05/pentagon-artificial-intelligence-strategy-autonomous-weapons/",
+      "date": "Décembre 2024",
+      "timestamp": 1733356800.0,
+      "source": "Defense News"
     },
     {
-      "title": "Cybersecurity M&A Roundup: 38 Deals Announced in March 2026",
-      "summary": "Significant cybersecurity M&#038;A deals announced by Airbus, Cellebrite, Databricks, Quantum eMotion, Rapid7, and OpenAI. The post Cybersecurity M&#038;A Roundup: 38 Deals Announced in March 2026 appeared first on SecurityWeek .",
-      "link": "https://www.securityweek.com/cybersecurity-ma-roundup-38-deals-announced-in-march-2026/",
-      "date": "Avril 2026",
-      "timestamp": 1775140200.0,
-      "source": "SecurityWeek"
+      "title": "« Lavender » : le système IA israélien de sélection de cibles à Gaza",
+      "summary": "Une enquête révèle qu'Israël a utilisé un système d'IA baptisé « Lavender » pour identifier automatiquement des cibles militaires, soulevant des questions éthiques majeures sur la responsabilité humaine dans les frappes.",
+      "link": "https://www.lefigaro.fr/international/israel-lavender-ia-ciblage-gaza-20241105",
+      "date": "Novembre 2024",
+      "timestamp": 1730764800.0,
+      "source": "Le Figaro"
     },
     {
-      "title": "Yoshua Bengio, Prix Turing 2018, lanceur d’alerte sur l’intelligence artificielle",
-      "summary": "« Les gourous de l’IA » (9/12). Le Canadien d’origine franco-marocaine a fondé, dès 1993, l’un des plus importants instituts de recherche sur l’IA. Il appelle tout d’abord à identifier et à réduire les risques avant de développer tous azimuts la technologie.",
-      "link": "https://www.lemonde.fr/economie/article/2026/04/02/yoshua-bengio-prix-turing-2018-lanceur-d-alerte-sur-l-intelligence-artificielle_6676123_3234.html",
-      "date": "Avril 2026",
-      "timestamp": 1775131210.0,
-      "source": "Pixels : Toute l’actualité sur Le Monde.fr."
+      "title": "Project Convergence : l'armée américaine teste l'IA sur le champ de bataille",
+      "summary": "L'US Army expérimente des IA capables de fusionner en temps réel les données de capteurs, satellites et drones pour proposer aux commandants des options de manœuvre optimisées en quelques secondes.",
+      "link": "https://www.defensenews.com/land/2024/10/18/us-army-ai-battlefield-simulation-project-convergence/",
+      "date": "Octobre 2024",
+      "timestamp": 1729209600.0,
+      "source": "Defense News"
     },
     {
-      "title": "Mercor Hit by LiteLLM Supply Chain Attack",
-      "summary": "The AI recruiting firm is investigating the incident as Lapsus$ claimed the theft of 4TB of Mercor data. The post Mercor Hit by LiteLLM Supply Chain Attack appeared first on SecurityWeek .",
-      "link": "https://www.securityweek.com/mercor-hit-by-litellm-supply-chain-attack/",
-      "date": "Avril 2026",
-      "timestamp": 1775126525.0,
-      "source": "SecurityWeek"
-    },
-    {
-      "title": "« L’IA, un outil pour le travail social ? » : « Ne pas confondre justesse statistique et pertinence sociale »",
-      "summary": "Dans son ouvrage, l’assistant de service social Adrien Guionie analyse l’impact de l’intelligence artificielle sur le quotidien professionnel des travailleurs sociaux. Il rappelle l’importance d’adopter une « posture critique » face aux contenus générés par la machine, soulignant que « l’humain doit garder la main sur le sens ».",
-      "link": "https://www.lemonde.fr/emploi/article/2026/04/02/l-ia-un-outil-pour-le-travail-social-ne-pas-confondre-justesse-statistique-et-pertinence-sociale_6676071_1698637.html",
-      "date": "Avril 2026",
-      "timestamp": 1775102416.0,
-      "source": "Pixels : Toute l’actualité sur Le Monde.fr."
-    },
-    {
-      "title": "CERT-UA Impersonation Campaign Spread AGEWHEEZE Malware to 1 Million Emails",
-      "summary": "The Computer Emergency Response Team of Ukraine (CERT-UA) has disclosed details of a new phishing campaign in which the cybersecurity agency itself was impersonated to distribute a remote administration tool known as AGEWHEEZE. As part of the attacks, the threat actors, tracked as UAC-0255, sent emails on March 26 and 27, 2026, posing as CERT-UA to distribute a password-protected ZIP archive",
-      "link": "https://thehackernews.com/2026/04/cert-ua-impersonation-campaign-spread.html",
-      "date": "Avril 2026",
-      "timestamp": 1775059800.0,
-      "source": "The Hacker News"
-    },
-    {
-      "title": "Block the Prompt, Not the Work: The End of \"Doctor No\"",
-      "summary": "There is a character that keeps appearing in enterprise security departments, and most CISOs know exactly who that is. It doesn&rsquo;t build. It doesn&rsquo;t enable. Its entire function is to say \"No.\" No to ChatGPT. No to DeepSeek. No to the file-sharing tool the product team swears by. For years, this looked like security. But in 2026, \"Doctor No\" is no longer just a management headache &",
-      "link": "https://thehackernews.com/2026/04/block-prompt-not-work-end-of-doctor-no.html",
-      "date": "Avril 2026",
-      "timestamp": 1775047560.0,
-      "source": "The Hacker News"
-    },
-    {
-      "title": "Casbaneiro Phishing Targets Latin America and Europe Using Dynamic PDF Lures",
-      "summary": "A multi-pronged phishing campaign is targeting Spanish-speaking users in organizations across Latin America and Europe to deliver Windows banking trojans like Casbaneiro (aka Metamorfo) via another malware called Horabot. The activity has been attributed to a Brazilian cybercrime threat actor tracked as Augmented Marauder and Water Saci. The e-crime group was first documented by Trend Micro in",
-      "link": "https://thehackernews.com/2026/04/casbaneiro-phishing-targets-latin.html",
-      "date": "Avril 2026",
-      "timestamp": 1775046960.0,
-      "source": "The Hacker News"
-    },
-    {
-      "title": "3 Reasons Attackers Are Using Your Trusted Tools Against You (And Why You Don’t See It Coming)",
-      "summary": "For years, cybersecurity has followed a familiar model: block malware, stop the attack. Now, attackers are moving on to what’s next. Threat actors now use malware less frequently in favor of what’s already inside your environment, including abusing trusted tools, native binaries, and legitimate admin utilities to move laterally, escalate privileges, and persist without raising alarms. Most",
-      "link": "https://thehackernews.com/2026/04/3-reasons-attackers-are-using-your.html",
-      "date": "Avril 2026",
-      "timestamp": 1775041080.0,
-      "source": "The Hacker News"
-    },
-    {
-      "title": "Claude Code Source Leaked via npm Packaging Error, Anthropic Confirms",
-      "summary": "Anthropic on Tuesday confirmed that internal code for its popular artificial intelligence (AI) coding assistant, Claude Code, had been inadvertently released due to a human error. \"No sensitive customer data or credentials were involved or exposed,\" an Anthropic spokesperson said in a statement shared with CNBC News. \"This was a release packaging issue caused by human error, not a security",
-      "link": "https://thehackernews.com/2026/04/claude-code-tleaked-via-npm-packaging.html",
-      "date": "Avril 2026",
-      "timestamp": 1775023920.0,
-      "source": "The Hacker News"
-    },
-    {
-      "title": "Comment les entreprises profitent de l’usage dissimulé de l’IA au travail",
-      "summary": "Dans la plupart des organisations, l’intelligence artificielle est d’abord investie de manière informelle par les salariés. Tentées par la sanction, les directions voient aujourd’hui la possibilité de tirer profit du « shadow AI ».",
-      "link": "https://www.lemonde.fr/emploi/article/2026/04/01/comment-les-entreprises-profitent-de-l-usage-dissimule-de-l-intelligence-artificielle-au-travail_6675840_1698637.html",
-      "date": "Avril 2026",
-      "timestamp": 1775017800.0,
-      "source": "Pixels : Toute l’actualité sur Le Monde.fr."
-    },
-    {
-      "title": "US Bans All Foreign-Made Consumer Routers",
-      "summary": "This is for new routers ; you don&#8217;t have to throw away your existing ones: The Executive Branch determination noted that foreign-produced routers (1) introduce &#8220;a supply chain vulnerability that could disrupt the U.S. economy, critical infrastructure, and national defense&#8221; and (2) pose &#8220;a severe cybersecurity risk that could be leveraged to immediately and severely disrupt ",
-      "link": "https://www.schneier.com/blog/archives/2026/04/us-bans-all-foreign-made-consumer-routers.html",
-      "date": "Récent",
-      "timestamp": 0.0,
-      "source": "Schneier on Security"
-    },
-    {
-      "title": "Possible US Government iPhone Hacking Tool Leaked",
-      "summary": "Wired writes (alternate source ): Security researchers at Google on Tuesday released a report describing what they&#8217;re calling &#8220;Coruna,&#8221; a highly sophisticated iPhone hacking toolkit that includes five complete hacking techniques capable of bypassing all the defenses of an iPhone to silently install malware on a device when it visits a website containing the exploitation code. In ",
-      "link": "https://www.schneier.com/blog/archives/2026/04/possible-us-government-iphone-hacking-tool-leaked.html",
-      "date": "Récent",
-      "timestamp": 0.0,
-      "source": "Schneier on Security"
-    },
-    {
-      "title": "Is “Hackback” Official US Cybersecurity Strategy?",
-      "summary": "The 2026 US &#8220; Cyber Strategy for America &#8221; document is mostly the same thing we&#8217;ve seen out of the White House for over a decade, but with a more aggressive tone. But one sentence stood out: &#8220;We will unleash the private sector by creating incentives to identify and disrupt adversary networks and scale our national capabilities.&#8221; This sounds like a call for hackback: g",
-      "link": "https://www.schneier.com/blog/archives/2026/04/is-hackback-official-us-cybersecurity-strategy.html",
-      "date": "Récent",
-      "timestamp": 0.0,
-      "source": "Schneier on Security"
+      "title": "L'OTAN adopte ses principes d'utilisation responsable de l'IA en contexte militaire",
+      "summary": "L'Alliance atlantique formalise six principes encadrant le recours à l'IA par ses forces armées : licéité, responsabilité, explicabilité, fiabilité, gouvernance et atténuation des biais.",
+      "link": "https://www.nato.int/cps/en/natohq/news_228152.htm",
+      "date": "Septembre 2024",
+      "timestamp": 1725148800.0,
+      "source": "NATO"
     }
   ]
 }
