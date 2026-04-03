@@ -1,6 +1,62 @@
 {
-  "updated": "02/04/2026 09:33 UTC",
+  "updated": "03/04/2026 08:02 UTC",
   "articles": [
+    {
+      "title": "Des hackers profitent de la fuite géante chez Anthropic pour piéger les curieux",
+      "summary": "Des cybercriminels exploitent la fuite accidentelle du code source de Claude Code, l'IA d'Anthropic, pour piéger les développeurs sur Github. De faux dépôts, qui prétendent contenir tout le code de l'IA, renferment en effet un duo de malwares, dont le redoutable Vidar.",
+      "link": "https://www.01net.com/actualites/hackers-profitent-fuite-geante-anthropic-pieger-developpeurs.html",
+      "date": "Avril 2026",
+      "timestamp": 1775201738.0,
+      "source": "01net.com"
+    },
+    {
+      "title": "Google Vids : l’outil gratuit de création vidéo en un clic reçoit une énorme mise à jour",
+      "summary": "L'outil de création de vidéo Vids intègre désormais les modèles d'intelligence artificielle les plus récents de Google, pour créer des vidéos encore plus réalistes, en quelques secondes.",
+      "link": "https://www.01net.com/actualites/google-vids-outil-gratuit-creation-video-un-clic-recoit-enorme-mise-a-jour.html",
+      "date": "Avril 2026",
+      "timestamp": 1775196123.0,
+      "source": "01net.com"
+    },
+    {
+      "title": "Sur la banquise du Groenland, cet avion français réussit ce que les appareils américains ne font qu’avec des skis",
+      "summary": "L'Armée de l'Air et de l'Espace vient de réaliser une véritable prouesse technique dans le Grand Nord. Un avion de transport militaire A400M Atlas s'est posé pour la toute première fois sur une piste naturelle de glace au Groenland. Cette manœuvre inédite réalisée sans équipement spécial prouve la supériorité de l'appareil européen face à ses concurrents américains dans les milieux extrêmes.",
+      "link": "https://www.01net.com/actualites/sur-la-banquise-du-groenland-cet-avion-francais-reussit-ce-que-les-appareils-americains-ne-font-quavec-des-skis.html",
+      "date": "Avril 2026",
+      "timestamp": 1775145486.0,
+      "source": "01net.com"
+    },
+    {
+      "title": "ChatGPT sur Apple CarPlay : voilà ce qu’il peut (et ne peut pas) faire dans votre voiture",
+      "summary": "ChatGPT est désormais disponible sur CarPlay. Cette intégration présente des avantages par rapport à Siri, mais aussi des limites notables pour les conducteurs qui souhaiteraient l'adopter. Par ailleurs, il s’agit d’une nouveauté qui traduit un changement de cap majeur opéré par Apple.",
+      "link": "https://www.01net.com/actualites/chatgpt-apple-carplay-voila-peut-pas-faire-voiture.html",
+      "date": "Avril 2026",
+      "timestamp": 1775142696.0,
+      "source": "01net.com"
+    },
+    {
+      "title": "Cybersecurity M&A Roundup: 38 Deals Announced in March 2026",
+      "summary": "Significant cybersecurity M&#038;A deals announced by Airbus, Cellebrite, Databricks, Quantum eMotion, Rapid7, and OpenAI. The post Cybersecurity M&#038;A Roundup: 38 Deals Announced in March 2026 appeared first on SecurityWeek .",
+      "link": "https://www.securityweek.com/cybersecurity-ma-roundup-38-deals-announced-in-march-2026/",
+      "date": "Avril 2026",
+      "timestamp": 1775140200.0,
+      "source": "SecurityWeek"
+    },
+    {
+      "title": "Yoshua Bengio, Prix Turing 2018, lanceur d’alerte sur l’intelligence artificielle",
+      "summary": "« Les gourous de l’IA » (9/12). Le Canadien d’origine franco-marocaine a fondé, dès 1993, l’un des plus importants instituts de recherche sur l’IA. Il appelle tout d’abord à identifier et à réduire les risques avant de développer tous azimuts la technologie.",
+      "link": "https://www.lemonde.fr/economie/article/2026/04/02/yoshua-bengio-prix-turing-2018-lanceur-d-alerte-sur-l-intelligence-artificielle_6676123_3234.html",
+      "date": "Avril 2026",
+      "timestamp": 1775131210.0,
+      "source": "Pixels : Toute l’actualité sur Le Monde.fr."
+    },
+    {
+      "title": "Mercor Hit by LiteLLM Supply Chain Attack",
+      "summary": "The AI recruiting firm is investigating the incident as Lapsus$ claimed the theft of 4TB of Mercor data. The post Mercor Hit by LiteLLM Supply Chain Attack appeared first on SecurityWeek .",
+      "link": "https://www.securityweek.com/mercor-hit-by-litellm-supply-chain-attack/",
+      "date": "Avril 2026",
+      "timestamp": 1775126525.0,
+      "source": "SecurityWeek"
+    },
     {
       "title": "« L’IA, un outil pour le travail social ? » : « Ne pas confondre justesse statistique et pertinence sociale »",
       "summary": "Dans son ouvrage, l’assistant de service social Adrien Guionie analyse l’impact de l’intelligence artificielle sur le quotidien professionnel des travailleurs sociaux. Il rappelle l’importance d’adopter une « posture critique » face aux contenus générés par la machine, soulignant que « l’humain doit garder la main sur le sens ».",
@@ -16,14 +72,6 @@
       "date": "Avril 2026",
       "timestamp": 1775059800.0,
       "source": "The Hacker News"
-    },
-    {
-      "title": "Toy Giant Hasbro Hit by Cyberattack",
-      "summary": "The company is investigating the full scope of the incident, including whether any files have been compromised. The post Toy Giant Hasbro Hit by Cyberattack appeared first on SecurityWeek .",
-      "link": "https://www.securityweek.com/toy-giant-hasbro-hit-by-cyberattack/",
-      "date": "Avril 2026",
-      "timestamp": 1775057747.0,
-      "source": "SecurityWeek"
     },
     {
       "title": "Block the Prompt, Not the Work: The End of \"Doctor No\"",
@@ -66,28 +114,20 @@
       "source": "Pixels : Toute l’actualité sur Le Monde.fr."
     },
     {
-      "title": "Vertex AI Vulnerability Exposes Google Cloud Data and Private Artifacts",
-      "summary": "Cybersecurity researchers have disclosed a security \"blind spot\" in Google Cloud's Vertex AI platform that could allow artificial intelligence (AI) agents to be weaponized by an attacker to gain unauthorized access to sensitive data and compromise an organization's cloud environment. According to Palo Alto Networks Unit 42, the issue relates to how the Vertex AI permission model can be misused",
-      "link": "https://thehackernews.com/2026/03/vertex-ai-vulnerability-exposes-google.html",
-      "date": "Mars 2026",
-      "timestamp": 1774962540.0,
-      "source": "The Hacker News"
+      "title": "US Bans All Foreign-Made Consumer Routers",
+      "summary": "This is for new routers ; you don&#8217;t have to throw away your existing ones: The Executive Branch determination noted that foreign-produced routers (1) introduce &#8220;a supply chain vulnerability that could disrupt the U.S. economy, critical infrastructure, and national defense&#8221; and (2) pose &#8220;a severe cybersecurity risk that could be leveraged to immediately and severely disrupt ",
+      "link": "https://www.schneier.com/blog/archives/2026/04/us-bans-all-foreign-made-consumer-routers.html",
+      "date": "Récent",
+      "timestamp": 0.0,
+      "source": "Schneier on Security"
     },
     {
-      "title": "The AI Arms Race – Why Unified Exposure Management Is Becoming a Boardroom Priority",
-      "summary": "The cybersecurity landscape is accelerating at an unprecedented rate. What is emerging is not simply a rise in the number of vulnerabilities or tools, but a dramatic increase in speed. Speed of attack, speed of exploitation, and speed of change across modern environments. This is the defining challenge of the new era of digital warfare: the weaponization of Artificial Intelligence. Threat actors",
-      "link": "https://thehackernews.com/2026/03/the-ai-arms-race-why-unified-exposure.html",
-      "date": "Mars 2026",
-      "timestamp": 1774957800.0,
-      "source": "The Hacker News"
-    },
-    {
-      "title": "Silver Fox Expands Asia Cyber Campaign with AtlasCross RAT and Fake Domains",
-      "summary": "Chinese-speaking users are the target of an active campaign that uses typosquatted domains impersonating trusted software brands to deliver a previously undocumented remote access trojan named AtlasCross RAT. \"The operation covers VPN clients, encrypted messengers, video conferencing tools, cryptocurrency trackers, and e-commerce applications, with eleven confirmed delivery domains impersonating",
-      "link": "https://thehackernews.com/2026/03/silver-fox-expands-asia-cyber-campaign.html",
-      "date": "Mars 2026",
-      "timestamp": 1774957560.0,
-      "source": "The Hacker News"
+      "title": "Possible US Government iPhone Hacking Tool Leaked",
+      "summary": "Wired writes (alternate source ): Security researchers at Google on Tuesday released a report describing what they&#8217;re calling &#8220;Coruna,&#8221; a highly sophisticated iPhone hacking toolkit that includes five complete hacking techniques capable of bypassing all the defenses of an iPhone to silently install malware on a device when it visits a website containing the exploitation code. In ",
+      "link": "https://www.schneier.com/blog/archives/2026/04/possible-us-government-iphone-hacking-tool-leaked.html",
+      "date": "Récent",
+      "timestamp": 0.0,
+      "source": "Schneier on Security"
     },
     {
       "title": "Is “Hackback” Official US Cybersecurity Strategy?",
