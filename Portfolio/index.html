@@ -780,11 +780,21 @@
     </p>
 
     <h3 class="text-3xl font-bold text-primary mb-6" data-scroll>- Outils de veille -</h3>
-    <p class="mb-14 max-w-3xl mx-auto text-gray-200">
-      <strong>Feedly</strong>, <strong>Google Alerts</strong>, <strong>X/Twitter</strong>, <strong>LinkedIn</strong>,
-      <strong>GitHub Trending</strong>, <strong>ZDNet</strong>, <strong>BleepingComputer</strong>, 
-      <strong>The Hacker News</strong>, <strong>Le Monde</strong>, <strong>Defense News</strong>.
-    </p>
+    <div class="mb-14 max-w-3xl mx-auto text-gray-200 space-y-3">
+      <p>
+        <strong>Feedly</strong>, <strong>Google Alerts</strong>, <strong>X/Twitter</strong>, <strong>LinkedIn</strong>,
+        <strong>GitHub Trending</strong>, <strong>ZDNet</strong>, <strong>BleepingComputer</strong>,
+        <strong>The Hacker News</strong>, <strong>Le Monde</strong>, <strong>Defense News</strong>.
+      </p>
+      <p class="text-sm text-gray-400">
+        <i class="fas fa-robot text-primary mr-1"></i>
+        <strong class="text-gray-200">Mise à jour automatisée</strong> — les articles affichés ci-dessous sont collectés
+        automatiquement via un script <strong class="text-gray-200">Python</strong> qui interroge plusieurs flux RSS,
+        filtre par mots-clés (IA, cybersécurité, armement…) et génère un fichier <code class="text-primary">veille-data.json</code>.
+        L'exécution est orchestrée par <strong class="text-gray-200">GitHub Actions</strong> grâce à un fichier
+        <code class="text-primary">update-veille.yml</code> planifié toutes les 12 heures — sans intervention manuelle.
+      </p>
+    </div>
 
     <!-- Frise horizontale articles -->
     <div id="veille-items" class="hscroll-track">
