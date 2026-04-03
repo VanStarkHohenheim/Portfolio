@@ -412,7 +412,7 @@ document.addEventListener('keydown', (e) => {
 
 (function stagesFilter(){
   const bar  = document.getElementById('stages-filters');
-  const items = Array.from(document.querySelectorAll('#Stages .timeline-item'));
+  const items = Array.from(document.querySelectorAll('#Stages .stage-hcard'));
   if(!bar || !items.length) return;
 
   bar.addEventListener('click', e=>{
