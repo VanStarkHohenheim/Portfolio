@@ -1,61 +1,21 @@
 {
-  "updated": "03/04/2026 12:00 UTC",
+  "updated": "04/04/2026 07:48 UTC",
   "articles": [
     {
-      "title": "IA et autonomie militaire : le débat s'intensifie à l'ONU",
-      "summary": "Les Nations unies discutent de la régulation des systèmes d'armes létaux autonomes (SALA). De nombreux États réclament un traité garantissant le contrôle humain sur toute décision létale déléguée à une machine.",
-      "link": "https://www.defensenews.com/artificial-intelligence/2025/03/01/ai-military-autonomy-debate/",
-      "date": "Mars 2025",
-      "timestamp": 1740787200.0,
-      "source": "Defense News"
+      "title": "« Sur les réseaux sociaux, on finit par suivre la guerre comme on suit une télé-réalité »",
+      "summary": "Dans une tribune au « Monde », l’étudiante en sciences politiques Romane de Colonges analyse la manière dont les algorithmes présentent les images relatives au conflit au Moyen-Orient, jusqu’à en faire des contenus aseptisés, « reproductibles et oubliables », altérant notre rapport moral et politique à la guerre.",
+      "link": "https://www.lemonde.fr/idees/article/2026/04/03/sur-les-reseaux-sociaux-on-finit-par-suivre-la-guerre-comme-on-suit-une-tele-realite_6676329_3232.html",
+      "date": "Avril 2026",
+      "timestamp": 1775194208.0,
+      "source": "Pixels : Toute l’actualité sur Le Monde.fr."
     },
     {
-      "title": "DeepSeek : données transmises à une entreprise liée à l'armée chinoise",
-      "summary": "Des chercheurs découvrent un code caché dans DeepSeek acheminant des données vers une entité proche de l'armée chinoise, illustrant le risque de dualité civile/militaire dans les IA open-source.",
-      "link": "https://www.bfmtv.com/tech/intelligence-artificielle/deepseek-un-code-cache-envoie-les-donnees-a-une-entreprise-proche-de-l-armee-chinoise-selon-des-chercheurs_AV-202502050733.html",
-      "date": "Février 2025",
-      "timestamp": 1738713600.0,
-      "source": "BFM TV"
-    },
-    {
-      "title": "Ukraine : l'IA au cœur de la guerre des drones",
-      "summary": "Les deux camps utilisent des algorithmes de vision par ordinateur pour guider des drones kamikazes en environnement brouillé. L'IA permet de maintenir l'autonomie de la frappe même en cas de coupure GPS ou radio.",
-      "link": "https://www.lemonde.fr/international/article/2025/01/14/ukraine-l-ia-au-coeur-de-la-guerre-des-drones_6383245_3210.html",
-      "date": "Janvier 2025",
-      "timestamp": 1736812800.0,
-      "source": "Le Monde"
-    },
-    {
-      "title": "Le Pentagone publie sa stratégie IA pour les systèmes d'armes autonomes",
-      "summary": "Le département américain de la Défense dévoile sa feuille de route pour intégrer l'IA dans ses systèmes d'armes d'ici 2030, en maintenant une doctrine de supervision humaine sur les décisions létales.",
-      "link": "https://www.defensenews.com/pentagon/2024/12/05/pentagon-artificial-intelligence-strategy-autonomous-weapons/",
-      "date": "Décembre 2024",
-      "timestamp": 1733356800.0,
-      "source": "Defense News"
-    },
-    {
-      "title": "« Lavender » : le système IA israélien de sélection de cibles à Gaza",
-      "summary": "Une enquête révèle qu'Israël a utilisé un système d'IA baptisé « Lavender » pour identifier automatiquement des cibles militaires, soulevant des questions éthiques majeures sur la responsabilité humaine dans les frappes.",
-      "link": "https://www.lefigaro.fr/international/israel-lavender-ia-ciblage-gaza-20241105",
-      "date": "Novembre 2024",
-      "timestamp": 1730764800.0,
-      "source": "Le Figaro"
-    },
-    {
-      "title": "Project Convergence : l'armée américaine teste l'IA sur le champ de bataille",
-      "summary": "L'US Army expérimente des IA capables de fusionner en temps réel les données de capteurs, satellites et drones pour proposer aux commandants des options de manœuvre optimisées en quelques secondes.",
-      "link": "https://www.defensenews.com/land/2024/10/18/us-army-ai-battlefield-simulation-project-convergence/",
-      "date": "Octobre 2024",
-      "timestamp": 1729209600.0,
-      "source": "Defense News"
-    },
-    {
-      "title": "L'OTAN adopte ses principes d'utilisation responsable de l'IA en contexte militaire",
-      "summary": "L'Alliance atlantique formalise six principes encadrant le recours à l'IA par ses forces armées : licéité, responsabilité, explicabilité, fiabilité, gouvernance et atténuation des biais.",
-      "link": "https://www.nato.int/cps/en/natohq/news_228152.htm",
-      "date": "Septembre 2024",
-      "timestamp": 1725148800.0,
-      "source": "NATO"
+      "title": "Comment les entreprises profitent de l’usage dissimulé de l’IA au travail",
+      "summary": "Dans la plupart des organisations, l’intelligence artificielle est d’abord investie de manière informelle par les salariés. Tentées par la sanction, les directions voient aujourd’hui la possibilité de tirer profit du « shadow AI ».",
+      "link": "https://www.lemonde.fr/emploi/article/2026/04/01/comment-les-entreprises-profitent-de-l-usage-dissimule-de-l-intelligence-artificielle-au-travail_6675840_1698637.html",
+      "date": "Avril 2026",
+      "timestamp": 1775017800.0,
+      "source": "Pixels : Toute l’actualité sur Le Monde.fr."
     }
   ]
 }
