@@ -1,13 +1,13 @@
 {
-  "updated": "09/04/2026 08:20 UTC",
+  "updated": "10/04/2026 08:21 UTC",
   "articles": [
     {
-      "title": "La proposition de loi qui veut renverser le rapport de force entre IA et auteurs a été adoptée au Sénat",
-      "summary": "Honnie des développeurs d'IA, bénie des auteurs : la proposition de loi sénatoriale, qui vise à rééquilibrer les rapports de force entre sociétés d'IA et créateurs, a été adoptée à l'unanimité mercredi 8 avril au Sénat. Le texte pourrait changer le paysage actuel du secteur de l'intelligence artificielle.",
-      "link": "https://www.01net.com/actualites/pourquoi-la-proposition-de-loi-examinee-ce-mercredi-au-senat-pourrait-renverser-le-rapport-de-force-entre-ia-et-auteurs.html",
+      "title": "Pentagon’s ouster of Anthropic opens doors for small AI rivals",
+      "summary": "Small defense industry artificial intelligence startups are suddenly fielding calls from generals, combatant commanders and deep-pocketed investors.",
+      "link": "https://www.defensenews.com/pentagon/2026/04/09/pentagons-ouster-of-anthropic-opens-doors-for-small-ai-rivals/",
       "date": "Avril 2026",
-      "timestamp": 1775709435.0,
-      "source": "01net.com"
+      "timestamp": 1775741905.0,
+      "source": "Defense News"
     },
     {
       "title": "Anthropic's Claude Mythos Finds Thousands of Zero-Day Flaws Across Major Systems",
@@ -16,14 +16,6 @@
       "date": "Avril 2026",
       "timestamp": 1775639760.0,
       "source": "The Hacker News"
-    },
-    {
-      "title": "Outpaced by the US, China’s military places selective bets on artificial intelligence",
-      "summary": "China may have surpassed the United States in AI for drone swarms, one Taiwan-based analyst said.",
-      "link": "https://www.defensenews.com/global/asia-pacific/2026/04/07/outpaced-by-the-us-chinas-military-places-selective-bets-on-artificial-intelligence/",
-      "date": "Avril 2026",
-      "timestamp": 1775555858.0,
-      "source": "Defense News"
     }
   ]
 }
