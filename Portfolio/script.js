@@ -411,9 +411,19 @@ document.addEventListener('keydown', (e) => {
 })();
 
 (function stagesFilter(){
-  const bar  = document.getElementById('stages-filters');
+  const bar   = document.getElementById('stages-filters');
+  const track = document.getElementById('stages-track-h');
   const items = Array.from(document.querySelectorAll('#Stages .stage-hcard'));
   if(!bar || !items.length) return;
+
+  let emptyMsg = document.getElementById('stages-empty-msg');
+  if(!emptyMsg){
+    emptyMsg = document.createElement('p');
+    emptyMsg.id = 'stages-empty-msg';
+    emptyMsg.className = 'text-gray-500 italic py-6 w-full text-center hidden';
+    emptyMsg.textContent = 'Aucun stage de prévu pour l\'instant.';
+    track.after(emptyMsg);
+  }
 
   bar.addEventListener('click', e=>{
     const btn = e.target.closest('[data-stage-filter]');
@@ -421,10 +431,16 @@ document.addEventListener('keydown', (e) => {
     const current = (btn.dataset.stageFilter || 'all').toLowerCase();
     bar.querySelectorAll('.stage-filter-btn').forEach(b=>b.classList.toggle('active', b===btn));
 
+    let visible = 0;
     items.forEach(it=>{
       const status = (it.dataset.status || '').toLowerCase();
-      it.style.display = ((current==='all') || (status===current)) ? '' : 'none';
+      const show = (current==='all') || (status===current);
+      it.style.display = show ? '' : 'none';
+      if(show) visible++;
     });
+
+    emptyMsg.classList.toggle('hidden', visible > 0);
+    track.classList.toggle('hidden', visible === 0);
   });
 })();
 

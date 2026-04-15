@@ -28,22 +28,26 @@
 <body class="bg-dark text-light font-sans leading-relaxed overflow-x-hidden">
   <!-- Navbar -->
   <header class="fixed top-0 left-0 w-full navbar-bg z-50 shadow-lg">
-    <div class="container mx-auto flex justify-between items-center py-4 px-6">
-      <a href="#hero" class="text-primary text-2xl font-bold tracking-tight" aria-label="Accueil">MB.</a>
+    <div class="container mx-auto flex justify-between items-center py-3 px-6">
+      <a href="#hero" class="text-primary text-xl font-bold tracking-tight flex-shrink-0 mr-4" aria-label="Accueil">MB.</a>
 
-      <nav class="hidden md:flex items-center space-x-6">
+      <nav class="hidden md:flex items-center gap-0.5 flex-nowrap overflow-x-auto" style="-ms-overflow-style:none;scrollbar-width:none;">
         <a href="#hero" class="nav-link">Accueil</a>
-        <a href="#about" class="nav-link">À propos</a>
-        <a href="#objectifs" class="nav-link">Objectifs</a>
+        <span class="nav-sep"></span>
+        <a href="#about" class="nav-link">À&nbsp;propos</a>
         <a href="#parcours" class="nav-link">Parcours</a>
-        <a href="#bts-sio" class="nav-link">BTS SIO</a>
-        <a href="#skills" class="nav-link">Certifications</a>
-        <a href="#competences" class="nav-link">Compétences</a>
-        <a href="#projects-pro" class="nav-link">Projets</a>
-        <a href="#Veille" class="nav-link">Veille</a>
+        <a href="#bts-sio" class="nav-link">BTS&nbsp;SIO</a>
+        <a href="#objectifs" class="nav-link">Objectifs</a>
+        <span class="nav-sep"></span>
         <a href="#Stages" class="nav-link">Stages</a>
+        <a href="#projects-pro" class="nav-link">Projets</a>
+        <span class="nav-sep"></span>
+        <a href="#competences" class="nav-link">Compétences</a>
+        <a href="#skills" class="nav-link">Certifications</a>
         <a href="#synthese" class="nav-link">Synthèse</a>
-        <a href="#contact" class="nav-link">Contact</a>
+        <span class="nav-sep"></span>
+        <a href="#Veille" class="nav-link">Veille</a>
+        <a href="#reseaux" class="nav-link">Réseaux</a>
       </nav>
 
       <button id="menu-toggle" class="block text-light md:hidden focus:outline-none" aria-label="Ouvrir le menu">
@@ -56,15 +60,16 @@
       <nav class="px-6 py-4 space-y-3">
         <a href="#hero" class="mobile-link">Accueil</a>
         <a href="#about" class="mobile-link">À propos</a>
-        <a href="#objectifs" class="mobile-link">Objectifs</a>
         <a href="#parcours" class="mobile-link">Parcours</a>
         <a href="#bts-sio" class="mobile-link">BTS SIO</a>
-        <a href="#skills" class="mobile-link">Certifications</a>
-        <a href="#competences" class="mobile-link">Compétences</a>
-        <a href="#projects-pro" class="mobile-link">Projets</a>
-        <a href="#Veille" class="mobile-link">Veille</a>
+        <a href="#objectifs" class="mobile-link">Objectifs</a>
         <a href="#Stages" class="mobile-link">Stages</a>
+        <a href="#projects-pro" class="mobile-link">Projets</a>
+        <a href="#competences" class="mobile-link">Compétences</a>
+        <a href="#skills" class="mobile-link">Certifications</a>
         <a href="#synthese" class="mobile-link">Synthèse</a>
+        <a href="#Veille" class="mobile-link">Veille</a>
+        <a href="#reseaux" class="mobile-link">Réseaux</a>
         <a href="#contact" class="mobile-link">Contact</a>
       </nav>
     </div>
@@ -128,7 +133,7 @@
             </div>
             <div class="flex items-baseline gap-3">
               <span class="profile-label">SPÉC.</span>
-              <span class="text-light font-semibold">Cybersécurité · Linux · Infra</span>
+              <span class="text-light font-semibold">Développement logiciel · Linux · Bug Bounty</span>
             </div>
           </div>
 
@@ -184,6 +189,133 @@
       </div>
     </div>
 
+  </div>
+</section>
+
+<!-- Parcours scolaire -->
+<section id="parcours" class="bg-surface-1 py-24">
+  <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-bold text-primary mb-4" data-scroll>Parcours scolaire</h2>
+    <p class="mb-14 max-w-2xl mx-auto text-gray-300" data-scroll>
+      Mon chemin académique, de l'obtention du bac jusqu'à la formation actuelle en <strong>BTS SIO SLAM</strong>.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+
+      <!-- Bac STI2D -->
+      <div class="glass-card p-6 text-left flex flex-col gap-3" data-scroll>
+        <div class="text-primary text-3xl"><i class="fas fa-graduation-cap"></i></div>
+        <span class="text-primary text-xs font-semibold uppercase tracking-widest">2022 – 2024</span>
+        <h3 class="text-lg font-bold text-light">Bac STI2D<br>Option SIN</h3>
+        <p class="text-gray-400 text-sm leading-relaxed">
+          Sciences et Technologies de l'Industrie et du Développement Durable —
+          spécialité <strong class="text-gray-300">Systèmes d'Information et Numérique</strong>.
+        </p>
+        <p class="text-gray-500 text-sm mt-auto"><i class="fas fa-school mr-1"></i> Lycée Le Corbusier</p>
+      </div>
+
+      <!-- BUT Informatique -->
+      <div class="glass-card p-6 text-left flex flex-col gap-3" data-scroll>
+        <div class="text-primary text-3xl"><i class="fas fa-university"></i></div>
+        <span class="text-primary text-xs font-semibold uppercase tracking-widest">2024 – 2025</span>
+        <h3 class="text-lg font-bold text-light">1ʳᵉ année BUT<br>Informatique</h3>
+        <p class="text-gray-400 text-sm leading-relaxed">
+          Formation universitaire technologique en développement logiciel, algorithmique et réseaux.
+        </p>
+        <p class="text-gray-500 text-sm mt-auto"><i class="fas fa-map-marker-alt mr-1"></i> IUT d'Annecy</p>
+      </div>
+
+      <!-- BTS SIO SLAM -->
+      <div class="glass-card p-6 text-left flex flex-col gap-3 border-primary/30" data-scroll>
+        <div class="text-primary text-3xl"><i class="fas fa-laptop-code"></i></div>
+        <span class="text-primary text-xs font-semibold uppercase tracking-widest">2025 – 2026 · En cours</span>
+        <h3 class="text-lg font-bold text-light">BTS SIO<br>Option SLAM</h3>
+        <p class="text-gray-400 text-sm leading-relaxed">
+          Services Informatiques aux Organisations —
+          spécialité <strong class="text-gray-300">Solutions Logicielles et Applications Métiers</strong>.
+        </p>
+        <p class="text-gray-500 text-sm mt-auto"><i class="fas fa-map-marker-alt mr-1"></i> ENC Paris 17</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="bts-sio" class="min-h-screen bg-dark py-24">
+  <div class="container mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold text-primary" data-scroll>BTS Services Informatiques aux Organisations</h2>
+      <p class="text-gray-300 max-w-3xl mx-auto mt-4" data-scroll>
+        Un diplôme en 2 ans qui prépare aux métiers de l’IT, avec deux options complémentaires : <strong>SLAM</strong> (développement) et <strong>SISR</strong> (infrastructures).
+        Il permet l’insertion pro rapide ou la poursuite d’études.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <!-- Présentation -->
+      <div class="info-card p-8" data-scroll>
+        <div class="flex items-center gap-3">
+          <i class="fas fa-graduation-cap text-primary text-2xl"></i>
+          <h3 class="text-2xl font-bold text-light">Présentation</h3>
+        </div>
+        <p class="text-gray-300 mt-4">
+          Le BTS SIO forme à la mise en œuvre de solutions numériques au sein des organisations : analyse des besoins,
+          sécurité, qualité de service, documentation et collaboration.
+        </p>
+        <ul class="text-gray-300 mt-4 space-y-2 list-disc list-inside">
+          <li>Approche professionnelle (projets, stages, support aux utilisateurs).</li>
+          <li>Culture de la sécurité et des bonnes pratiques IT.</li>
+          <li>Montée en compétences progressive (de la maîtrise d’outils à l’autonomie).</li>
+        </ul>
+      </div>
+
+      <!-- SLAM -->
+      <div class="info-card p-8" data-scroll>
+        <div class="flex items-center gap-3">
+          <i class="fas fa-code-branch text-primary text-2xl"></i>
+          <h3 class="text-2xl font-bold text-light">Option SLAM — Développement</h3>
+        </div>
+        <p class="text-gray-300 mt-4">
+          Conception et réalisation d’applications (web, API), intégration continue, tests et maintenance.
+          Le cœur du parcours : <strong>rigueur méthodologique</strong> et qualité logicielle.
+        </p>
+        <ul class="text-gray-300 mt-4 space-y-2 list-disc list-inside">
+          <li>Analyse & modélisation (UML/MCD), <em>patterns</em> (MVC), documentation.</li>
+          <li>Back-end (ex. Laravel, Python), front (HTML/CSS/JS, frameworks), APIs REST.</li>
+          <li>Bases de données (SQL, migrations, optimisation), sécurité applicative.</li>
+          <li>Tests (unitaires/fonctionnels), CI/CD, revues de code, versionning Git.</li>
+        </ul>
+        <div class="mt-4">
+          <span class="badge">Choix personnel</span>
+          <p class="text-gray-300 mt-2">
+            <strong>J’ai choisi l’option SLAM pour sa rigueur</strong> : cadrage des besoins, conception structurée,
+            exigence de qualité (tests, revues, sécurité), et traçabilité (docs & versions).
+            Cette discipline correspond à ma manière de travailler et à mes projets (Linux, cybersécurité, web).
+          </p>
+        </div>
+      </div>
+
+      <!-- SISR -->
+      <div class="info-card p-8" data-scroll>
+        <div class="flex items-center gap-3">
+          <i class="fas fa-network-wired text-primary text-2xl"></i>
+          <h3 class="text-2xl font-bold text-light">Option SISR — Infrastructures</h3>
+        </div>
+        <p class="text-gray-300 mt-4">
+          Conception, déploiement et supervision d’infrastructures : réseaux, systèmes, virtualisation et sécurité opérationnelle.
+        </p>
+        <ul class="text-gray-300 mt-4 space-y-2 list-disc list-inside">
+          <li>Administration systèmes (Linux/Windows), services (SSH, HTTP, DNS, etc.).</li>
+          <li>Réseaux (adressage, VLAN, routage), pare-feu, haute disponibilité.</li>
+          <li>Virtualisation & conteneurs (VMware, Docker), sauvegardes & PRA.</li>
+          <li>Supervision, journalisation, durcissement, conformité et continuité de service.</li>
+        </ul>
+        <p class="text-gray-300 mt-4">
+          Parcours idéal pour les métiers d’<em>admin système/réseau</em>, d’<em>ops</em> ou de <em>support/production</em>,
+          en lien direct avec la sécurité opérationnelle.
+        </p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -274,334 +406,108 @@
   </div>
 </section>
 
- <!-- Section Réseaux & Profil -->
-<section id="reseaux" class="bg-dark py-24">
+<!-- Stages (frise) -->
+<section id="Stages" class="bg-surface-1 py-24">
   <div class="container mx-auto text-center">
-    <h2 class="text-4xl font-bold text-primary mb-12" data-scroll>Réseaux & Profil professionnel</h2>
-    <p class="text-gray-300 max-w-3xl mx-auto mb-16" data-scroll>
-      Retrouvez mes profils et documents professionnels.  
-      Ces plateformes reflètent mon parcours, mes projets et mes ambitions dans la cybersécurité et le développement.
+    <h1 class="text-4xl font-bold text-primary mb-6" data-scroll>Stages</h1>
+    <p class="mb-10 max-w-3xl mx-auto text-gray-200" data-scroll>
+      Mes <strong>expériences en entreprise</strong>. Filtre par statut pour aller à l’essentiel.
     </p>
 
-    <!-- Grille des cartes -->
-    <div class="grid gap-8 md:grid-cols-3 max-w-6xl mx-auto">
-      
-      <!-- Carte CV -->
-      <a href="CV-ATS-SHERPA-LP.pdf" target="_blank" rel="noopener noreferrer" data-scroll
-         class="glass-card p-8 flex flex-col items-center justify-center text-center transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg">
-        <div class="text-primary text-5xl mb-4">
-          <i class="fas fa-file-alt"></i>
-        </div>
-        <h3 class="text-2xl font-bold text-light mb-2">Mon CV</h3>
-        <p class="text-gray-400 mb-4">
-          Consultez mon <strong>CV à jour</strong> (BTS SIO SLAM & Prépa ATS) pour découvrir mes compétences et projets récents.
-        </p>
-        <span class="inline-flex items-center gap-2 text-primary font-medium">
-          Ouvrir le CV <i class="fas fa-arrow-right"></i>
-        </span>
-      </a>
-
-      <!-- Carte LinkedIn -->
-      <a href="https://www.linkedin.com/in/mohamed-belmokhtar-b399312a4" target="_blank" rel="noopener noreferrer" data-scroll
-         class="glass-card p-8 flex flex-col items-center justify-center text-center transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg">
-        <div class="text-[#0A66C2] text-5xl mb-4">
-          <i class="fab fa-linkedin"></i>
-        </div>
-        <h3 class="text-2xl font-bold text-light mb-2">LinkedIn</h3>
-        <p class="text-gray-400 mb-4">
-          Mon profil <strong>LinkedIn</strong> met en avant mon parcours académique, mes expériences et ma veille professionnelle.
-        </p>
-        <span class="inline-flex items-center gap-2 text-[#0A66C2] font-medium">
-          Voir mon profil <i class="fas fa-arrow-right"></i>
-        </span>
-      </a>
-
-      <!-- Carte GitHub -->
-      <a href="https://github.com/VanStarkHohenheim" target="_blank" rel="noopener noreferrer" data-scroll
-         class="glass-card p-8 flex flex-col items-center justify-center text-center transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg">
-        <div class="text-gray-300 text-5xl mb-4">
-          <i class="fab fa-github"></i>
-        </div>
-        <h3 class="text-2xl font-bold text-light mb-2">GitHub</h3>
-        <p class="text-gray-400 mb-4">
-          Retrouvez tous mes <strong>projets open-source</strong> : scripts, sites web, SaaS et expérimentations en cybersécurité.
-        </p>
-        <span class="inline-flex items-center gap-2 text-primary font-medium">
-          Explorer mes dépôts <i class="fas fa-arrow-right"></i>
-        </span>
-      </a>
-
-    </div>
-  </div>
-</section>
-
-<!-- Parcours scolaire -->
-<section id="parcours" class="bg-surface-1 py-24">
-  <div class="container mx-auto text-center">
-    <h2 class="text-4xl font-bold text-primary mb-4" data-scroll>Parcours scolaire</h2>
-    <p class="mb-14 max-w-2xl mx-auto text-gray-300" data-scroll>
-      Mon chemin académique, de l'obtention du bac jusqu'à la formation actuelle en <strong>BTS SIO SLAM</strong>.
-    </p>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-
-      <!-- Bac STI2D -->
-      <div class="glass-card p-6 text-left flex flex-col gap-3" data-scroll>
-        <div class="text-primary text-3xl"><i class="fas fa-graduation-cap"></i></div>
-        <span class="text-primary text-xs font-semibold uppercase tracking-widest">2022 – 2024</span>
-        <h3 class="text-lg font-bold text-light">Bac STI2D<br>Option SIN</h3>
-        <p class="text-gray-400 text-sm leading-relaxed">
-          Sciences et Technologies de l'Industrie et du Développement Durable —
-          spécialité <strong class="text-gray-300">Systèmes d'Information et Numérique</strong>.
-        </p>
-        <p class="text-gray-500 text-sm mt-auto"><i class="fas fa-school mr-1"></i> Lycée Le Corbusier</p>
-      </div>
-
-      <!-- BUT Informatique -->
-      <div class="glass-card p-6 text-left flex flex-col gap-3" data-scroll>
-        <div class="text-primary text-3xl"><i class="fas fa-university"></i></div>
-        <span class="text-primary text-xs font-semibold uppercase tracking-widest">2024 – 2025</span>
-        <h3 class="text-lg font-bold text-light">1ʳᵉ année BUT<br>Informatique</h3>
-        <p class="text-gray-400 text-sm leading-relaxed">
-          Formation universitaire technologique en développement logiciel, algorithmique et réseaux.
-        </p>
-        <p class="text-gray-500 text-sm mt-auto"><i class="fas fa-map-marker-alt mr-1"></i> IUT d'Annecy</p>
-      </div>
-
-      <!-- BTS SIO SLAM -->
-      <div class="glass-card p-6 text-left flex flex-col gap-3 border-primary/30" data-scroll>
-        <div class="text-primary text-3xl"><i class="fas fa-laptop-code"></i></div>
-        <span class="text-primary text-xs font-semibold uppercase tracking-widest">2025 – 2026 · En cours</span>
-        <h3 class="text-lg font-bold text-light">BTS SIO<br>Option SLAM</h3>
-        <p class="text-gray-400 text-sm leading-relaxed">
-          Services Informatiques aux Organisations —
-          spécialité <strong class="text-gray-300">Solutions Logicielles et Applications Métiers</strong>.
-        </p>
-        <p class="text-gray-500 text-sm mt-auto"><i class="fas fa-map-marker-alt mr-1"></i> ENC Paris 17</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
- <!-- BTS SIO -->
-<section id="bts-sio" class="min-h-screen bg-dark py-24">
-  <div class="container mx-auto">
-    <div class="text-center mb-12">
-      <h2 class="text-4xl font-bold text-primary" data-scroll>BTS Services Informatiques aux Organisations</h2>
-      <p class="text-gray-300 max-w-3xl mx-auto mt-4" data-scroll>
-        Un diplôme en 2 ans qui prépare aux métiers de l’IT, avec deux options complémentaires : <strong>SLAM</strong> (développement) et <strong>SISR</strong> (infrastructures).
-        Il permet l’insertion pro rapide ou la poursuite d’études.
-      </p>
+    <!-- Filtres -->
+    <div id="stages-filters" class="flex flex-wrap items-center justify-center gap-2 mb-10">
+      <button class="stage-filter-btn proj-filter-btn active" data-stage-filter="all">Tous</button>
+      <button class="stage-filter-btn proj-filter-btn" data-stage-filter="done">Réalisé</button>
+      <button class="stage-filter-btn proj-filter-btn" data-stage-filter="planned">Prévu</button>
     </div>
 
-    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-      <!-- Présentation -->
-      <div class="info-card p-8" data-scroll>
-        <div class="flex items-center gap-3">
-          <i class="fas fa-graduation-cap text-primary text-2xl"></i>
-          <h3 class="text-2xl font-bold text-light">Présentation</h3>
+    <!-- Frise horizontale -->
+    <div class="hscroll-track" id="stages-track-h">
+
+      <!-- 2026 — Rectorat -->
+      <div class="stage-hcard" data-status="done">
+        <div class="flex items-center gap-2 flex-wrap">
+          <span class="stage-badge stage-badge--done">Réalisé</span>
+          <time class="timeline-time">Janvier – Février 2026</time>
         </div>
-        <p class="text-gray-300 mt-4">
-          Le BTS SIO forme à la mise en œuvre de solutions numériques au sein des organisations : analyse des besoins,
-          sécurité, qualité de service, documentation et collaboration.
+        <div class="flex flex-wrap gap-2 mt-1">
+          <span class="stage-meta"><i class="fas fa-map-marker-alt"></i> Rectorat</span>
+          <span class="stage-meta"><i class="far fa-clock"></i> ~6–8 semaines</span>
+        </div>
+        <h3 class="timeline-title mt-2">Stagiaire Support &amp; Exploitation — Rectorat</h3>
+        <p class="timeline-text mt-2">
+          Stage orienté <strong>infrastructure &amp; sécurité</strong> : virtualisation sur Proxmox,
+          déploiement Ansible, PKI et sécurisation TLS 1.3 conforme ANSSI.
         </p>
-        <ul class="text-gray-300 mt-4 space-y-2 list-disc list-inside">
-          <li>Approche professionnelle (projets, stages, support aux utilisateurs).</li>
-          <li>Culture de la sécurité et des bonnes pratiques IT.</li>
-          <li>Montée en compétences progressive (de la maîtrise d’outils à l’autonomie).</li>
+        <ul class="timeline-text mt-2 space-y-1 list-disc list-inside text-left text-sm">
+          <li>Serveurs Linux sur <strong>Proxmox</strong> (Dell PowerEdge R630)</li>
+          <li>Déploiement automatisé avec <strong>Ansible</strong></li>
+          <li>Conception d’une <strong>PKI</strong></li>
+          <li><strong>TLS 1.3</strong> conforme <strong>ANSSI</strong></li>
+          <li>Sécurisation flux serveur → client → interne</li>
         </ul>
-      </div>
-
-      <!-- SLAM -->
-      <div class="info-card p-8" data-scroll>
-        <div class="flex items-center gap-3">
-          <i class="fas fa-code-branch text-primary text-2xl"></i>
-          <h3 class="text-2xl font-bold text-light">Option SLAM — Développement</h3>
-        </div>
-        <p class="text-gray-300 mt-4">
-          Conception et réalisation d’applications (web, API), intégration continue, tests et maintenance.
-          Le cœur du parcours : <strong>rigueur méthodologique</strong> et qualité logicielle.
-        </p>
-        <ul class="text-gray-300 mt-4 space-y-2 list-disc list-inside">
-          <li>Analyse & modélisation (UML/MCD), <em>patterns</em> (MVC), documentation.</li>
-          <li>Back-end (ex. Laravel, Python), front (HTML/CSS/JS, frameworks), APIs REST.</li>
-          <li>Bases de données (SQL, migrations, optimisation), sécurité applicative.</li>
-          <li>Tests (unitaires/fonctionnels), CI/CD, revues de code, versionning Git.</li>
-        </ul>
-        <div class="mt-4">
-          <span class="badge">Choix personnel</span>
-          <p class="text-gray-300 mt-2">
-            <strong>J’ai choisi l’option SLAM pour sa rigueur</strong> : cadrage des besoins, conception structurée,
-            exigence de qualité (tests, revues, sécurité), et traçabilité (docs & versions).
-            Cette discipline correspond à ma manière de travailler et à mes projets (Linux, cybersécurité, web).
-          </p>
+        <div class="mt-auto pt-3 flex flex-wrap gap-2">
+          <span class="tag">Proxmox</span>
+          <span class="tag">Linux</span>
+          <span class="tag">Ansible</span>
+          <span class="tag">PKI</span>
+          <span class="tag">TLS 1.3</span>
+          <span class="tag">ANSSI</span>
         </div>
       </div>
 
-      <!-- SISR -->
-      <div class="info-card p-8" data-scroll>
-        <div class="flex items-center gap-3">
-          <i class="fas fa-network-wired text-primary text-2xl"></i>
-          <h3 class="text-2xl font-bold text-light">Option SISR — Infrastructures</h3>
+      <!-- 2025 — AWC -->
+      <div class="stage-hcard" data-status="done">
+        <div class="flex items-center gap-2 flex-wrap">
+          <span class="stage-badge stage-badge--done">Réalisé</span>
+          <time class="timeline-time">Mai – Juin 2025</time>
         </div>
-        <p class="text-gray-300 mt-4">
-          Conception, déploiement et supervision d’infrastructures : réseaux, systèmes, virtualisation et sécurité opérationnelle.
+        <div class="flex flex-wrap gap-2 mt-1">
+          <span class="stage-meta"><i class="fas fa-map-marker-alt"></i> AWC</span>
+          <span class="stage-meta"><i class="far fa-clock"></i> 6 semaines</span>
+        </div>
+        <h3 class="timeline-title mt-2">Développeur Full-Stack (Stage) — AWC</h3>
+        <p class="timeline-text mt-2">
+          Stage <strong>1ʳᵉ année BTS SIO (SLAM)</strong>. Conception d’un site vitrine et d’outils internes de gestion de projets.
         </p>
-        <ul class="text-gray-300 mt-4 space-y-2 list-disc list-inside">
-          <li>Administration systèmes (Linux/Windows), services (SSH, HTTP, DNS, etc.).</li>
-          <li>Réseaux (adressage, VLAN, routage), pare-feu, haute disponibilité.</li>
-          <li>Virtualisation & conteneurs (VMware, Docker), sauvegardes & PRA.</li>
-          <li>Supervision, journalisation, durcissement, conformité et continuité de service.</li>
-        </ul>
-        <p class="text-gray-300 mt-4">
-          Parcours idéal pour les métiers d’<em>admin système/réseau</em>, d’<em>ops</em> ou de <em>support/production</em>,
-          en lien direct avec la sécurité opérationnelle.
-        </p>
+        <div class="mt-3 flex flex-wrap gap-2">
+          <span class="tag">HTML</span>
+          <span class="tag">Tailwind</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Bash</span>
+          <span class="tag">Python</span>
+        </div>
+        <a href="photo/rapport_de_stage.pdf" target="_blank" rel="noopener noreferrer"
+           class="btn-report mt-auto pt-4 inline-flex items-center gap-2 group">
+          <i class="fas fa-file-alt text-primary group-hover:text-light transition"></i>
+          <span>Voir le rapport de stage</span>
+        </a>
       </div>
-    </div>
-  </div>
-</section>
 
-<section id="skills" class="bg-dark py-24">
-  <div class="container mx-auto text-center">
-    <h2 class="section-title">Certifications</h2>
-    <p class="section-description max-w-3xl mx-auto">
-      Mes certifications vérifiées (clique pour ouvrir la preuve).
-    </p>
-
-    <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-      <!-- ANSSI -->
-      <button class="skill-card group" data-type="cert" data-skill="html" aria-label="Voir la certification ANSSI SecNumacadémie">
-        <div class="icon-container">
-          <img src="photo/anssi-icon.png" alt="ANSSI - SecNumacadémie" class="w-full h-full object-cover rounded-lg transition-all duration-300 group-hover:scale-105 group-hover:brightness-110">
+      <!-- 2020 — ENGIE Cofely -->
+      <div class="stage-hcard" data-status="done">
+        <div class="flex items-center gap-2 flex-wrap">
+          <span class="stage-badge stage-badge--done">Réalisé</span>
+          <time class="timeline-time">Février 2020 (5 jours)</time>
         </div>
-        <p class="mt-4 font-semibold">ANSSI</p>
-        <span>(SecNumacadémie)</span>
-      </button>
-
-      <!-- TryHackMe -->
-      <button class="skill-card group" data-type="cert" data-skill="css" aria-label="Voir la certification TryHackMe Pre Security">
-        <div class="icon-container">
-          <img src="photo/thm-icon.png" alt="TryHackMe - Pre Security" class="w-full h-full object-cover rounded-lg transition-all duration-300 group-hover:scale-105 group-hover:brightness-110">
+        <div class="flex flex-wrap gap-2 mt-1">
+          <span class="stage-meta"><i class="fas fa-map-marker-alt"></i> Saint-Denis</span>
         </div>
-        <p class="mt-4 font-semibold">TryHackMe</p>
-        <span>(Pre Security)</span>
-      </button>
-
-      <!-- Cisco Python -->
-      <button class="skill-card group" data-type="cert" data-skill="python" aria-label="Voir la certification Cisco Python Essentials 1">
-        <div class="icon-container">
-          <img src="photo/cisco-icon.png" alt="Cisco - Python Essentials 1" class="w-full h-full object-cover rounded-lg transition-all duration-300 group-hover:scale-105 group-hover:brightness-110">
+        <h3 class="timeline-title mt-2">Stage de 3ᵉ — Analyste SOC — ENGIE Cofely</h3>
+        <p class="timeline-text mt-2">
+          Immersion au sein d’un <strong>SOC</strong> : observation de l’<strong>analyse d’alertes</strong>, sensibilisation à la <strong>cyberdéfense</strong>
+          et aux bonnes pratiques de surveillance.
+        </p>
+        <div class="mt-auto pt-3 flex flex-wrap gap-2">
+          <span class="tag">SOC</span>
+          <span class="tag">Cyberdéfense</span>
+          <span class="tag">Surveillance réseau</span>
         </div>
-        <p class="mt-4 font-semibold">Cisco</p>
-        <span>(Python Essentials 1)</span>
-      </button>
-
-      <!-- Cisco Cybersecurity -->
-      <button class="skill-card group" data-type="cert" data-skill="cybersecurity" aria-label="Voir la certification Cisco Introduction to Cybersecurity">
-        <div class="icon-container">
-          <img src="photo/cisco-icon.png" alt="Cisco - Introduction to Cybersecurity" class="w-full h-full object-cover rounded-lg transition-all duration-300 group-hover:scale-105 group-hover:brightness-110">
-        </div>
-        <p class="mt-4 font-semibold">Cisco</p>
-        <span>(Intro to Cybersecurity)</span>
-      </button>
-    </div>
-  </div>
-</section>
-
-
-<section id="competences" class="bg-dark py-24 skills-section">
-  <div class="container mx-auto">
-    <h2 class="text-3xl font-bold text-primary text-center mb-8">Compétences</h2>
-
-    <div class="flex flex-wrap items-center justify-center gap-2 mb-10" id="competences-filters">
-      <button class="filter-btn active" data-filter="all">Tous</button>
-      <button class="filter-btn" data-filter="langage">Langages</button>
-      <button class="filter-btn" data-filter="frontend">Front-end</button>
-      <button class="filter-btn" data-filter="backend">Back-end</button>
-      <button class="filter-btn" data-filter="database">Data</button>
-      <button class="filter-btn" data-filter="devops">DevOps</button>
-      <button class="filter-btn" data-filter="tools">Outils</button>
-    </div>
-
-    <div class="skills-grid" id="skills-grid">
-      
-      <div class="skill-card" data-category="langage" data-title="Python" data-color="55,118,171" 
-           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"></div>
-      
-      <div class="skill-card" data-category="langage backend" data-title="Django" data-color="65,184,131" 
-           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"></div>
-      
-      <div class="skill-card" data-category="langage" data-title="Java" data-color="224,31,31" 
-           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"></div>
-      
-      <div class="skill-card" data-category="langage frontend" data-title="JavaScript" data-color="247,223,30" 
-           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"></div>
-      
-      <div class="skill-card" data-category="langage devops" data-title="Bash" data-color="78,170,37" 
-           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg"></div>
-
-      <div class="skill-card" data-category="frontend" data-title="HTML5" data-color="227,76,38" 
-           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"></div>
-      
-      <div class="skill-card" data-category="frontend" data-title="CSS3" data-color="38,77,228" 
-           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"></div>
-      
-      <div class="skill-card" data-category="frontend" data-title="Tailwind" data-color="56,189,248" 
-           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"></div>
-      
-      <div class="skill-card" data-category="frontend" data-title="Vue.js" data-color="65,184,131" 
-           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"></div>
-
-      <div class="skill-card" data-category="backend" data-title="Laravel" data-color="255,45,32" 
-           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg"></div>
-
-      <div class="skill-card" data-category="database" data-title="PostgreSQL" data-color="51,103,145" 
-           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"></div>
-      
-      <div class="skill-card" data-category="database" data-title="SQLite" data-color="68,165,255" 
-           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg"></div>
-
-      <div class="skill-card" data-category="devops" data-title="Docker" data-color="36,150,237" 
-           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"></div>
-      
-      <div class="skill-card" data-category="devops" data-title="Nginx" data-color="0,150,57" 
-           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg"></div>
-      
-      <div class="skill-card" data-category="devops" data-title="Linux" data-color="255,204,51"
-           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"></div>
-
-      <div class="skill-card" data-category="devops" data-title="Ansible" data-color="238,0,0"
-           data-icon="photo/Ansible.png"></div>
-
-      <div class="skill-card" data-category="tools" data-title="Git" data-color="240,80,50" 
-           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"></div>
-      
-      <div class="skill-card" data-category="tools" data-title="VS Code" data-color="0,120,215" 
-           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"></div>
+      </div>
 
     </div>
   </div>
 </section>
-
-
-  <!-- Modale (unique, corrigée) -->
-  <div id="cert-modal" class="hidden fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
-    <div class="bg-dark p-8 rounded-xl relative max-w-3xl w-full border border-gray-800">
-      <button id="close-modal" class="absolute top-4 right-4 text-gray-300 hover:text-white" aria-label="Fermer">
-        <i class="fas fa-times text-2xl"></i>
-      </button>
-
-      <button id="prev-skill" class="nav-dot left-4" aria-label="Précédent"><i class="fas fa-chevron-left text-2xl"></i></button>
-      <button id="next-skill" class="nav-dot right-4" aria-label="Suivant"><i class="fas fa-chevron-right text-2xl"></i></button>
-
-      <h3 id="modal-title" class="text-2xl font-bold text-primary mb-4">Titre de la certification</h3>
-      <iframe id="modal-pdf" src="" class="w-full h-80 rounded-lg border border-gray-700"></iframe>
-      <a id="modal-link" href="#" target="_blank" rel="noopener noreferrer" class="btn-primary mt-6 inline-block">Voir la certification complète</a>
-    </div>
-  </div>
-
 
 <!-- Projets -->
 <section id="projects-pro" class="bg-surface-1 py-24">
@@ -906,6 +812,170 @@
   </div>
 </section>
 
+<section id="competences" class="bg-dark py-24 skills-section">
+  <div class="container mx-auto">
+    <h2 class="text-3xl font-bold text-primary text-center mb-8">Compétences</h2>
+
+    <div class="flex flex-wrap items-center justify-center gap-2 mb-10" id="competences-filters">
+      <button class="filter-btn active" data-filter="all">Tous</button>
+      <button class="filter-btn" data-filter="langage">Langages</button>
+      <button class="filter-btn" data-filter="frontend">Front-end</button>
+      <button class="filter-btn" data-filter="backend">Back-end</button>
+      <button class="filter-btn" data-filter="database">Data</button>
+      <button class="filter-btn" data-filter="devops">DevOps</button>
+      <button class="filter-btn" data-filter="tools">Outils</button>
+    </div>
+
+    <div class="skills-grid" id="skills-grid">
+      
+      <div class="skill-card" data-category="langage" data-title="Python" data-color="55,118,171" 
+           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"></div>
+      
+      <div class="skill-card" data-category="langage backend" data-title="Django" data-color="65,184,131" 
+           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"></div>
+      
+      <div class="skill-card" data-category="langage" data-title="Java" data-color="224,31,31" 
+           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"></div>
+      
+      <div class="skill-card" data-category="langage frontend" data-title="JavaScript" data-color="247,223,30" 
+           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"></div>
+      
+      <div class="skill-card" data-category="langage devops" data-title="Bash" data-color="78,170,37" 
+           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg"></div>
+
+      <div class="skill-card" data-category="frontend" data-title="HTML5" data-color="227,76,38" 
+           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"></div>
+      
+      <div class="skill-card" data-category="frontend" data-title="CSS3" data-color="38,77,228" 
+           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"></div>
+      
+      <div class="skill-card" data-category="frontend" data-title="Tailwind" data-color="56,189,248" 
+           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"></div>
+      
+      <div class="skill-card" data-category="frontend" data-title="Vue.js" data-color="65,184,131" 
+           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"></div>
+
+      <div class="skill-card" data-category="backend" data-title="Laravel" data-color="255,45,32" 
+           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg"></div>
+
+      <div class="skill-card" data-category="database" data-title="PostgreSQL" data-color="51,103,145" 
+           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"></div>
+      
+      <div class="skill-card" data-category="database" data-title="SQLite" data-color="68,165,255" 
+           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg"></div>
+
+      <div class="skill-card" data-category="devops" data-title="Docker" data-color="36,150,237" 
+           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"></div>
+      
+      <div class="skill-card" data-category="devops" data-title="Nginx" data-color="0,150,57" 
+           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg"></div>
+      
+      <div class="skill-card" data-category="devops" data-title="Linux" data-color="255,204,51"
+           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"></div>
+
+      <div class="skill-card" data-category="devops" data-title="Ansible" data-color="238,0,0"
+           data-icon="photo/Ansible.png"></div>
+
+      <div class="skill-card" data-category="tools" data-title="Git" data-color="240,80,50" 
+           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"></div>
+      
+      <div class="skill-card" data-category="tools" data-title="VS Code" data-color="0,120,215" 
+           data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"></div>
+
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="bg-dark py-24">
+  <div class="container mx-auto text-center">
+    <h2 class="section-title">Certifications</h2>
+    <p class="section-description max-w-3xl mx-auto">
+      Mes certifications vérifiées (clique pour ouvrir la preuve).
+    </p>
+
+    <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+      <!-- ANSSI -->
+      <button class="skill-card group" data-type="cert" data-skill="html" aria-label="Voir la certification ANSSI SecNumacadémie">
+        <div class="icon-container">
+          <img src="photo/anssi-icon.png" alt="ANSSI - SecNumacadémie" class="w-full h-full object-cover rounded-lg transition-all duration-300 group-hover:scale-105 group-hover:brightness-110">
+        </div>
+        <p class="mt-4 font-semibold">ANSSI</p>
+        <span>(SecNumacadémie)</span>
+      </button>
+
+      <!-- TryHackMe -->
+      <button class="skill-card group" data-type="cert" data-skill="css" aria-label="Voir la certification TryHackMe Pre Security">
+        <div class="icon-container">
+          <img src="photo/thm-icon.png" alt="TryHackMe - Pre Security" class="w-full h-full object-cover rounded-lg transition-all duration-300 group-hover:scale-105 group-hover:brightness-110">
+        </div>
+        <p class="mt-4 font-semibold">TryHackMe</p>
+        <span>(Pre Security)</span>
+      </button>
+
+      <!-- Cisco Python -->
+      <button class="skill-card group" data-type="cert" data-skill="python" aria-label="Voir la certification Cisco Python Essentials 1">
+        <div class="icon-container">
+          <img src="photo/cisco-icon.png" alt="Cisco - Python Essentials 1" class="w-full h-full object-cover rounded-lg transition-all duration-300 group-hover:scale-105 group-hover:brightness-110">
+        </div>
+        <p class="mt-4 font-semibold">Cisco</p>
+        <span>(Python Essentials 1)</span>
+      </button>
+
+      <!-- Cisco Cybersecurity -->
+      <button class="skill-card group" data-type="cert" data-skill="cybersecurity" aria-label="Voir la certification Cisco Introduction to Cybersecurity">
+        <div class="icon-container">
+          <img src="photo/cisco-icon.png" alt="Cisco - Introduction to Cybersecurity" class="w-full h-full object-cover rounded-lg transition-all duration-300 group-hover:scale-105 group-hover:brightness-110">
+        </div>
+        <p class="mt-4 font-semibold">Cisco</p>
+        <span>(Intro to Cybersecurity)</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Modale (unique, corrigée) -->
+  <div id="cert-modal" class="hidden fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
+    <div class="bg-dark p-8 rounded-xl relative max-w-3xl w-full border border-gray-800">
+      <button id="close-modal" class="absolute top-4 right-4 text-gray-300 hover:text-white" aria-label="Fermer">
+        <i class="fas fa-times text-2xl"></i>
+      </button>
+
+      <button id="prev-skill" class="nav-dot left-4" aria-label="Précédent"><i class="fas fa-chevron-left text-2xl"></i></button>
+      <button id="next-skill" class="nav-dot right-4" aria-label="Suivant"><i class="fas fa-chevron-right text-2xl"></i></button>
+
+      <h3 id="modal-title" class="text-2xl font-bold text-primary mb-4">Titre de la certification</h3>
+      <iframe id="modal-pdf" src="" class="w-full h-80 rounded-lg border border-gray-700"></iframe>
+      <a id="modal-link" href="#" target="_blank" rel="noopener noreferrer" class="btn-primary mt-6 inline-block">Voir la certification complète</a>
+    </div>
+  </div>
+
+<!-- Tableau de synthèse -->
+<section id="synthese" class="bg-dark py-24">
+  <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-bold text-primary mb-4" data-scroll>Tableau de synthèse</h2>
+    <p class="mb-10 max-w-2xl mx-auto text-gray-300" data-scroll>
+      Document récapitulatif de mes <strong>activités et compétences professionnelles</strong> dans le cadre du <strong>BTS SIO SLAM</strong>.
+    </p>
+
+    <!-- Prévisualisation PDF -->
+    <div class="max-w-5xl mx-auto" data-scroll>
+      <div class="glass-card overflow-hidden">
+        <iframe
+          src="tab_synthese.pdf"
+          class="w-full"
+          style="height: 700px; border: none;"
+          title="Tableau de synthèse BTS SIO"
+        ></iframe>
+      </div>
+
+      <!-- Bouton téléchargement -->
+      <a href="tab_synthese.pdf" download
+         class="mt-6 inline-flex items-center gap-2 text-primary font-medium hover:underline">
+        <i class="fas fa-download"></i> Télécharger le PDF
+      </a>
+    </div>
+  </div>
+</section>
 
 <!-- Veille (frise) -->
 <section id="Veille" class="bg-surface-2 py-24">
@@ -1076,175 +1146,66 @@
 
   </div>
 </section>
-<!-- Stages (frise) -->
-<section id="Stages" class="bg-surface-1 py-24">
+
+<section id="reseaux" class="bg-dark py-24">
   <div class="container mx-auto text-center">
-    <h1 class="text-4xl font-bold text-primary mb-6" data-scroll>Stages</h1>
-    <p class="mb-10 max-w-3xl mx-auto text-gray-200" data-scroll>
-      Mes <strong>expériences en entreprise</strong>. Filtre par statut pour aller à l’essentiel.
+    <h2 class="text-4xl font-bold text-primary mb-12" data-scroll>Réseaux & Profil professionnel</h2>
+    <p class="text-gray-300 max-w-3xl mx-auto mb-16" data-scroll>
+      Retrouvez mes profils et documents professionnels.  
+      Ces plateformes reflètent mon parcours, mes projets et mes ambitions dans la cybersécurité et le développement.
     </p>
 
-    <!-- Filtres -->
-    <div id="stages-filters" class="flex flex-wrap items-center justify-center gap-2 mb-10">
-      <button class="stage-filter-btn proj-filter-btn active" data-stage-filter="all">Tous</button>
-      <button class="stage-filter-btn proj-filter-btn" data-stage-filter="done">Réalisé</button>
-      <button class="stage-filter-btn proj-filter-btn" data-stage-filter="planned">Prévu</button>
-    </div>
-
-    <!-- Frise horizontale -->
-    <div class="hscroll-track" id="stages-track-h">
-
-      <!-- 2026 — Rectorat -->
-      <div class="stage-hcard" data-status="done">
-        <div class="flex items-center gap-2 flex-wrap">
-          <span class="stage-badge stage-badge--done">Réalisé</span>
-          <time class="timeline-time">Janvier – Février 2026</time>
+    <!-- Grille des cartes -->
+    <div class="grid gap-8 md:grid-cols-3 max-w-6xl mx-auto">
+      
+      <!-- Carte CV -->
+      <a href="CV-ATS-SHERPA-LP.pdf" target="_blank" rel="noopener noreferrer" data-scroll
+         class="glass-card p-8 flex flex-col items-center justify-center text-center transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg">
+        <div class="text-primary text-5xl mb-4">
+          <i class="fas fa-file-alt"></i>
         </div>
-        <div class="flex flex-wrap gap-2 mt-1">
-          <span class="stage-meta"><i class="fas fa-map-marker-alt"></i> Rectorat</span>
-          <span class="stage-meta"><i class="far fa-clock"></i> ~6–8 semaines</span>
-        </div>
-        <h3 class="timeline-title mt-2">Stagiaire Support &amp; Exploitation — Rectorat</h3>
-        <p class="timeline-text mt-2">
-          Stage orienté <strong>infrastructure &amp; sécurité</strong> : virtualisation sur Proxmox,
-          déploiement Ansible, PKI et sécurisation TLS 1.3 conforme ANSSI.
+        <h3 class="text-2xl font-bold text-light mb-2">Mon CV</h3>
+        <p class="text-gray-400 mb-4">
+          Consultez mon <strong>CV à jour</strong> (BTS SIO SLAM & Prépa ATS) pour découvrir mes compétences et projets récents.
         </p>
-        <ul class="timeline-text mt-2 space-y-1 list-disc list-inside text-left text-sm">
-          <li>Serveurs Linux sur <strong>Proxmox</strong> (Dell PowerEdge R630)</li>
-          <li>Déploiement automatisé avec <strong>Ansible</strong></li>
-          <li>Conception d’une <strong>PKI</strong></li>
-          <li><strong>TLS 1.3</strong> conforme <strong>ANSSI</strong></li>
-          <li>Sécurisation flux serveur → client → interne</li>
-        </ul>
-        <div class="mt-auto pt-3 flex flex-wrap gap-2">
-          <span class="tag">Proxmox</span>
-          <span class="tag">Linux</span>
-          <span class="tag">Ansible</span>
-          <span class="tag">PKI</span>
-          <span class="tag">TLS 1.3</span>
-          <span class="tag">ANSSI</span>
-        </div>
-      </div>
-
-      <!-- 2025 — AWC -->
-      <div class="stage-hcard" data-status="done">
-        <div class="flex items-center gap-2 flex-wrap">
-          <span class="stage-badge stage-badge--done">Réalisé</span>
-          <time class="timeline-time">Mai – Juin 2025</time>
-        </div>
-        <div class="flex flex-wrap gap-2 mt-1">
-          <span class="stage-meta"><i class="fas fa-map-marker-alt"></i> AWC</span>
-          <span class="stage-meta"><i class="far fa-clock"></i> 6 semaines</span>
-        </div>
-        <h3 class="timeline-title mt-2">Développeur Full-Stack (Stage) — AWC</h3>
-        <p class="timeline-text mt-2">
-          Stage <strong>1ʳᵉ année BTS SIO (SLAM)</strong>. Conception d’un site vitrine et d’outils internes de gestion de projets.
-        </p>
-        <div class="mt-3 flex flex-wrap gap-2">
-          <span class="tag">HTML</span>
-          <span class="tag">Tailwind</span>
-          <span class="tag">JavaScript</span>
-          <span class="tag">Bash</span>
-          <span class="tag">Python</span>
-        </div>
-        <a href="photo/rapport_de_stage.pdf" target="_blank" rel="noopener noreferrer"
-           class="btn-report mt-auto pt-4 inline-flex items-center gap-2 group">
-          <i class="fas fa-file-alt text-primary group-hover:text-light transition"></i>
-          <span>Voir le rapport de stage</span>
-        </a>
-      </div>
-
-      <!-- 2020 — ENGIE Cofely -->
-      <div class="stage-hcard" data-status="done">
-        <div class="flex items-center gap-2 flex-wrap">
-          <span class="stage-badge stage-badge--done">Réalisé</span>
-          <time class="timeline-time">Février 2020 (5 jours)</time>
-        </div>
-        <div class="flex flex-wrap gap-2 mt-1">
-          <span class="stage-meta"><i class="fas fa-map-marker-alt"></i> Saint-Denis</span>
-        </div>
-        <h3 class="timeline-title mt-2">Stage de 3ᵉ — Analyste SOC — ENGIE Cofely</h3>
-        <p class="timeline-text mt-2">
-          Immersion au sein d’un <strong>SOC</strong> : observation de l’<strong>analyse d’alertes</strong>, sensibilisation à la <strong>cyberdéfense</strong>
-          et aux bonnes pratiques de surveillance.
-        </p>
-        <div class="mt-auto pt-3 flex flex-wrap gap-2">
-          <span class="tag">SOC</span>
-          <span class="tag">Cyberdéfense</span>
-          <span class="tag">Surveillance réseau</span>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-<!-- Tableau de synthèse -->
-<section id="synthese" class="bg-dark py-24">
-  <div class="container mx-auto text-center">
-    <h2 class="text-4xl font-bold text-primary mb-4" data-scroll>Tableau de synthèse</h2>
-    <p class="mb-10 max-w-2xl mx-auto text-gray-300" data-scroll>
-      Document récapitulatif de mes <strong>activités et compétences professionnelles</strong> dans le cadre du <strong>BTS SIO SLAM</strong>.
-    </p>
-
-    <!-- Prévisualisation PDF -->
-    <div class="max-w-5xl mx-auto" data-scroll>
-      <div class="glass-card overflow-hidden">
-        <iframe
-          src="tab_synthese.pdf"
-          class="w-full"
-          style="height: 700px; border: none;"
-          title="Tableau de synthèse BTS SIO"
-        ></iframe>
-      </div>
-
-      <!-- Bouton téléchargement -->
-      <a href="tab_synthese.pdf" download
-         class="mt-6 inline-flex items-center gap-2 text-primary font-medium hover:underline">
-        <i class="fas fa-download"></i> Télécharger le PDF
+        <span class="inline-flex items-center gap-2 text-primary font-medium">
+          Ouvrir le CV <i class="fas fa-arrow-right"></i>
+        </span>
       </a>
+
+      <!-- Carte LinkedIn -->
+      <a href="https://www.linkedin.com/in/mohamed-belmokhtar-b399312a4" target="_blank" rel="noopener noreferrer" data-scroll
+         class="glass-card p-8 flex flex-col items-center justify-center text-center transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg">
+        <div class="text-[#0A66C2] text-5xl mb-4">
+          <i class="fab fa-linkedin"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-light mb-2">LinkedIn</h3>
+        <p class="text-gray-400 mb-4">
+          Mon profil <strong>LinkedIn</strong> met en avant mon parcours académique, mes expériences et ma veille professionnelle.
+        </p>
+        <span class="inline-flex items-center gap-2 text-[#0A66C2] font-medium">
+          Voir mon profil <i class="fas fa-arrow-right"></i>
+        </span>
+      </a>
+
+      <!-- Carte GitHub -->
+      <a href="https://github.com/VanStarkHohenheim" target="_blank" rel="noopener noreferrer" data-scroll
+         class="glass-card p-8 flex flex-col items-center justify-center text-center transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg">
+        <div class="text-gray-300 text-5xl mb-4">
+          <i class="fab fa-github"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-light mb-2">GitHub</h3>
+        <p class="text-gray-400 mb-4">
+          Retrouvez tous mes <strong>projets open-source</strong> : scripts, sites web, SaaS et expérimentations en cybersécurité.
+        </p>
+        <span class="inline-flex items-center gap-2 text-primary font-medium">
+          Explorer mes dépôts <i class="fas fa-arrow-right"></i>
+        </span>
+      </a>
+
     </div>
   </div>
 </section>
-
-  <!-- Contact -->
-  <section id="contact" class="bg-surface-2 py-24">
-    <div class="container mx-auto text-center">
-      <h2 class="text-4xl font-bold text-primary mb-10" data-scroll>Contactez-moi</h2>
-
-      <form action="https://formspree.io/f/manoggyp" method="post" class="max-w-xl mx-auto glass-card p-8 text-left space-y-4" data-scroll>
-        <!-- anti-bot -->
-        <input type="text" name="_gotcha" class="hidden" aria-hidden="true" tabindex="-1"/>
-
-        <div>
-          <label for="name" class="block text-sm text-gray-400 mb-1">Votre nom</label>
-          <input id="name" name="name" type="text" required
-                 class="input"/>
-        </div>
-
-        <div>
-          <label for="email" class="block text-sm text-gray-400 mb-1">Votre email</label>
-          <input id="email" name="email" type="email" required
-                 class="input"/>
-        </div>
-
-        <div>
-          <label for="message" class="block text-sm text-gray-400 mb-1">Votre message</label>
-          <textarea id="message" name="message" rows="5" required
-                    class="input"></textarea>
-        </div>
-
-        <button class="btn-primary w-full inline-flex items-center justify-center gap-2">
-          <i class="fas fa-paper-plane"></i> Envoyer
-        </button>
-
-        <p id="form-status" class="text-sm text-gray-400 mt-2 hidden">Envoi en cours…</p>
-      </form>
-    </div>
-  </section>
-
   <!-- JS -->
   <script src="script.js"></script>
 </body>
