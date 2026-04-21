@@ -1,20 +1,12 @@
 {
-  "updated": "20/04/2026 09:06 UTC",
+  "updated": "21/04/2026 08:52 UTC",
   "articles": [
     {
-      "title": "Face au risque de désengagement américain de l’Otan, les Européens se préparent à se passer des États-Unis",
-      "summary": "DÉCRYPTAGE - Les menaces de Trump contre l’Alliance atlantique contraignent les pays d’Europe à accélérer, en ordre dispersé, leurs projets pour une défense autonome.",
-      "link": "https://www.lefigaro.fr/international/face-au-risque-de-desengagement-americain-de-l-otan-les-europeens-se-preparent-a-se-passer-des-etats-unis-20260419",
+      "title": "Boeing lands Chinook without a pilot at the controls",
+      "summary": "Boeing used its A2X software to autonomously guide an Army CH-47 Chinook through its final approach and landing.",
+      "link": "https://www.defensenews.com/news/your-military/2026/04/20/boeing-lands-chinook-without-a-pilot-at-the-controls/",
       "date": "Avril 2026",
-      "timestamp": 1776592641.0,
-      "source": "Le Figaro - International : Actualité internationale en direct"
-    },
-    {
-      "title": "Air Force unit executes test of Anduril’s semiautonomous combat drone",
-      "summary": "Airmen operated Auduril's YFQ-44A jet-powered combat drone, which could someday fly alongside piloted fighters.",
-      "link": "https://www.defensenews.com/industry/techwatch/2026/04/17/air-force-unit-executes-test-of-andurils-semiautonomous-combat-drone/",
-      "date": "Avril 2026",
-      "timestamp": 1776455095.0,
+      "timestamp": 1776707443.0,
       "source": "Defense News"
     }
   ]
