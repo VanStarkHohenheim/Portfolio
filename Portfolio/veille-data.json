@@ -1,6 +1,14 @@
 {
-  "updated": "28/04/2026 09:21 UTC",
+  "updated": "29/04/2026 09:08 UTC",
   "articles": [
+    {
+      "title": "IA : Google signe un accord qui permet au Pentagone d’utiliser Gemini pour des opérations classifiées",
+      "summary": "Lundi, 600 salariés du spécialiste du numérique avaient appelé leur dirigeant à renoncer à mettre le modèle d’intelligence artificielle générative au service du ministère de la défense pour une utilisation susceptible d’atteindre aux libertés individuelles.",
+      "link": "https://www.lemonde.fr/pixels/article/2026/04/29/ia-google-signe-un-accord-qui-permet-au-pentagone-d-utiliser-gemini-pour-des-operations-classifiees_6684064_4408996.html",
+      "date": "Avril 2026",
+      "timestamp": 1777426137.0,
+      "source": "Pixels : Toute l’actualité sur Le Monde.fr."
+    },
     {
       "title": "IA : plus de 600 salariés de Google demandent à leur direction de ne pas fournir des modèles à l’armée américaine",
       "summary": "Selon des informations de presse, la filiale d’Alphabet est actuellement en discussion avec le Pentagone concernant son intelligence artificielle.",
