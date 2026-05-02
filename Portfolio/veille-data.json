@@ -1,13 +1,13 @@
 {
-  "updated": "01/05/2026 09:00 UTC",
+  "updated": "02/05/2026 08:20 UTC",
   "articles": [
     {
-      "title": "IA : Google signe un accord qui permet au Pentagone d’utiliser Gemini pour des opérations classifiées",
-      "summary": "Lundi, 600 salariés du spécialiste du numérique avaient appelé leur dirigeant à renoncer à mettre le modèle d’intelligence artificielle générative au service du ministère de la défense pour une utilisation susceptible d’atteindre aux libertés individuelles.",
-      "link": "https://www.lemonde.fr/pixels/article/2026/04/29/ia-google-signe-un-accord-qui-permet-au-pentagone-d-utiliser-gemini-pour-des-operations-classifiees_6684064_4408996.html",
-      "date": "Avril 2026",
-      "timestamp": 1777426137.0,
-      "source": "Pixels : Toute l’actualité sur Le Monde.fr."
+      "title": "Pentagon freezes out Anthropic as it signs deals with AI rivals",
+      "summary": "The Department of Defense announced on Friday that it had struck deals with seven leading artificial intelligence companies.",
+      "link": "https://www.defensenews.com/news/pentagon-congress/2026/05/01/pentagon-freezes-out-anthropic-as-it-signs-deals-with-ai-rivals/",
+      "date": "Mai 2026",
+      "timestamp": 1777659350.0,
+      "source": "Defense News"
     }
   ]
 }
