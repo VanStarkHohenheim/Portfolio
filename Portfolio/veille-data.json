@@ -1,4 +1,13 @@
 {
-  "updated": "13/05/2026 09:44 UTC",
-  "articles": []
+  "updated": "14/05/2026 09:34 UTC",
+  "articles": [
+    {
+      "title": "Microsoft's MDASH AI System Finds 16 Windows Flaws Fixed in Patch Tuesday",
+      "summary": "Microsoft has unveiled a new multi-model artificial intelligence (AI)-driven system called MDASH to facilitate vulnerability discovery and remediation at scale, adding that it's being tested by some customers as part of a limited private preview. MDASH, short for multi-model agentic scanning harness, is designed as a model-agnostic system that uses bespoke AI agents for different vulnerability",
+      "link": "https://thehackernews.com/2026/05/microsofts-mdash-ai-system-finds-16.html",
+      "date": "Mai 2026",
+      "timestamp": 1778679962.0,
+      "source": "The Hacker News"
+    }
+  ]
 }
