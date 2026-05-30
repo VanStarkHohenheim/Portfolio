@@ -1,4 +1,13 @@
 {
-  "updated": "29/05/2026 10:45 UTC",
-  "articles": []
+  "updated": "30/05/2026 09:16 UTC",
+  "articles": [
+    {
+      "title": "Pourquoi l’armée opaque des petits robots arpenteurs d’Internet et nourrisseurs d’IA héritent des angles morts et des biais du web",
+      "summary": "Profondément dépendants d’Internet, qui leur fournit la masse de données nécessaires à leur entraînement, les robots d’intelligence artificielle tels que ChatGPT ne peuvent prétendre à l’exhaustivité : de nombreuses pages leur restent inaccessibles et les informations collectées représentent mal la diversité des cultures humaines.",
+      "link": "https://www.lemonde.fr/idees/article/2026/05/30/pourquoi-l-ia-herite-des-angles-morts-et-des-biais-du-web_6695202_3232.html",
+      "date": "Mai 2026",
+      "timestamp": 1780115405.0,
+      "source": "Pixels : Toute l’actualité sur Le Monde.fr."
+    }
+  ]
 }
