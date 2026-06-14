@@ -1,6 +1,14 @@
 {
-  "updated": "13/06/2026 09:55 UTC",
+  "updated": "14/06/2026 10:24 UTC",
   "articles": [
+    {
+      "title": "Bourse : pourquoi les marchés financiers résistent au choc de la guerre au Moyen-Orient",
+      "summary": "Si les marchés obligataires ont été chahutés, la Bourse affiche une résilience insolente depuis le début du conflit, tirée par l’intelligence artificielle. L’or, en revanche, a connu une sérieuse correction après une hausse pendant cinq ans.",
+      "link": "https://www.lemonde.fr/argent/article/2026/06/14/bourse-pourquoi-les-marches-financiers-resistent-au-choc-de-la-guerre-au-moyen-orient_6702241_1657007.html",
+      "date": "Juin 2026",
+      "timestamp": 1781409604.0,
+      "source": "International : Toute l’actualité sur Le Monde.fr."
+    },
     {
       "title": "LangGraph Flaw Chain Exposes Self-Hosted AI Agents to Remote Code Execution",
       "summary": "Cybersecurity researchers have disclosed details of three now-patched security flaws impacting LangGraph, including a critical vulnerability chain that could result in remote code execution. LangGraph is an open-source framework created by LangChain to build complex, stateful, and multi-agent artificial intelligence (AI) agentic applications. \"An SQL injection in LangGraph's function could",
