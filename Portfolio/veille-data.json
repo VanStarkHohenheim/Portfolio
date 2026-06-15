@@ -1,13 +1,13 @@
 {
-  "updated": "14/06/2026 10:24 UTC",
+  "updated": "15/06/2026 13:13 UTC",
   "articles": [
     {
-      "title": "Bourse : pourquoi les marchés financiers résistent au choc de la guerre au Moyen-Orient",
-      "summary": "Si les marchés obligataires ont été chahutés, la Bourse affiche une résilience insolente depuis le début du conflit, tirée par l’intelligence artificielle. L’or, en revanche, a connu une sérieuse correction après une hausse pendant cinq ans.",
-      "link": "https://www.lemonde.fr/argent/article/2026/06/14/bourse-pourquoi-les-marches-financiers-resistent-au-choc-de-la-guerre-au-moyen-orient_6702241_1657007.html",
+      "title": "En marge du G7, un chemin semé d’embûches pour encadrer l’usage de l’IA militaire",
+      "summary": "Alors que les patrons de la tech mondiale se retrouvent à Evian du 15 au 17 juin, des négociations s’ouvrent simultanément sous l’égide de l’ONU pour tenter d’encadrer l’usage de l’intelligence artificielle dans les conflits armés.",
+      "link": "https://www.lemonde.fr/international/article/2026/06/14/encadrement-de-l-ia-militaire-un-chemin-seme-d-embuches-discute-a-geneve-en-marge-du-g7_6702891_3210.html",
       "date": "Juin 2026",
-      "timestamp": 1781409604.0,
-      "source": "International : Toute l’actualité sur Le Monde.fr."
+      "timestamp": 1781461229.0,
+      "source": "Pixels : Toute l’actualité sur Le Monde.fr."
     },
     {
       "title": "LangGraph Flaw Chain Exposes Self-Hosted AI Agents to Remote Code Execution",
