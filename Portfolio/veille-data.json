@@ -1,5 +1,5 @@
 {
-  "updated": "15/06/2026 13:13 UTC",
+  "updated": "16/06/2026 12:11 UTC",
   "articles": [
     {
       "title": "En marge du G7, un chemin semé d’embûches pour encadrer l’usage de l’IA militaire",
@@ -8,14 +8,6 @@
       "date": "Juin 2026",
       "timestamp": 1781461229.0,
       "source": "Pixels : Toute l’actualité sur Le Monde.fr."
-    },
-    {
-      "title": "LangGraph Flaw Chain Exposes Self-Hosted AI Agents to Remote Code Execution",
-      "summary": "Cybersecurity researchers have disclosed details of three now-patched security flaws impacting LangGraph, including a critical vulnerability chain that could result in remote code execution. LangGraph is an open-source framework created by LangChain to build complex, stateful, and multi-agent artificial intelligence (AI) agentic applications. \"An SQL injection in LangGraph's function could",
-      "link": "https://thehackernews.com/2026/06/langgraph-flaw-chain-exposes-self.html",
-      "date": "Juin 2026",
-      "timestamp": 1781257836.0,
-      "source": "The Hacker News"
     }
   ]
 }
