@@ -1,21 +1,13 @@
 {
-  "updated": "19/06/2026 11:22 UTC",
+  "updated": "20/06/2026 10:08 UTC",
   "articles": [
     {
-      "title": "C’est « le goulag » chez Meta : la course à l’IA tourne au cauchemar pour les employés de Mark Zuckerberg",
-      "summary": "« C'est littéralement le goulag. Du jour au lendemain, vous n'avez plus aucun but dans la vie ». Certains employés de Meta décrivent un climat de travail délétère au sein de l’entreprise. La course au développement de l’intelligence artificielle menée par le groupe se ferait au détriment de la santé mentale de ses salariés.",
-      "link": "https://www.01net.com/actualites/cest-le-goulag-chez-meta-la-course-a-lia-tourne-au-cauchemar-pour-les-employes-de-mark-zuckerberg.html",
+      "title": "L’IA de défense érigée en «intérêt essentiel de sécurité» : ce que change cette annonce de Catherine Vautrin pour la France",
+      "summary": "La ministre des armées Catherine Vautrin a inauguré vendredi les nouveaux locaux de l’Agence ministérielle pour l’intelligence artificielle de défense.",
+      "link": "https://www.lefigaro.fr/international/l-ia-de-defense-erigee-en-interet-essentiel-de-securite-ce-que-change-cette-annonce-de-catherine-vautrin-pour-la-france-20260619",
       "date": "Juin 2026",
-      "timestamp": 1781867667.0,
-      "source": "01net.com"
-    },
-    {
-      "title": "Grok, l’IA d’Elon Musk, a servi dans les frappes en Iran, révèle le Pentagone",
-      "summary": "Un modèle dérivé, le Grok Gov Model, est utilisé dans un programme de ciblage assisté par intelligence artificielle de l’armée américaine, selon le ministère de la défense.",
-      "link": "https://www.lemonde.fr/international/article/2026/06/17/grok-l-ia-d-elon-musk-a-servi-dans-les-frappes-en-iran-revele-le-pentagone_6704083_3210.html",
-      "date": "Juin 2026",
-      "timestamp": 1781662327.0,
-      "source": "Pixels : Toute l’actualité sur Le Monde.fr."
+      "timestamp": 1781888971.0,
+      "source": "Le Figaro - International : Actualité internationale en direct"
     }
   ]
 }
