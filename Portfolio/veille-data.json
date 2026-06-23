@@ -1,13 +1,45 @@
 {
-  "updated": "22/06/2026 12:49 UTC",
+  "updated": "23/06/2026 10:35 UTC",
   "articles": [
     {
-      "title": "L’IA de défense érigée en «intérêt essentiel de sécurité» : ce que change cette annonce de Catherine Vautrin pour la France",
-      "summary": "La ministre des armées Catherine Vautrin a inauguré vendredi les nouveaux locaux de l’Agence ministérielle pour l’intelligence artificielle de défense.",
-      "link": "https://www.lefigaro.fr/international/l-ia-de-defense-erigee-en-interet-essentiel-de-securite-ce-que-change-cette-annonce-de-catherine-vautrin-pour-la-france-20260619",
+      "title": "Leonardo, Baykar tout in-flight control of Kizilelma drone from a M-346 jet trainer",
+      "summary": "Following an autonomous taxi and take-off, the Kizilelma autonomously linked to the M-346 using “an advanced radio frequency data exchange system.\"",
+      "link": "https://www.defensenews.com/global/europe/2026/06/23/leonardo-baykar-tout-in-flight-control-of-kizilelma-drone-from-a-m-346-jet-trainer/",
       "date": "Juin 2026",
-      "timestamp": 1781888971.0,
-      "source": "Le Figaro - International : Actualité internationale en direct"
+      "timestamp": 1782208769.0,
+      "source": "Defense News"
+    },
+    {
+      "title": "OpenAI Expands Daybreak With GPT-5.5-Cyber to Help Defenders Patch Security Flaws",
+      "summary": "OpenAI on Monday said it's releasing an improved version of its GPT‑5.5‑Cyber model to trusted defenders as part of the Daybreak initiative&nbsp;the artificial intelligence (AI) company announced last month. Calling GPT‑5.5‑Cyber its \"strongest model yet for finding and helping patch software vulnerabilities,\" OpenAI said the model can \"sustain deeper analysis across large codebases\" to",
+      "link": "https://thehackernews.com/2026/06/openai-expands-daybreak-with-gpt-55.html",
+      "date": "Juin 2026",
+      "timestamp": 1782187018.0,
+      "source": "The Hacker News"
+    },
+    {
+      "title": "Google se fait braconner ses talents dans l’IA par OpenAI et Anthropic",
+      "summary": "La maison mère du géant de la tech, Alphabet, dévisse en Bourse, alors que les surinvestissements se poursuivent et qu’une guerre des prix dans l’intelligence artificielle, avec l’aide de modèles chinois, menace les leaders du secteur.",
+      "link": "https://www.lemonde.fr/international/article/2026/06/23/google-se-fait-braconner-ses-talents-dans-l-intelligence-artificielle-par-openai-et-anthropic_6708550_3210.html",
+      "date": "Juin 2026",
+      "timestamp": 1782185241.0,
+      "source": "Pixels : Toute l’actualité sur Le Monde.fr."
+    },
+    {
+      "title": "Researchers Detail DifyTap Flaws in Dify That Could Expose AI Chats Across Tenants",
+      "summary": "Cybersecurity researchers have disclosed details of four vulnerabilities in Dify, an open-source agentic workflow platform with more than 146,000 GitHub stars, that could allow attackers to stealthily read artificial intelligence (AI) conversions from other customers' applications without requiring authentication. The vulnerabilities have been collectively codenamed DifyTap by Zafran Security.",
+      "link": "https://thehackernews.com/2026/06/researchers-detail-difytap-flaws-in.html",
+      "date": "Juin 2026",
+      "timestamp": 1782144808.0,
+      "source": "The Hacker News"
+    },
+    {
+      "title": "US Army tests autonomous boats during Philippine exercise",
+      "summary": "Autonomous boats helped escort a U.S. Army vessel during a military exercise, in a demonstration of how uncrewed assets are changing maritime operations.",
+      "link": "https://www.defensenews.com/news/your-military/2026/06/22/us-army-tests-autonomous-boats-during-philippine-exercise/",
+      "date": "Juin 2026",
+      "timestamp": 1782144031.0,
+      "source": "Defense News"
     }
   ]
 }
