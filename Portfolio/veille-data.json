@@ -1,5 +1,5 @@
 {
-  "updated": "24/06/2026 10:22 UTC",
+  "updated": "25/06/2026 10:14 UTC",
   "articles": [
     {
       "title": "Leonardo, Baykar tout in-flight control of Kizilelma drone from a M-346 jet trainer",
@@ -10,36 +10,12 @@
       "source": "Defense News"
     },
     {
-      "title": "OpenAI Expands Daybreak With GPT-5.5-Cyber to Help Defenders Patch Security Flaws",
-      "summary": "OpenAI on Monday said it's releasing an improved version of its GPT‑5.5‑Cyber model to trusted defenders as part of the Daybreak initiative&nbsp;the artificial intelligence (AI) company announced last month. Calling GPT‑5.5‑Cyber its \"strongest model yet for finding and helping patch software vulnerabilities,\" OpenAI said the model can \"sustain deeper analysis across large codebases\" to",
-      "link": "https://thehackernews.com/2026/06/openai-expands-daybreak-with-gpt-55.html",
-      "date": "Juin 2026",
-      "timestamp": 1782187018.0,
-      "source": "The Hacker News"
-    },
-    {
       "title": "Google se fait braconner ses talents dans l’IA par OpenAI et Anthropic",
       "summary": "La maison mère du géant de la tech, Alphabet, dévisse en Bourse, alors que les surinvestissements se poursuivent et qu’une guerre des prix dans l’intelligence artificielle, avec l’aide de modèles chinois, menace les leaders du secteur.",
       "link": "https://www.lemonde.fr/international/article/2026/06/23/google-se-fait-braconner-ses-talents-dans-l-intelligence-artificielle-par-openai-et-anthropic_6708550_3210.html",
       "date": "Juin 2026",
       "timestamp": 1782185241.0,
       "source": "Pixels : Toute l’actualité sur Le Monde.fr."
-    },
-    {
-      "title": "Researchers Detail DifyTap Flaws in Dify That Could Expose AI Chats Across Tenants",
-      "summary": "Cybersecurity researchers have disclosed details of four vulnerabilities in Dify, an open-source agentic workflow platform with more than 146,000 GitHub stars, that could allow attackers to stealthily read artificial intelligence (AI) conversions from other customers' applications without requiring authentication. The vulnerabilities have been collectively codenamed DifyTap by Zafran Security.",
-      "link": "https://thehackernews.com/2026/06/researchers-detail-difytap-flaws-in.html",
-      "date": "Juin 2026",
-      "timestamp": 1782144808.0,
-      "source": "The Hacker News"
-    },
-    {
-      "title": "US Army tests autonomous boats during Philippine exercise",
-      "summary": "Autonomous boats helped escort a U.S. Army vessel during a military exercise, in a demonstration of how uncrewed assets are changing maritime operations.",
-      "link": "https://www.defensenews.com/news/your-military/2026/06/22/us-army-tests-autonomous-boats-during-philippine-exercise/",
-      "date": "Juin 2026",
-      "timestamp": 1782144031.0,
-      "source": "Defense News"
     }
   ]
 }
