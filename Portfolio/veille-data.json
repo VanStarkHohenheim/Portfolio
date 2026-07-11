@@ -1,29 +1,29 @@
 {
-  "updated": "10/07/2026 10:23 UTC",
+  "updated": "11/07/2026 08:45 UTC",
   "articles": [
+    {
+      "title": "Apple attaque en justice OpenAI pour détournement d’informations confidentielles après le recrutement d’ex-salariés",
+      "summary": "La marque à la pomme accuse l’entreprise d’intelligence artificielle d’avoir élaboré une « stratégie » destinée à « extraire des informations confidentielles » provenant d’Apple, dans une plainte déposée devant un tribunal fédéral.",
+      "link": "https://www.lemonde.fr/economie/article/2026/07/11/apple-attaque-en-justice-openai-pour-detournement-d-informations-confidentielles-apres-le-recrutement-d-ex-salaries_6722517_3234.html",
+      "date": "Juillet 2026",
+      "timestamp": 1783727265.0,
+      "source": "Pixels : Toute l’actualité sur Le Monde.fr."
+    },
+    {
+      "title": "Researcher Details WhatsApp-to-Host Attack Chain Using Three OpenClaw Flaws",
+      "summary": "Details have emerged about three now-patched security flaws in the OpenClaw personal artificial intelligence (AI) assistant that, if successfully exploited, could enable credential theft, privilege escalation, and arbitrary code execution on the host. A brief description of the high-severity vulnerabilities is as follows&nbsp;- GHSA-hjr6-g723-hmfm (CVSS score: 8.8) - An operating system",
+      "link": "https://thehackernews.com/2026/07/researcher-details-whatsapp-to-host.html",
+      "date": "Juillet 2026",
+      "timestamp": 1783693190.0,
+      "source": "The Hacker News"
+    },
     {
       "title": "Défense : « Notre défi est d’être capables de faire face aux usages malveillants de l’IA sans renier nos valeurs »",
       "summary": "L’innovation dans l’intelligence artificielle appliquée aux usages militaires relève d’un rapport de force dans lequel les entreprises américaines cherchent à empêcher l’émergence de concurrents internationaux, estime Bertrand Rondepierre, directeur de l’Agence ministérielle pour l’intelligence artificielle de défense, dans un entretien au « Monde ».",
       "link": "https://www.lemonde.fr/international/article/2026/07/10/defense-notre-defi-est-d-etre-capables-de-faire-face-aux-usages-malveillants-de-l-ia-sans-renier-nos-valeurs_6722386_3210.html",
       "date": "Juillet 2026",
       "timestamp": 1783656012.0,
-      "source": "International : Toute l’actualité sur Le Monde.fr."
-    },
-    {
-      "title": "Comment l’IA a-t-elle déjà métamorphosé la guerre ?",
-      "summary": "Massivement déployée au service de différentes armées dans le monde, l’intelligence artificielle bouleverse la conduite des conflits et l’éthique de la guerre. Dans ce podcast, Alexandre Piquard, journaliste au service Economie du « Monde » chargé de l’IA, analyse cette révolution militaire.",
-      "link": "https://www.lemonde.fr/podcasts/article/2026/07/08/comment-l-ia-a-t-elle-deja-metamorphose-la-guerre_6721691_5463015.html",
-      "date": "Juillet 2026",
-      "timestamp": 1783479607.0,
       "source": "Pixels : Toute l’actualité sur Le Monde.fr."
-    },
-    {
-      "title": "US Army tests autonomous mass minelaying",
-      "summary": "The Army’s Volcano mine dispenser can blanket 32 acres of terrain with up to 960 mines. Now, the Army is testing an autonomous version.",
-      "link": "https://www.defensenews.com/news/your-military/2026/07/07/us-army-tests-autonomous-mass-mine-laying/",
-      "date": "Juillet 2026",
-      "timestamp": 1783459541.0,
-      "source": "Defense News"
     }
   ]
 }
