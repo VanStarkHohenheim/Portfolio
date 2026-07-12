@@ -1,6 +1,14 @@
 {
-  "updated": "11/07/2026 08:45 UTC",
+  "updated": "12/07/2026 09:02 UTC",
   "articles": [
+    {
+      "title": "Comment Reddit est devenu un champ de bataille de l’IA",
+      "summary": "Les marques ne cherchent plus seulement à apparaître en tête des résultats de Google : elles veulent désormais être citées dans les réponses des chatbots comme ChatGPT. La plateforme Reddit, source majeure pour ces derniers, voit donc déferler les contenus promotionnels, que les communautés d’utilisateurs tentent d’endiguer.",
+      "link": "https://www.lemonde.fr/pixels/article/2026/07/11/comment-reddit-est-devenu-un-champ-de-bataille-de-l-ia_6722733_4408996.html",
+      "date": "Juillet 2026",
+      "timestamp": 1783792128.0,
+      "source": "Pixels : Toute l’actualité sur Le Monde.fr."
+    },
     {
       "title": "Apple attaque en justice OpenAI pour détournement d’informations confidentielles après le recrutement d’ex-salariés",
       "summary": "La marque à la pomme accuse l’entreprise d’intelligence artificielle d’avoir élaboré une « stratégie » destinée à « extraire des informations confidentielles » provenant d’Apple, dans une plainte déposée devant un tribunal fédéral.",
@@ -16,14 +24,6 @@
       "date": "Juillet 2026",
       "timestamp": 1783693190.0,
       "source": "The Hacker News"
-    },
-    {
-      "title": "Défense : « Notre défi est d’être capables de faire face aux usages malveillants de l’IA sans renier nos valeurs »",
-      "summary": "L’innovation dans l’intelligence artificielle appliquée aux usages militaires relève d’un rapport de force dans lequel les entreprises américaines cherchent à empêcher l’émergence de concurrents internationaux, estime Bertrand Rondepierre, directeur de l’Agence ministérielle pour l’intelligence artificielle de défense, dans un entretien au « Monde ».",
-      "link": "https://www.lemonde.fr/international/article/2026/07/10/defense-notre-defi-est-d-etre-capables-de-faire-face-aux-usages-malveillants-de-l-ia-sans-renier-nos-valeurs_6722386_3210.html",
-      "date": "Juillet 2026",
-      "timestamp": 1783656012.0,
-      "source": "Pixels : Toute l’actualité sur Le Monde.fr."
     }
   ]
 }
