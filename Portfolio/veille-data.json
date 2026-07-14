@@ -1,29 +1,13 @@
 {
-  "updated": "13/07/2026 10:25 UTC",
+  "updated": "14/07/2026 09:03 UTC",
   "articles": [
     {
       "title": "Comment Reddit est devenu un champ de bataille de l’IA",
       "summary": "Les marques ne cherchent plus seulement à apparaître en tête des résultats de Google : elles veulent désormais être citées dans les réponses des chatbots comme ChatGPT. La plateforme Reddit, source majeure pour ces derniers, voit donc déferler les contenus promotionnels, que les communautés d’utilisateurs tentent d’endiguer.",
       "link": "https://www.lemonde.fr/pixels/article/2026/07/11/comment-reddit-est-devenu-un-champ-de-bataille-de-l-ia_6722733_4408996.html",
       "date": "Juillet 2026",
-      "timestamp": 1783792128.0,
+      "timestamp": 1783792126.0,
       "source": "Pixels : Toute l’actualité sur Le Monde.fr."
-    },
-    {
-      "title": "Apple attaque en justice OpenAI pour détournement d’informations confidentielles après le recrutement d’ex-salariés",
-      "summary": "La marque à la pomme accuse l’entreprise d’intelligence artificielle d’avoir élaboré une « stratégie » destinée à « extraire des informations confidentielles » provenant d’Apple, dans une plainte déposée devant un tribunal fédéral.",
-      "link": "https://www.lemonde.fr/economie/article/2026/07/11/apple-attaque-en-justice-openai-pour-detournement-d-informations-confidentielles-apres-le-recrutement-d-ex-salaries_6722517_3234.html",
-      "date": "Juillet 2026",
-      "timestamp": 1783727265.0,
-      "source": "Pixels : Toute l’actualité sur Le Monde.fr."
-    },
-    {
-      "title": "Researcher Details WhatsApp-to-Host Attack Chain Using Three OpenClaw Flaws",
-      "summary": "Details have emerged about three now-patched security flaws in the OpenClaw personal artificial intelligence (AI) assistant that, if successfully exploited, could enable credential theft, privilege escalation, and arbitrary code execution on the host. A brief description of the high-severity vulnerabilities is as follows&nbsp;- GHSA-hjr6-g723-hmfm (CVSS score: 8.8) - An operating system",
-      "link": "https://thehackernews.com/2026/07/researcher-details-whatsapp-to-host.html",
-      "date": "Juillet 2026",
-      "timestamp": 1783693190.0,
-      "source": "The Hacker News"
     }
   ]
 }
