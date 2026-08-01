@@ -1,4 +1,13 @@
 {
-  "updated": "31/07/2026 09:44 UTC",
-  "articles": []
+  "updated": "01/08/2026 09:05 UTC",
+  "articles": [
+    {
+      "title": "Chinese military researchers tap US AI models to train defense systems",
+      "summary": "Chinese researchers have reportedly used leading U.S. AI models developed by OpenAI and Anthropic to train AI systems to advance defense capabilities.",
+      "link": "https://www.defensenews.com/industry/techwatch/2026/07/31/chinese-military-researchers-tap-us-ai-models-to-train-defense-systems/",
+      "date": "Juillet 2026",
+      "timestamp": 1785501243.0,
+      "source": "Defense News"
+    }
+  ]
 }
