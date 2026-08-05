@@ -1,14 +1,6 @@
 {
-  "updated": "04/08/2026 09:37 UTC",
+  "updated": "05/08/2026 09:36 UTC",
   "articles": [
-    {
-      "title": "Hugging Face Diffusers Flaws Could Let Model Repositories Execute Arbitrary Code",
-      "summary": "Three high-severity security flaws have been disclosed in Hugging Face's Diffusers library that could allow crafted model repositories to stealthily execute arbitrary code on machines that load it, opening the artificial intelligence (AI) supply chain to security risk. \"These vulnerabilities are bypassing trust_remote_code, the safeguard designed to stop unreviewed code from running in the",
-      "link": "https://thehackernews.com/2026/08/hugging-face-diffusers-flaws-could-let.html",
-      "date": "Août 2026",
-      "timestamp": 1785739231.0,
-      "source": "The Hacker News"
-    },
     {
       "title": "Chinese military researchers tap US AI models to train defense systems",
       "summary": "Chinese researchers have reportedly used leading U.S. AI models developed by OpenAI and Anthropic to train AI systems to advance defense capabilities.",
