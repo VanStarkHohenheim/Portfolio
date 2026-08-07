@@ -1,13 +1,4 @@
 {
-  "updated": "06/08/2026 09:38 UTC",
-  "articles": [
-    {
-      "title": "Paperclip AI Flaws Let Attackers Run Host Commands via Malicious Agent Imports",
-      "summary": "Two security flaws in Paperclip could let attackers execute commands on a network server or a developer's computer. Paperclip is an open-source control plane for teams of artificial intelligence (AI) agents, and both paths rely on importing a malicious agent and starting it. A third flaw could expose sensitive data and control-plane details through application programming interface (API) routes",
-      "link": "https://thehackernews.com/2026/08/paperclip-ai-flaws-let-attackers-run.html",
-      "date": "Août 2026",
-      "timestamp": 1785942845.0,
-      "source": "The Hacker News"
-    }
-  ]
+  "updated": "07/08/2026 08:12 UTC",
+  "articles": []
 }
