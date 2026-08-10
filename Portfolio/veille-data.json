@@ -1,13 +1,4 @@
 {
-  "updated": "09/08/2026 07:53 UTC",
-  "articles": [
-    {
-      "title": "AI-Assisted HTTP Terminator Finds Novel HTTP Desync Techniques and Apache Zero-Day",
-      "summary": "PortSwigger says HTTP Terminator, an artificial intelligence (AI)-assisted research system built by James Kettle, generated and proved new HTTP desynchronization techniques after exploring 30,000 candidate desync vectors. PortSwigger said a separate human-guided discovery cascade also exposed a zero-day in Apache Traffic Server. Kettle said HTTP Terminator tested 30,000 websites where",
-      "link": "https://thehackernews.com/2026/08/ai-assisted-http-terminator-finds-novel.html",
-      "date": "Août 2026",
-      "timestamp": 1786097394.0,
-      "source": "The Hacker News"
-    }
-  ]
+  "updated": "10/08/2026 08:25 UTC",
+  "articles": []
 }
