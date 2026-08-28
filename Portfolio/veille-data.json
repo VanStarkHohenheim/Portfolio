@@ -1,4 +1,13 @@
 {
-  "updated": "27/08/2026 18:06 UTC",
-  "articles": []
+  "updated": "28/08/2026 19:15 UTC",
+  "articles": [
+    {
+      "title": "Intelligence artificielle : des sanctions de l’administration Trump contre Anthropic annulées par une juge fédérale",
+      "summary": "Washington avait interdit aux agences fédérales d’utiliser les outils d’Anthropic après que l’entreprise eut refusé de laisser l’armée américaine utiliser son chatbot Claude pour des armes létales entièrement autonomes ou la surveillance de masse de la population.",
+      "link": "https://www.lemonde.fr/international/article/2026/08/28/intelligence-artificielle-le-bannissement-d-anthropic-par-l-administration-trump-est-illegal-decide-la-justice-americaine_6758773_3210.html",
+      "date": "Août 2026",
+      "timestamp": 1787886547.0,
+      "source": "Pixels : Toute l’actualité sur Le Monde.fr."
+    }
+  ]
 }
