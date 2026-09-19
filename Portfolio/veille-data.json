@@ -1,6 +1,14 @@
 {
-  "updated": "18/09/2026 12:04 UTC",
+  "updated": "19/09/2026 11:47 UTC",
   "articles": [
+    {
+      "title": "Claude Opus 5 Helped Researchers Take Over OpenAI Staff Accounts via Chained Flaws",
+      "summary": "Three researchers at the security firm&nbsp;Hacktron&nbsp;used Anthropic's Claude Opus 5 to chain two flaws and take over the ChatGPT and Codex accounts of several OpenAI employees, then reach an internal OpenAI code repository. The chain began with a bug in the software that runs OpenAI's public help forum and moved through a weakness in OpenAI's own login system. This was security research,",
+      "link": "https://thehackernews.com/2026/09/claude-opus-5-helped-researchers-take.html",
+      "date": "Septembre 2026",
+      "timestamp": 1789812070.0,
+      "source": "The Hacker News"
+    },
     {
       "title": "French Army wants to keep adversaries guessing on see-through battlefield",
       "summary": "The French Future Combat Command is looking at what Baratz called “frugal artificial intelligence,” designed to consume as little energy as possible.",
