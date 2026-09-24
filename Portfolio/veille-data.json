@@ -1,5 +1,5 @@
 {
-  "updated": "23/09/2026 12:34 UTC",
+  "updated": "24/09/2026 12:33 UTC",
   "articles": [
     {
       "title": "Anthropic and OpenAI Models Still Attempt Restricted Actions in Safety Tests",
@@ -8,30 +8,6 @@
       "date": "Septembre 2026",
       "timestamp": 1790164033.0,
       "source": "The Hacker News"
-    },
-    {
-      "title": "Guerre en Ukraine : des deux côtés du front, l’essor des drones dopés à l’IA",
-      "summary": "L’armée ukrainienne effectue déjà quotidiennement des missions avec des aéronefs embarquant des modules d’intelligence artificielle pour reconnaître et atteindre leur cible. Côté russe, les développements sont massifs et rapides, permettant à des drones de moyenne portée d’effectuer des missions en totale autonomie.",
-      "link": "https://www.lemonde.fr/international/article/2026/09/23/guerre-en-ukraine-des-deux-cotes-du-front-l-essor-des-drones-dopes-a-l-ia_6780882_3210.html",
-      "date": "Septembre 2026",
-      "timestamp": 1790157603.0,
-      "source": "International : Toute l’actualité sur Le Monde.fr."
-    },
-    {
-      "title": "Le futur avion de chasse de la France fait voler deux IA 100 % françaises",
-      "summary": "Deux algorithmes tricolores viennent de prendre l'air à bord d'un avion de chasse. Leur rôle exact ? Motus. Depuis l'abandon du chasseur européen, chaque avionneur français trace sa propre route vers l'IA de combat.",
-      "link": "https://www.01net.com/actualites/le-futur-avion-de-chasse-de-la-france-fait-voler-deux-ia-100-francaises.html",
-      "date": "Septembre 2026",
-      "timestamp": 1790152238.0,
-      "source": "01net.com"
-    },
-    {
-      "title": "ChatGPT vs Claude : OpenAI et Anthropic dégainent des IA moins chers et plus efficaces… au lieu de ralentir",
-      "summary": "Coup sur coup, OpenAI et Anthropic ont lancé de nouvelles IA bien moins chères que les précédentes. GPT-6 Sol et Luna d'un côté, Claude Opus 5.5 de l'autre. La guerre des prix de l'IA s'intensifie en pleine polémique sur le ralentissement de l'IA.",
-      "link": "https://www.01net.com/actualites/chatgpt-vs-claude-openai-et-anthropic-degainent-ia-moins-chers-lieu-ralentir.html",
-      "date": "Septembre 2026",
-      "timestamp": 1790144262.0,
-      "source": "01net.com"
     }
   ]
 }
