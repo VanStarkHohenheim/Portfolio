@@ -1,4 +1,29 @@
 {
-  "updated": "25/09/2026 12:34 UTC",
-  "articles": []
+  "updated": "26/09/2026 12:03 UTC",
+  "articles": [
+    {
+      "title": "IA : la mise à l’écart d’Anthropic par le Pentagone confirmée par la justice",
+      "summary": "La cour d’appel de Washington a jugé conforme, vendredi, la mise à l’index de la start-up d’intelligence artificielle qui avait refusé, en février, de laisser l’armée américaine utiliser sans restriction son modèle, Claude.",
+      "link": "https://www.lemonde.fr/economie/article/2026/09/26/ia-la-mise-a-l-ecart-d-anthropic-par-le-pentagone-confirmee-par-la-justice_6782773_3234.html",
+      "date": "Septembre 2026",
+      "timestamp": 1790378794.0,
+      "source": "Pixels : Toute l’actualité sur Le Monde.fr."
+    },
+    {
+      "title": "US Navy stands up hub to prepare unmanned systems for combat",
+      "summary": "U.S. Chief of Naval Operations Adm. Daryl Caudle announced a new autonomous development center to train sailors and test new technology.",
+      "link": "https://www.defensenews.com/industry/techwatch/2026/09/25/us-navy-stands-up-hub-to-prepare-unmanned-systems-for-combat/",
+      "date": "Septembre 2026",
+      "timestamp": 1790360028.0,
+      "source": "Defense News"
+    },
+    {
+      "title": "Thales in ‘quite advanced’ talks with NATO countries on AI-powered command software",
+      "summary": "French firm Thales is “quite advanced” in discussions with a number of NATO countries about using its artificial intelligence-powered C2 system.",
+      "link": "https://www.defensenews.com/global/europe/2026/09/25/thales-in-quite-advanced-talks-with-nato-countries-on-ai-powered-command-software/",
+      "date": "Septembre 2026",
+      "timestamp": 1790350482.0,
+      "source": "Defense News"
+    }
+  ]
 }
