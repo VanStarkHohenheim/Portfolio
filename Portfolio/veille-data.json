@@ -1,6 +1,14 @@
 {
-  "updated": "28/09/2026 14:58 UTC",
+  "updated": "29/09/2026 13:45 UTC",
   "articles": [
+    {
+      "title": "A Gaza, « usines à cibles » et « dommages collatéraux » : les méthodes de l’armée israélienne racontées par ses militaires",
+      "summary": "Des officiers israéliens détaillent au « Monde », en collaboration avec l’ONG Breaking The Silence, les règles d’engagement de l’armée à Gaza, le nombre assumé de victimes civiles provoqué par ses opérations et l’utilisation massive de l’intelligence artificielle.",
+      "link": "https://www.lemonde.fr/international/article/2026/09/29/a-gaza-usines-a-cibles-et-dommages-collateraux-les-methodes-de-l-armee-israelienne-racontees-par-ses-militaires_6785614_3210.html",
+      "date": "Septembre 2026",
+      "timestamp": 1790686804.0,
+      "source": "International : Toute l’actualité sur Le Monde.fr."
+    },
     {
       "title": "Carbonato Botnet Compromises Docker Hosts to Deploy Telegram-Controlled Hermes AI Agent",
       "summary": "Cybersecurity researchers have disclosed details of a new botnet malware called Carbonato that's targeting exposed Docker daemons to deploy an open-source artificial intelligence (AI) agent framework called Hermes Agent. \"The implant installs the framework unchanged, then overwrites its SOUL.md persona file,\" ThreatDown said. \"The 39-line prompt directs it to execute tasks received through",
@@ -8,14 +16,6 @@
       "date": "Septembre 2026",
       "timestamp": 1790595960.0,
       "source": "The Hacker News"
-    },
-    {
-      "title": "IA : la mise à l’écart d’Anthropic par le Pentagone confirmée par la justice",
-      "summary": "La cour d’appel de Washington a jugé conforme, vendredi, la mise à l’index de la start-up d’intelligence artificielle qui avait refusé, en février, de laisser l’armée américaine utiliser sans restriction son modèle, Claude.",
-      "link": "https://www.lemonde.fr/economie/article/2026/09/26/ia-la-mise-a-l-ecart-d-anthropic-par-le-pentagone-confirmee-par-la-justice_6782773_3234.html",
-      "date": "Septembre 2026",
-      "timestamp": 1790378794.0,
-      "source": "Pixels : Toute l’actualité sur Le Monde.fr."
     },
     {
       "title": "US Navy stands up hub to prepare unmanned systems for combat",
