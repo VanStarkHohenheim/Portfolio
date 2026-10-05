@@ -1,4 +1,13 @@
 {
-  "updated": "04/10/2026 13:02 UTC",
-  "articles": []
+  "updated": "05/10/2026 15:34 UTC",
+  "articles": [
+    {
+      "title": "« Aucun moyen d’éviter l’attaque » : la Corée du Nord lance un missile balistique piloté par IA",
+      "summary": "Les médias d'État de la Corée du Nord ont déclaré que l'armée avait utilisé l'intelligence artificielle pour lancer un missile balistique. L'IA permettrait à ce dernier de changer sa trajectoire, le rendant « impossible à éviter ».",
+      "link": "https://www.01net.com/actualites/missile-balistique-pilote-ia-voici-derniere-experience-coree-du-nord.html",
+      "date": "Octobre 2026",
+      "timestamp": 1791214295.0,
+      "source": "01net.com"
+    }
+  ]
 }
