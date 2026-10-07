@@ -1,4 +1,21 @@
 {
-  "updated": "06/10/2026 13:56 UTC",
-  "articles": []
+  "updated": "07/10/2026 14:13 UTC",
+  "articles": [
+    {
+      "title": "Un Américain condamné à dix-huit mois de prison pour une arnaque à la musique générée par IA sur des plateformes de streaming",
+      "summary": "Michael Smith avait mis en ligne des milliers de morceaux générés par intelligence artificielle et les avait fait écouter en boucle par une armée de faux comptes. Un stratagème qui lui avait permis d’obtenir plus de 8 millions de dollars de royalties.",
+      "link": "https://www.lemonde.fr/pixels/article/2026/10/07/un-americain-condamne-a-dix-huit-mois-de-prison-pour-une-arnaque-a-la-musique-generee-par-ia-sur-des-plateformes-de-streaming_6789577_4408996.html",
+      "date": "Octobre 2026",
+      "timestamp": 1791363707.0,
+      "source": "Pixels : Toute l’actualité sur Le Monde.fr."
+    },
+    {
+      "title": "Anthropic Expands Claude Access for Vetted Cyber Teams as Glasswing Finds 129,000 Flaws",
+      "summary": "Anthropic on Tuesday said it's expanding a program that allows vetted cybersecurity professionals to test its advanced artificial intelligence (AI) models with reduced safeguards and blocking classifiers, as the company claimed its Project Glasswing initiative uncovered at least 129,000 verified software vulnerabilities between April and July 2026. The company said it also found an additional",
+      "link": "https://thehackernews.com/2026/10/anthropic-expands-claude-access-for.html",
+      "date": "Octobre 2026",
+      "timestamp": 1791360458.0,
+      "source": "The Hacker News"
+    }
+  ]
 }
