@@ -1,6 +1,22 @@
 {
-  "updated": "08/10/2026 14:23 UTC",
+  "updated": "09/10/2026 14:08 UTC",
   "articles": [
+    {
+      "title": "Ce drone de frappe français revendique 2 000 km de portée sans GPS, et un premier pays s’y intéresse déjà",
+      "summary": "Harmattan AI dévoile IRIFI, drone de frappe autonome annoncé à 2 000 km de portée, sans GPS. Le Maroc a signé une lettre d'intention.",
+      "link": "https://www.01net.com/actualites/ce-drone-de-frappe-francais-revendique-2-000-km-de-portee-sans-gps-et-un-premier-pays-sy-interesse-deja.html",
+      "date": "Octobre 2026",
+      "timestamp": 1791541873.0,
+      "source": "01net.com"
+    },
+    {
+      "title": "Vers «un ciblage d’êtres humains par des machines» ? L’essor des armes autonomes et de l’IA bouleverse les règles du combat",
+      "summary": "DÉCRYPTAGE - Le gouvernement américain a annoncé la création d’un nouveau Commandement de la guerre autonome, chargé de rassembler les progrès technologiques en matière d’intelligence artificielle au service des armées.",
+      "link": "https://www.lefigaro.fr/international/vers-un-ciblage-d-etres-humains-par-des-machines-l-essor-des-armes-autonomes-et-de-l-ia-bouleverse-les-regles-du-combat-20261009",
+      "date": "Octobre 2026",
+      "timestamp": 1791531800.0,
+      "source": "Le Figaro - International : Actualité internationale en direct"
+    },
     {
       "title": "Un Américain condamné à dix-huit mois de prison pour une arnaque à la musique générée par IA sur des plateformes de streaming",
       "summary": "Michael Smith avait mis en ligne des milliers de morceaux générés par intelligence artificielle et les avait fait écouter en boucle par une armée de faux comptes. Un stratagème qui lui avait permis d’obtenir plus de 8 millions de dollars de royalties.",
@@ -8,14 +24,6 @@
       "date": "Octobre 2026",
       "timestamp": 1791363707.0,
       "source": "Pixels : Toute l’actualité sur Le Monde.fr."
-    },
-    {
-      "title": "Anthropic Expands Claude Access for Vetted Cyber Teams as Glasswing Finds 129,000 Flaws",
-      "summary": "Anthropic on Tuesday said it's expanding a program that allows vetted cybersecurity professionals to test its advanced artificial intelligence (AI) models with reduced safeguards and blocking classifiers, as the company claimed its Project Glasswing initiative uncovered at least 129,000 verified software vulnerabilities between April and July 2026. The company said it also found an additional",
-      "link": "https://thehackernews.com/2026/10/anthropic-expands-claude-access-for.html",
-      "date": "Octobre 2026",
-      "timestamp": 1791360458.0,
-      "source": "The Hacker News"
     }
   ]
 }
