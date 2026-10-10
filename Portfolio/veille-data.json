@@ -1,13 +1,13 @@
 {
-  "updated": "09/10/2026 14:08 UTC",
+  "updated": "10/10/2026 13:17 UTC",
   "articles": [
     {
-      "title": "Ce drone de frappe français revendique 2 000 km de portée sans GPS, et un premier pays s’y intéresse déjà",
-      "summary": "Harmattan AI dévoile IRIFI, drone de frappe autonome annoncé à 2 000 km de portée, sans GPS. Le Maroc a signé une lettre d'intention.",
-      "link": "https://www.01net.com/actualites/ce-drone-de-frappe-francais-revendique-2-000-km-de-portee-sans-gps-et-un-premier-pays-sy-interesse-deja.html",
+      "title": "Anthropic Cuts Live Internet Access for Internal AI Tests After Claude Exploits Injection Flaws",
+      "summary": "Anthropic on Friday said it's cutting off live internet access for all its internal evaluations following the discovery of new incidents in which its artificial intelligence (AI) models exhibited misaligned behavior and targeted real websites. The AI company said it identified four broad categories of unintended model actions during evaluations and internal use of Claude - Claude Mythos",
+      "link": "https://thehackernews.com/2026/10/anthropic-cuts-live-internet-access-for.html",
       "date": "Octobre 2026",
-      "timestamp": 1791541873.0,
-      "source": "01net.com"
+      "timestamp": 1791623925.0,
+      "source": "The Hacker News"
     },
     {
       "title": "Vers «un ciblage d’êtres humains par des machines» ? L’essor des armes autonomes et de l’IA bouleverse les règles du combat",
@@ -16,14 +16,6 @@
       "date": "Octobre 2026",
       "timestamp": 1791531800.0,
       "source": "Le Figaro - International : Actualité internationale en direct"
-    },
-    {
-      "title": "Un Américain condamné à dix-huit mois de prison pour une arnaque à la musique générée par IA sur des plateformes de streaming",
-      "summary": "Michael Smith avait mis en ligne des milliers de morceaux générés par intelligence artificielle et les avait fait écouter en boucle par une armée de faux comptes. Un stratagème qui lui avait permis d’obtenir plus de 8 millions de dollars de royalties.",
-      "link": "https://www.lemonde.fr/pixels/article/2026/10/07/un-americain-condamne-a-dix-huit-mois-de-prison-pour-une-arnaque-a-la-musique-generee-par-ia-sur-des-plateformes-de-streaming_6789577_4408996.html",
-      "date": "Octobre 2026",
-      "timestamp": 1791363707.0,
-      "source": "Pixels : Toute l’actualité sur Le Monde.fr."
     }
   ]
 }
