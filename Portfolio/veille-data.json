@@ -1,5 +1,5 @@
 {
-  "updated": "10/10/2026 13:17 UTC",
+  "updated": "11/10/2026 13:46 UTC",
   "articles": [
     {
       "title": "Anthropic Cuts Live Internet Access for Internal AI Tests After Claude Exploits Injection Flaws",
@@ -8,14 +8,6 @@
       "date": "Octobre 2026",
       "timestamp": 1791623925.0,
       "source": "The Hacker News"
-    },
-    {
-      "title": "Vers «un ciblage d’êtres humains par des machines» ? L’essor des armes autonomes et de l’IA bouleverse les règles du combat",
-      "summary": "DÉCRYPTAGE - Le gouvernement américain a annoncé la création d’un nouveau Commandement de la guerre autonome, chargé de rassembler les progrès technologiques en matière d’intelligence artificielle au service des armées.",
-      "link": "https://www.lefigaro.fr/international/vers-un-ciblage-d-etres-humains-par-des-machines-l-essor-des-armes-autonomes-et-de-l-ia-bouleverse-les-regles-du-combat-20261009",
-      "date": "Octobre 2026",
-      "timestamp": 1791531800.0,
-      "source": "Le Figaro - International : Actualité internationale en direct"
     }
   ]
 }
