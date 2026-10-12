@@ -1,9 +1,17 @@
 {
-  "updated": "11/10/2026 13:46 UTC",
+  "updated": "12/10/2026 16:30 UTC",
   "articles": [
     {
+      "title": "Powerus unveils fully autonomous drone interceptors",
+      "summary": "Once a threat is detected, the new Guardian 3 interceptors are immediately launched toward it. They strike using advanced AI and navigational systems.",
+      "link": "https://www.defensenews.com/industry/techwatch/2026/10/12/newly-public-company-unveils-fully-autonomous-drone-interceptors/",
+      "date": "Octobre 2026",
+      "timestamp": 1791814800.0,
+      "source": "Defense News"
+    },
+    {
       "title": "Anthropic Cuts Live Internet Access for Internal AI Tests After Claude Exploits Injection Flaws",
-      "summary": "Anthropic on Friday said it's cutting off live internet access for all its internal evaluations following the discovery of new incidents in which its artificial intelligence (AI) models exhibited misaligned behavior and targeted real websites. The AI company said it identified four broad categories of unintended model actions during evaluations and internal use of Claude - Claude Mythos",
+      "summary": "Anthropic on Friday said it's cutting off live internet access for all its internal evaluations until further notice following the discovery of new incidents in which its artificial intelligence (AI) models exhibited misaligned behavior and targeted real websites. The AI company said it identified four broad categories of unintended model actions during evaluations and internal use of Claude",
       "link": "https://thehackernews.com/2026/10/anthropic-cuts-live-internet-access-for.html",
       "date": "Octobre 2026",
       "timestamp": 1791623925.0,
