@@ -1,6 +1,14 @@
 {
-  "updated": "18/10/2026 11:56 UTC",
+  "updated": "19/10/2026 14:22 UTC",
   "articles": [
+    {
+      "title": "US Army Cyber Command charts course for human-AI equilibrium",
+      "summary": "U.S. Army Cyber Command is constantly refining human oversight of artificial intelligence, Lt. Gen. Christopher Eubank said last week.",
+      "link": "https://www.defensenews.com/industry/techwatch/2026/10/19/us-army-cyber-command-charts-course-for-human-ai-equilibrium/",
+      "date": "Octobre 2026",
+      "timestamp": 1792414800.0,
+      "source": "Defense News"
+    },
     {
       "title": "Des «fermes à drones» aux essaims autonomes grâce à l’IA : comment l’armée de terre française accélère sa transformation",
       "summary": "DÉCRYPTAGE - Pourvue de six unités de drones de combat, elle devrait être équipée de 14.000 drones d’ici à la fin de l’année.",
@@ -8,14 +16,6 @@
       "date": "Octobre 2026",
       "timestamp": 1792177200.0,
       "source": "Le Figaro - International : Actualité internationale en direct"
-    },
-    {
-      "title": "Blood supplies, autonomous systems shape US Army’s Indo-Pacific combat care plans",
-      "summary": "18th Theater Medical Command leaders are experimenting with ways to prolong care in a theater where the \"Golden Hour\" standard is difficult to maintain.",
-      "link": "https://www.defensenews.com/news/your-military/2026/10/14/blood-supplies-autonomous-systems-shape-us-armys-indo-pacific-combat-care-plans/",
-      "date": "Octobre 2026",
-      "timestamp": 1792152000.0,
-      "source": "Defense News"
     }
   ]
 }
