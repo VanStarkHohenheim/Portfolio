@@ -1,20 +1,20 @@
 {
-  "updated": "12/11/2026 15:46 UTC",
+  "updated": "13/11/2026 15:06 UTC",
   "articles": [
+    {
+      "title": "Gaspard de Monclin, le nouveau loup de la presse éco qui mise à fond sur l’IA",
+      "summary": "En quelques mois, l’entrepreneur de 35 ans a racheté des titres de la presse économique en difficulté, comme « Le Revenu » ou « Le Nouvel Economiste ». Pour augmenter leur rentabilité, il réduit drastiquement le nombre de salariés et utilise massivement l’intelligence artificielle. Une stratégie qu’il assume sans faux-semblants.",
+      "link": "https://www.lemonde.fr/m-le-mag/article/2026/11/13/gaspard-de-monclin-le-nouveau-loup-de-la-presse-eco-qui-mise-a-fond-sur-l-ia_6809274_4500055.html",
+      "date": "Novembre 2026",
+      "timestamp": 1794546015.0,
+      "source": "Pixels : Toute l’actualité sur Le Monde.fr."
+    },
     {
       "title": "Le patron de Nvidia, mis en cause pour une liaison avec une Chinoise soupçonnée d’espionnage, accusé d’avoir eu une seconde affaire sentimentale avec une salariée",
       "summary": "Selon le « Wall Street Journal », le conseil d’administration se préparait, mercredi soir, à révoquer Jensen Huang, le fondateur du géant des puces électroniques nécessaires à la révolution de l’intelligence artificielle.",
       "link": "https://www.lemonde.fr/economie/article/2026/11/12/le-patron-de-nvidia-mis-en-cause-pour-une-liaison-avec-une-chinoise-soupconnee-d-espionnage-accuse-d-avoir-eu-une-seconde-affaire-sentimentale-avec-une-salariee_6809035_3234.html",
       "date": "Novembre 2026",
       "timestamp": 1794439803.0,
-      "source": "Pixels : Toute l’actualité sur Le Monde.fr."
-    },
-    {
-      "title": "Comment Nvidia s’est retrouvée au cœur d’un scandale international, entre espionne chinoise, guerre des puces et indifférence de Donald Trump",
-      "summary": "Le fondateur du géant des microprocesseurs américain a reconnu une liaison avec une entrepreneuse soupçonnée d’avoir travaillé pour Pékin, alors placé sous embargo, en pleine course à l’intelligence artificielle entre les deux pays.",
-      "link": "https://www.lemonde.fr/economie/article/2026/11/11/comment-nvidia-s-est-retrouve-au-c-ur-d-un-scandale-international-entre-espionne-chinoise-guerre-des-puces-et-indifference-de-donald-trump_6808922_3234.html",
-      "date": "Novembre 2026",
-      "timestamp": 1794369602.0,
       "source": "Pixels : Toute l’actualité sur Le Monde.fr."
     }
   ]
