@@ -1,4 +1,21 @@
 {
-  "updated": "18/11/2026 16:11 UTC",
-  "articles": []
+  "updated": "19/11/2026 16:19 UTC",
+  "articles": [
+    {
+      "title": "CISA Warns of 4 Exploited Flaws Linked to Ransomware, Cryptomining, and LLMjacking Attacks",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added four vulnerabilities impacting Synology DiskStation Manager (DSM), BerriAI LiteLLM, Apache Axis, and Vanderbilt University Research Electronic Data Capture (REDCap) to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The vulnerabilities are listed below -",
+      "link": "https://thehackernews.com/2026/11/cisa-warns-of-4-exploited-flaws-linked.html",
+      "date": "Novembre 2026",
+      "timestamp": 1795075200.0,
+      "source": "The Hacker News"
+    },
+    {
+      "title": "Armes autonomes, soldats robots... Le vertige d’une guerre sans hommes",
+      "summary": "ENQUÊTE - Alors que les systèmes autonomes, portés par les progrès de l’intelligence artificielle, se développent, les États membres des Nations unies, réunis à Genève, s’interrogent sur la régulation de ces nouvelles armes.",
+      "link": "https://www.lefigaro.fr/international/armes-autonomes-soldats-robots-le-vertige-d-une-guerre-sans-hommes-20261118",
+      "date": "Novembre 2026",
+      "timestamp": 1795032189.0,
+      "source": "Le Figaro - International : Actualité internationale en direct"
+    }
+  ]
 }
